@@ -41,102 +41,53 @@
 </head>
 
 <body>
-  <header id="header" class="DownMove">
-    <h1><img src="/static/img/hat-wizard-solid.svg" width="32" height="32"></h1>
-    <nav>
-      <ul id="g-navi">
-        <li><a href="#area-1">Page Top</a></li>
-        <li><a href="#area-2">Apps</a></li>
-        <li><a href="#area-3">Social Media</a></li>
-        <li><a href="#area-4">About Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
 
-    <section id="area-1" class="hero">
-      <svg class="hero-art" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice" aria-hidden="true"
-        focusable="false">
-        <defs>
-          <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#eef1f2" />
-            <stop offset="1" stop-color="#dfe4e6" />
-          </linearGradient>
-        </defs>
-        <rect width="1440" height="600" fill="url(#skyGradient)" />
-        <polygon class="ridge ridge-far"
-          points="0,430 160,330 340,400 520,300 700,380 900,310 1100,390 1280,320 1440,370 1440,600 0,600" />
-        <polygon class="ridge ridge-mid"
-          points="0,480 220,400 420,460 640,370 860,450 1080,390 1300,450 1440,420 1440,600 0,600" />
-        <polygon class="ridge ridge-near"
-          points="0,540 260,470 500,520 720,440 960,510 1180,460 1440,510 1440,600 0,600" />
-      </svg>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 641px)" srcset="/static/images/snowpeak-wide.jpg">
+        <img src="/static/images/snowpeak-tall.jpg" alt="" class="hero-photo">
+      </picture>
+      <div class="hero-mark">chloro</div>
+    </div>
 
-      <div class="hero-content">
-        <p class="hero-tagline">Run your own race, in your own pace</p>
-        <blockquote class="hero-quote">
-          <p>Everyone is running their own race, in their own time. They are in their time zone, and you are in
-            yours.</p>
-          <cite><a
-              href="https://www.reddit.com/r/DecidingToBeBetter/comments/qucxy6/run_your_own_race_in_your_own_pace/"
-              id="cite2" onclick="return confirm('Are you sure you want to proceed to the external site?');"
-              target="_blank" rel="noopener noreferrer">— from Reddit</a></cite>
-        </blockquote>
-      </div>
-
-      <!--/area1-->
-    </section>
-    <section id="area-2">
-      <h2>Fan Apps Here</h2>
-      <p><a href="/play/" id="cite2">great number game</a></p>
-      <p><a href="/gallery/" id="cite2">gallery</a></p>
-      <p><a href="/timer/" id="cite2">timer game</a></p>
-      <p>&nbsp;</p>
-      <p>Wait for more development</p>
-
-      <!--/area2-->
-    </section>
-    <section id="area-3">
-      <h2>Social Media</h2>
-      <p class="horizon"><a href="https://bit.ly/3Ctt6RM" id="cite2" target="_blank" rel="noopener noreferrer"><img
-            src="/static/img/square-instagram.svg" width="24" height="24">instagram</a></p>
-      <p class="horizon"><a href="https://www.youtube.com/@kirinketsu2911" id="cite2"
-          onclick="return confirm('Are you sure you want to proceed to the external site?');" target="_blank"
-          rel="noopener noreferrer"><img src="/static/img/iconmonstr-youtube-8.svg" width="24"
-            height="24">youtube</a></p>
-      <p>&nbsp;</p>
-      <p>You may need a secret key</p>
-
-      <!--/area3-->
-    </section>
-    <section id="area-4">
-      <h2>My Work</h2>
-      <p><a href="/studies/" id="cite2">studies</a></p>
-      <p><a href="https://prompthero.com/chloro" id="cite2"
-          onclick="return confirm('Are you sure you want to proceed to the external site?');" target="_blank"
-          rel="noopener noreferrer">image generation</a></p>
-      <p><a href="https://github.com/Chloro989" id="cite2"
-          onclick="return confirm('Are you sure you want to proceed to the external site?');" target="_blank"
-          rel="noopener noreferrer">coding</a></p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-
-
-
-      <!--/area4-->
-    </section>
+    <nav class="links">
+      <a href="/studies/jkmath.html" class="link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 5.5c2-1 5-1 8 0 3-1 6-1 8 0v13c-2-1-5-1-8 0-3-1-6-1-8 0z" />
+          <path d="M12 5.5v13" />
+        </svg>
+        Math Problems
+      </a>
+      <a href="https://www.youtube.com/@kirinketsu2911" class="link" target="_blank" rel="noopener noreferrer"
+        onclick="return confirm('Are you sure you want to proceed to the external site?');">
+        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="1" y="1" width="22" height="18" rx="5" />
+          <path d="M10 6.5 L16 10 L10 13.5 Z" fill="currentColor" stroke="none" />
+        </svg>
+        YouTube
+      </a>
+      <a href="https://bit.ly/3Ctt6RM" class="link" target="_blank" rel="noopener noreferrer">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.2" />
+          <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+        </svg>
+        Instagram
+      </a>
+      <a href="https://github.com/Chloro989" class="link" target="_blank" rel="noopener noreferrer"
+        onclick="return confirm('Are you sure you want to proceed to the external site?');">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 6 L3 12 L8 18" />
+          <path d="M16 6 L21 12 L16 18" />
+        </svg>
+        GitHub
+      </a>
+    </nav>
     <!--/main-->
   </main>
-
-  <footer id="footer">
-    <small>contact me at discord @xlopo</small>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="/static/js/scroll.js"></script>
 </body>
 
 </html>

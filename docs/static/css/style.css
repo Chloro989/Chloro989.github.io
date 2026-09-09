@@ -127,128 +127,57 @@ nav ul li a:active{
   color: var(--accent);
 }
 
-main {
-      padding-top: 70px;
-}
-section{
-  padding:30px;
-}
-
-section:not(.hero) {
-  border-bottom: solid var(--line) 1px;
-}
-
-/*========= ヒーロー（山の背景） ===============*/
+/*========= ヒーロー（山の写真） ===============*/
 
 .hero {
   position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 880px;
   overflow: hidden;
-  min-height: 60vh;
-  display: flex;
-  align-items: flex-end;
-  padding: 7rem 1.5rem 4rem;
-  border-bottom: none;
 }
 
-.hero-art {
-  position: absolute;
-  inset: 0;
+.hero-photo {
+  display: block;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
-.ridge-far { fill: var(--ridge-far); }
-.ridge-mid { fill: var(--ridge-mid); }
-.ridge-near { fill: var(--ridge-near); }
-
-.hero::after {
-  content: "";
+.hero-mark {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 40%;
-  background: linear-gradient(to bottom, transparent, var(--bg));
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 34rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-tagline {
-  margin-top: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-
-.hero-quote {
-  margin: 0.75rem 0 0;
-}
-
-.hero-quote p {
-  margin-top: 0;
-  font-size: clamp(1.05rem, 2.2vw + 0.6rem, 1.5rem);
-  line-height: 1.7;
-  font-weight: 400;
-  font-family: 'Garamond', 'Times New Roman', serif;
-  font-style: italic;
+  top: 36px;
+  left: 48px;
+  font-size: 19px;
+  letter-spacing: 0.06em;
   color: var(--ink);
 }
 
-.hero-quote cite {
-  display: block;
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  font-style: normal;
+/*========= リンク一覧 ===============*/
+
+nav.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  padding: 44px 32px;
+}
+
+nav.links .link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: var(--ink);
+  text-decoration: none;
   font-family: 'Times New Roman';
 }
 
-/*========= レイアウトのためのCSS(ナビバー以外) ===============*/
-
-a#cite2:link,
-a#cite2:visited,
-a#cite2:active {
+nav.links .link:hover {
   color: var(--accent);
-}
-
-a#cite2:hover {
-  color: var(--ink);
-}
-
-section#area-2 p {
-  text-align:center;
-  font-size:1.15rem;
-  font-family:'Times New Roman'
-}
-
-section#area-3 p {
-  text-align:center;
-  font-size:1.15rem;
-  font-family:'Times New Roman'
-}
-
-section#area-4 p {
-  text-align:center;
-  font-size:1.15rem;
-  font-family:'Times New Roman'
-}
-
-.horizon img{
-  vertical-align: middle;
-  display: inline-block;
-}
-.horizon a{
-  display: inline-block;
-  padding: 0.25rem 0;
 }
 
 /*========= モバイル対応 ===============*/
@@ -260,17 +189,22 @@ section#area-4 p {
   }
 
   .hero {
-    min-height: 46vh;
-    padding: 6rem 1.25rem 3rem;
+    height: 56vh;
+    min-height: 360px;
   }
 
-  section {
-    padding: 1.5rem 1.25rem;
+  .hero-mark {
+    top: 22px;
+    left: 22px;
+    font-size: 16px;
   }
 
-  section#area-2 p,
-  section#area-3 p,
-  section#area-4 p {
-    font-size: 1rem;
+  nav.links {
+    gap: 26px 22px;
+    padding: 32px 20px;
+  }
+
+  nav.links .link {
+    font-size: 15px;
   }
 }
