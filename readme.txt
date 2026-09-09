@@ -14,10 +14,17 @@ python -m http.server 8000 -d docs
   in a DB; a static-friendly version needs image hosting + a JSON manifest, or a small
   serverless upload endpoint.
 - OGP/Twitter-card meta tags across several pages point at chloro966.net, but there's no CNAME
-  file in docs/ — the site is only actually reachable at its github.io URL right now. Left
-  alone since touching the custom domain wasn't asked for.
+  file in docs/ — the site is only actually reachable at https://chloro989.github.io/ right
+  now. Left alone since touching the custom domain wasn't asked for.
 
 ## Fixed
+- 2026-09-10: the repo was named `chloro.github.io`, which does NOT match the owner
+  `Chloro989` — GitHub Pages only serves at the bare `<owner>.github.io` root when the repo
+  name matches exactly, so the site was actually deployed one path segment deeper
+  (`.../chloro.github.io/`) than every absolute path in this site assumed. Every page was
+  broken on the real deployment (no CSS, no images, every internal link 404ing) while testing
+  fine locally. Renamed the repo to `Chloro989.github.io` to fix it — site is now correctly
+  at https://chloro989.github.io/. If this ever gets renamed again, re-check this.
 - /studies/jkmath had no file extension, so servers sent it as application/octet-stream and
   browsers downloaded it instead of rendering it. Renamed to jkmath.html.
 - 2026-09-10: most of the site still had unrendered Django template tags (`{% ... %}`) left
