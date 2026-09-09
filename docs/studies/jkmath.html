@@ -383,6 +383,73 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem4" role="button"
+                aria-expanded="false" aria-controls="collapseProblem4">
+                整数と数列
+                <div id="collapseProblem4" class="collapse">
+                    <div class="card-body">
+                        <p>\(p\)、\(q\)を正の整数とし、\(p \lt q\)とする。<br>
+                            \(a_n = p^n+q^n\)（\(n=1,2,3,\cdots\)）とすると、\(a_2=34\)である。<br>
+                            <br>
+                            \((1)\) \(p\)、\(q\)の値をそれぞれ求めよ。<br>
+                            \((2)\) \(a_{n+4}-a_n\)が\(40\)で割り切れることを証明せよ。<br>
+                            \((3)\) \(\displaystyle b_n =
+                            \frac{1}{40}\left\{(p^n+q^n)(p^{2n}+q^{2n})-4\right\}\)（\(n=1,2,3,\cdots\)）とする。\(b_n\)が整数となる\(n\)の条件を求めよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution4" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution4">
+                    整数と数列 解答
+                </div>
+                <div id="collapseSolution4" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) \(a_2=34\)より \(p^2+q^2=34\)<br>
+                            \(0 \lt p \lt q\)より\(p^2 \lt q^2\)であるから、\(2p^2 \lt 34\)、すなわち\(p^2 \lt 17\)<br>
+                            \(p\)は正の整数より \(p=1,2,3,4\)の可能性があり、それぞれ\(q^2=33,30,25,18\)となる。<br>
+                            この中で\(q^2\)が平方数になるのは\(p=3\)のとき\(q^2=25\)、すなわち\(q=5\)のみ。<br>
+                            \(\therefore\ p=3,\ q=5\)<br>
+                            <br>
+                            \((2)\) \((1)\)より \(a_n=3^n+5^n\)<br>
+                            \(a_{n+4}-a_n = (3^{n+4}+5^{n+4})-(3^n+5^n) = 3^n(3^4-1)+5^n(5^4-1) = 80\cdot3^n +
+                            624\cdot5^n\)<br>
+                            \(= 40\cdot2\cdot3^n + 40\cdot78\cdot5^{\,n-1} = 40\left(2\cdot3^n +
+                            78\cdot5^{\,n-1}\right)\)<br>
+                            \(n\geqq1\)より\(2\cdot3^n+78\cdot5^{\,n-1}\)は整数であるから、\(a_{n+4}-a_n\)は\(40\)で割り切れる。<br>
+                            <br>
+                            \((3)\) \(\displaystyle b_n = \frac{1}{40}(a_n\cdot a_{2n}-4)\)であるから、\(b_n\)が整数となるのは
+                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)のときである。<br>
+                            \((2)\)より、\(a_n\)を\(40\)で割った余りは周期\(4\)で繰り返すので、実際に計算すると<br>
+                            \(a_1=8\)を\(40\)で割った余りは\(8\)<br>
+                            \(a_2=34\)を\(40\)で割った余りは\(34\)<br>
+                            \(a_3=152\)を\(40\)で割った余りは\(32\)<br>
+                            \(a_4=706\)を\(40\)で割った余りは\(26\)<br>
+                            より、\(n\)を\(4\)で割った余りに応じて\(a_n\equiv8,34,32,26\pmod{40}\)（余り\(1,2,3,0\)のとき）を繰り返す。<br>
+                            <br>
+                            また\(2n\)を\(4\)で割った余りは、\(n\)が奇数のとき\(2\)（よって\(a_{2n}\equiv a_2\equiv34\)）、\(n\)が偶数のとき\(0\)（よって\(a_{2n}\equiv
+                            a_4\equiv26\)）となる。<br>
+                            <br>
+                            これらを\(n\)を\(4\)で割った余りごとにまとめると、<br>
+                            余り\(1\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv8\times34=272\equiv32\pmod{40}\)<br>
+                            余り\(2\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv34\times26=884\equiv4\pmod{40}\)<br>
+                            余り\(3\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv32\times34=1088\equiv8\pmod{40}\)<br>
+                            余り\(0\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv26\times26=676\equiv36\pmod{40}\)<br>
+                            <br>
+                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)となるのは\(n\)を\(4\)で割った余りが\(2\)のときのみである。<br>
+                            \(\therefore\ b_n\)が整数となる\(n\)の条件は \(n\equiv2\pmod4\)（すなわち\(n=4k+2\)、\(k=0,1,2,\cdots\)）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
