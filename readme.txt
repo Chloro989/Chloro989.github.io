@@ -7,8 +7,9 @@ python -m http.server 8000 -d docs
 # then open http://localhost:8000
 
 ## Known gaps (carried over from the old Django site)
-- /play/ (great number game) is dead (POST to /result has no backend, so is its Leaderboard
-  button). Decided not to rebuild. Still on disk but no longer linked from the homepage.
+- /play/ (great number game) is dead — its submit posts to /result, which has no backend.
+  Decided not to rebuild. Still on disk but no longer linked from the homepage. Removed its
+  Leaderboard button since that page doesn't exist anymore either.
 - Gallery (photo upload/browse) isn't in this repo at all yet. The old Django app stored photos
   in a DB; a static-friendly version needs image hosting + a JSON manifest, or a small
   serverless upload endpoint.
