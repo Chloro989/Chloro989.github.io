@@ -260,6 +260,101 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem3" role="button"
+                aria-expanded="false" aria-controls="collapseProblem3">
+                空間ベクトルと円錐
+                <div id="collapseProblem3" class="collapse">
+                    <div class="card-body">
+                        <p>\(a\)、\(b\)を定数とする。\(O\)を原点とする座標空間内に\(4\)点
+                            \(A(-4,4,0)\)、\(B(1,2,6)\)、\(C(-\frac{1}{3},a,b)\)、\(D(-\frac{1}{3},2,\frac{4}{3})\)
+                            がある。<br>
+                            \(3\)点\(O\)、\(A\)、\(B\)を通る平面\(\alpha\)上に、中心が\(\triangle OAB\)の重心\(G\)と一致し、半径が\(1\)の円がある。<br>
+                            この円を底面とし、点\(C\)を頂点とする直円錐は\(1\)つだけ存在し、これを\(S\)とする。<br>
+                            さらに、点\(D\)から\(\alpha\)に垂線を引き、\(\alpha\)との交点を\(E\)とする。<br>
+                            ただし、点\(D\)は平面\(\alpha\)に関して、点\(C\)と同じ側にある。<br>
+                            <br>
+                            \((1)\) \(a\)、\(b\)の値をそれぞれ求めよ。<br>
+                            \((2)\) \(\cos\angle GCD\)の値を求めよ。また、点\(D\)が\(S\)の外部にあることを示せ。<br>
+                            \((3)\) 点\(E\)の座標を求めよ。また、\(S\)の側面上の点で、点\(D\)から最も近い点を\(H\)とするとき、線分\(DH\)の長さを求めよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution3" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution3">
+                    空間ベクトルと円錐 解答
+                </div>
+                <div id="collapseSolution3" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) 点\(G\)は\(\triangle OAB\)の重心より<br>
+                            \(\displaystyle \vec{OG} = \frac{\vec{OA}+\vec{OB}}{3} = \frac{1}{3}(-4,4,0) +
+                            \frac{1}{3}(1,2,6) = (-1,2,2)\)<br>
+                            よって \(\vec{CG} = \vec{OG}-\vec{OC} = (-1,2,2)-(-\frac{1}{3},a,b) = (-\frac{2}{3},\,
+                            2-a,\, 2-b)\)<br>
+                            <br>
+                            平面\(\alpha\)上で中心が\(G\)である円を底面とする直円錐\(S\)の頂点が\(C\)であるから \(\vec{CG}\perp\alpha\)、<br>
+                            すなわち \(\vec{CG}\cdot\vec{OA}=0\) かつ \(\vec{CG}\cdot\vec{OB}=0\)<br>
+                            \(\vec{CG}\cdot\vec{OA} = \frac{8}{3}+4(2-a) = \frac{8}{3}+8-4a=0\) より \(a=\frac{8}{3}\)<br>
+                            \(\vec{CG}\cdot\vec{OB} = -\frac{2}{3}+2(2-a)+6(2-b)=0\) より \(a+3b=\frac{23}{3}\)、これに
+                            \(a=\frac{8}{3}\)を代入して \(b=\frac{5}{3}\)<br>
+                            \(\therefore\ a=\displaystyle\frac{8}{3},\ b=\displaystyle\frac{5}{3}\)<br>
+                            <br>
+                            \((2)\) \((1)\)より \(\vec{CG}=(-\frac{2}{3},-\frac{2}{3},\frac{1}{3})\)、\(|\vec{CG}|=1\)<br>
+                            \(\vec{CD} = \vec{OD}-\vec{OC} = (0,-\frac{2}{3},-\frac{1}{3})\)、\(|\vec{CD}| =
+                            \displaystyle\frac{\sqrt{5}}{3}\)<br>
+                            \(\vec{CG}\cdot\vec{CD} = \displaystyle\frac{1}{3}\)<br>
+                            よって \(\displaystyle \cos\angle GCD = \frac{1/3}{1\cdot \sqrt{5}/3} = \frac{1}{\sqrt{5}}
+                            = \frac{\sqrt{5}}{5}\)<br>
+                            <br>
+                            ここで、\(S\)の側面上の点\(C\)以外の任意の点を\(P\)、直線\(CP\)と\(S\)の底面の円の交点を\(Q\)とすると、底面の半径が\(1\)、高さ\(|CG|=1\)であることから<br>
+                            \(\displaystyle \angle GCQ = \angle GCP = \frac{\pi}{4}\)<br>
+                            一方、\(\cos\angle GCD = \displaystyle\frac{1}{\sqrt5} < \cos\frac{\pi}{4} =
+                            \frac{\sqrt2}{2}\)なので<br>
+                            \(\displaystyle \frac{\pi}{4} < \angle GCD < \frac{\pi}{2}\)<br>
+                            よって点\(D\)は\(S\)の外部にある。<br>
+                            <br>
+                            \((3)\) 点\(E\)は平面\(\alpha\)上の点であるから、\(\vec{OE}=k\vec{OA}+l\vec{OB}\)（\(k,l\)は実数）とおける。<br>
+                            \(\vec{OE} = k(-4,4,0)+l(1,2,6) = (-4k+l,\,4k+2l,\,6l)\)<br>
+                            <br>
+                            \(\vec{DE}\parallel\vec{CG}\parallel(2,2,-1)\)より、\(E\)は点\(D\)を通りベクトル\((2,2,-1)\)に平行な直線上にあるから、<br>
+                            \(\vec{OE} = \vec{OD}+s(2,2,-1) = (-\frac{1}{3}+2s,\,2+2s,\,\frac{4}{3}-s)\)（\(s\)は実数）<br>
+                            これらを連立して解くと \(\displaystyle k=l=\frac{7}{27},\ s=-\frac{2}{9}\)<br>
+                            よって \(\displaystyle \vec{OE} = \left(-\frac{7}{9},\,\frac{14}{9},\,\frac{14}{9}\right)\)<br>
+                            <br>
+                            \(\vec{GE} = \vec{OE}-\vec{OG} = (\frac{2}{9},-\frac{4}{9},-\frac{4}{9})\)、\(|\vec{GE}| =
+                            \displaystyle\frac{2}{3}\)<br>
+                            半直線\(GE\)上と\(S\)の底面の円の交点を\(F\)とすると、底面の円の半径が\(1\)より \(|\vec{GF}|=1\)<br>
+                            \(\vec{GF} = \displaystyle\frac{3}{2}\vec{GE}\)より
+                            \(\displaystyle \vec{OF}=\vec{OG}+\frac{3}{2}\vec{GE} =
+                            \left(-\frac{2}{3},\,\frac{4}{3},\,\frac{4}{3}\right)\)<br>
+                            <br>
+                            \((2)\)より点\(D\)は\(S\)の外部にあるから、\(S\)の側面上の点で点\(D\)から最も近い点\(H\)は線分\(CF\)上にある。<br>
+                            線分\(CF\)上の点を\(I\)とおき、\(\vec{OI}=(1-t)\vec{OC}+t\vec{OF}\)（\(0\leqq t\leqq1\)）とすると、<br>
+                            \(\displaystyle \vec{OI} = \left(-\frac{1}{3}-\frac{t}{3},\,\frac{8}{3}-\frac{4t}{3},\,
+                            \frac{5}{3}-\frac{t}{3}\right)\)<br>
+                            \(\displaystyle \vec{DI} = \vec{OI}-\vec{OD} =
+                            \left(-\frac{t}{3},\,\frac{2}{3}-\frac{4t}{3},\,\frac{1}{3}-\frac{t}{3}\right)\)<br>
+                            <br>
+                            線分\(DH\)の長さは\(|\vec{DI}|\)の最小値である。<br>
+                            \(\displaystyle |\vec{DI}|^2 = \frac{1}{9}\left\{t^2+(2-4t)^2+(1-t)^2\right\} =
+                            \frac{1}{9}(18t^2-18t+5)\)<br>
+                            \(\displaystyle |\vec{DI}| = \frac{1}{3}\sqrt{18t^2-18t+5} =
+                            \frac{1}{3}\sqrt{18\left(t-\frac{1}{2}\right)^2+\frac{1}{2}}\)<br>
+                            \(t=\displaystyle\frac{1}{2}\)のとき、すなわち\(I\)が線分\(CF\)の中点のとき、\(|\vec{DI}|\)は最小値
+                            \(\displaystyle \frac{1}{3}\sqrt{\frac{1}{2}} = \frac{\sqrt2}{6}\)をとる。<br>
+                            \(\therefore\ DH = \displaystyle\frac{\sqrt2}{6}\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
