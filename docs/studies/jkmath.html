@@ -83,6 +83,18 @@
 
         .card-body {
             line-height: 3rem;
+            background-color: #fff;
+        }
+
+        .triangle-diagram {
+            display: block;
+            margin: 0.5rem auto 1rem;
+        }
+
+        .triangle-diagram text {
+            font-family: 'Arial', sans-serif;
+            font-style: italic;
+            fill: #333;
         }
 
         p span {
@@ -114,6 +126,16 @@
                 数列と図形の複合問題
                 <div id="collapseProblem1" class="collapse">
                     <div class="card-body">
+                        <svg class="triangle-diagram" viewBox="0 0 240 200" width="220" height="183"
+                            aria-label="鋭角三角形ABC、辺a=BC、b=CA、c=AB">
+                            <polygon points="120,20 30,170 210,170" fill="none" stroke="#333" stroke-width="2" />
+                            <text x="120" y="14" text-anchor="middle" font-size="16">A</text>
+                            <text x="16" y="180" text-anchor="middle" font-size="16">B</text>
+                            <text x="224" y="180" text-anchor="middle" font-size="16">C</text>
+                            <text x="120" y="190" text-anchor="middle" font-size="14">a</text>
+                            <text x="182" y="90" text-anchor="middle" font-size="14">b</text>
+                            <text x="58" y="90" text-anchor="middle" font-size="14">c</text>
+                        </svg>
                         <p>鋭角三角形ABCがある。数列 \(\displaystyle \frac {1}{tanA} \), \(\displaystyle \frac {1}{tanB} \),
                             \(\displaystyle \frac {1}{tanC} \) が等差数列であるとき、
                             3点の長さの平方がなす数列 \(CA^2\), \(AB^2\), \(BC^2\) も等差数列であることを示せ。
