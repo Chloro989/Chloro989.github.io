@@ -86,12 +86,12 @@
             background-color: #fff;
         }
 
-        .triangle-diagram {
+        .problem-diagram {
             display: block;
             margin: 0.5rem auto 1rem;
         }
 
-        .triangle-diagram text {
+        .problem-diagram text {
             font-family: 'Arial', sans-serif;
             font-style: italic;
             fill: #333;
@@ -126,7 +126,7 @@
                 数列と図形の複合問題
                 <div id="collapseProblem1" class="collapse">
                     <div class="card-body">
-                        <svg class="triangle-diagram" viewBox="0 0 240 200" width="220" height="183"
+                        <svg class="problem-diagram" viewBox="0 0 240 200" width="220" height="183"
                             aria-label="鋭角三角形ABC、辺a=BC、b=CA、c=AB">
                             <polygon points="120,20 30,170 210,170" fill="none" stroke="#333" stroke-width="2" />
                             <text x="120" y="14" text-anchor="middle" font-size="16">A</text>
@@ -305,6 +305,34 @@
                             \(a=\frac{8}{3}\)を代入して \(b=\frac{5}{3}\)<br>
                             \(\therefore\ a=\displaystyle\frac{8}{3},\ b=\displaystyle\frac{5}{3}\)<br>
                             <br>
+                        </p>
+                        <p>
+                            \(C\)、\(G\)、\(D\)は同一平面（円錐\(S\)の軸を含む断面）上にあるので、この断面で\(D\)や\(H\)の位置関係を図示できる。<br>
+                            \(G\)を原点、底面方向を横軸、軸\(CG\)方向を縦軸とする断面座標では、\(G=(0,0)\)、\(C=(0,1)\)、\(F=(1,0)\)、\(E=(\frac{2}{3},0)\)、\(D=(\frac{2}{3},\frac{2}{3})\)、\(H=(\frac{1}{2},\frac{1}{2})\)（線分\(CF\)の中点）となる。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 260 210" width="260" height="210"
+                            aria-label="円錐Sの軸を含む断面図。頂点C、底面中心G、底面上の点F、垂線の足E、外部の点D、側面上の最近点Hを示す">
+                            <line x1="15" y1="140" x2="245" y2="140" stroke="#999" stroke-width="1" stroke-dasharray="3,3" />
+                            <polygon points="130,50 40,140 220,140" fill="none" stroke="#333" stroke-width="2" />
+                            <line x1="130" y1="50" x2="130" y2="140" stroke="#999" stroke-width="1.3" stroke-dasharray="4,3" />
+                            <line x1="190" y1="140" x2="190" y2="80" stroke="#999" stroke-width="1.3" stroke-dasharray="4,3" />
+                            <line x1="190" y1="80" x2="175" y2="95" stroke="#999" stroke-width="1.3" stroke-dasharray="4,3" />
+                            <rect x="184" y="134" width="6" height="6" fill="none" stroke="#999" stroke-width="1" />
+                            <circle cx="130" cy="50" r="2.5" fill="#333" />
+                            <circle cx="130" cy="140" r="2.5" fill="#333" />
+                            <circle cx="220" cy="140" r="2.5" fill="#333" />
+                            <circle cx="190" cy="140" r="2.5" fill="#333" />
+                            <circle cx="190" cy="80" r="2.5" fill="#333" />
+                            <circle cx="175" cy="95" r="2.5" fill="#333" />
+                            <text x="130" y="38" text-anchor="middle" font-size="15">C</text>
+                            <text x="118" y="156" text-anchor="middle" font-size="15">G</text>
+                            <text x="228" y="150" text-anchor="middle" font-size="15">F</text>
+                            <text x="190" y="156" text-anchor="middle" font-size="15">E</text>
+                            <text x="203" y="78" text-anchor="middle" font-size="15">D</text>
+                            <text x="162" y="90" text-anchor="middle" font-size="15">H</text>
+                            <text x="20" y="152" font-size="13" font-style="normal" fill="#777">α</text>
+                        </svg>
+                        <p>
                             \((2)\) \((1)\)より \(\vec{CG}=(-\frac{2}{3},-\frac{2}{3},\frac{1}{3})\)、\(|\vec{CG}|=1\)<br>
                             \(\vec{CD} = \vec{OD}-\vec{OC} = (0,-\frac{2}{3},-\frac{1}{3})\)、\(|\vec{CD}| =
                             \displaystyle\frac{\sqrt{5}}{3}\)<br>
