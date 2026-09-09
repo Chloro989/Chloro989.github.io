@@ -52,43 +52,70 @@
   }
 }
 
+/*========= 配色（落ち着いたNordic風パレット） ===============*/
+
+:root {
+  --bg: #eef1f2;
+  --ink: #333a40;
+  --ink-soft: #6f7780;
+  --accent: #4f6b78;
+  --line: #d7dbdd;
+  --header-bg: rgba(238, 241, 242, 0.86);
+  --ridge-far: #c9cfd2;
+  --ridge-mid: #a8b2b6;
+  --ridge-near: #86929a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
 /*========= レイアウトのためのCSS ===============*/
 
 h1{
   font-size:1.2rem;
-  color:#000;
+  color: var(--ink);
 }
 
 h2{
-  font-size:1.5rem;
+  font-size:1.4rem;
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 1.5rem 0;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   font-family:'Times New Roman'
 }
 
 p{
-  margin-top:20px;  
+  margin-top:20px;
 }
 
 small{
-  background:#000;
-  color:#fff;
+  background: var(--ink);
+  color: var(--bg);
   display: block;
   text-align: center;
   padding:20px;
 }
 
+#header {
+  background-color: var(--header-bg);
+  color: var(--ink);
+  backdrop-filter: blur(6px);
+}
 
 nav ul{
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 nav ul li a{
   display: block;
   text-decoration: none;
-  color: #000;
+  color: var(--ink);
   padding:1rem;
   transition:all 0.3s;
   font-family:'Times New Roman';
@@ -97,7 +124,7 @@ nav ul li a{
 nav ul li.current a,
 nav ul li a:hover,
 nav ul li a:active{
-  color:#fff; 
+  color: var(--accent);
 }
 
 main {
@@ -107,68 +134,111 @@ section{
   padding:30px;
 }
 
+section:not(.hero) {
+  border-bottom: solid var(--line) 1px;
+}
 
-section:nth-child(n){
-  border-bottom:solid
-  #000000 1px;
+/*========= ヒーロー（山の背景） ===============*/
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 7rem 1.5rem 4rem;
+  border-bottom: none;
+}
+
+.hero-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ridge-far { fill: var(--ridge-far); }
+.ridge-mid { fill: var(--ridge-mid); }
+.ridge-near { fill: var(--ridge-near); }
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 34rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-tagline {
+  margin-top: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hero-quote {
+  margin: 0.75rem 0 0;
+}
+
+.hero-quote p {
+  margin-top: 0;
+  font-size: clamp(1.05rem, 2.2vw + 0.6rem, 1.5rem);
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: 'Garamond', 'Times New Roman', serif;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.hero-quote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-family: 'Times New Roman';
 }
 
 /*========= レイアウトのためのCSS(ナビバー以外) ===============*/
 
-span {
-  display: block;
-  font-size: 3rem;
-  font-family:'Garamond'
-}
-
-span#cite {
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  font-family: 'Times New Roman'
-}
-
-
-  
-a#cite2:link {
-  color:#000;
-  }
-  
-a#cite2:visited {
-  color:#000;
-  }
-  
-a#cite2:hover {
-  color:#000;
-  }
-  
+a#cite2:link,
+a#cite2:visited,
 a#cite2:active {
-  color:#000;
-  }
+  color: var(--accent);
+}
 
-P#Vertical_Line {
-  font-size: 3rem;
-  font-family:'Garamond';
-  writing-mode: vertical-rl;
-  text-align: left;
-  float:left;
-
+a#cite2:hover {
+  color: var(--ink);
 }
 
 section#area-2 p {
   text-align:center;
-  font-size:1.5rem;
+  font-size:1.15rem;
   font-family:'Times New Roman'
 }
 
 section#area-3 p {
   text-align:center;
-  font-size:1.5rem;
+  font-size:1.15rem;
   font-family:'Times New Roman'
 }
 
 section#area-4 p {
   text-align:center;
-  font-size:1.5rem;
+  font-size:1.15rem;
   font-family:'Times New Roman'
 }
 
@@ -178,4 +248,29 @@ section#area-4 p {
 }
 .horizon a{
   display: inline-block;
+  padding: 0.25rem 0;
+}
+
+/*========= モバイル対応 ===============*/
+
+@media (max-width: 640px) {
+  nav ul li a {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    min-height: 46vh;
+    padding: 6rem 1.25rem 3rem;
+  }
+
+  section {
+    padding: 1.5rem 1.25rem;
+  }
+
+  section#area-2 p,
+  section#area-3 p,
+  section#area-4 p {
+    font-size: 1rem;
+  }
 }
