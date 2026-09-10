@@ -545,6 +545,75 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem6" role="button"
+                aria-expanded="false" aria-controls="collapseProblem6">
+                合同式と最大公約数
+                <div id="collapseProblem6" class="collapse">
+                    <div class="card-body">
+                        <p>\(m\)を\(1\)以上の整数、\(n\)を\(2\)以上の整数とする。以下の問いに答えよ。ただし、\((1)\)については結論のみ書けばよい。<br>
+                            <br>
+                            \((1)\) \(m^2\)を\(8\)で割った余りとしてありうるものをすべて求めよ。<br>
+                            \((2)\) \(3n^2-4\)と\(2n-3\)の最大公約数が\(1\)でないための必要十分条件を求めよ。<br>
+                            \((3)\) \((3n^2-4)(2n-3)\)は整数の\(2\)乗にならないことを示せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution6" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution6">
+                    合同式と最大公約数 解答
+                </div>
+                <div id="collapseSolution6" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) \(k\)を整数として<br>
+                            \((4k)^2 = 16k^2\)<br>
+                            \((4k\pm1)^2 = 16k^2\pm8k+1\)（複号同順）<br>
+                            \((4k+2)^2 = 16k^2+16k+4\)<br>
+                            より、求めるものは \(0,\ 1,\ 4\) である。<br>
+                            <br>
+                            \((2)\) 少なくとも\(1\)つが\(0\)でない整数\(a,b\)について、\(a\)と\(b\)の最大公約数（\(a\)と\(b\)をともに割り切る最大の正の整数）を\(\gcd(a,b)\)と書くことにする。このとき、次の性質が成り立つ。<br>
+                            \((\mathrm{i})\) \(\gcd(a,b)=\gcd(b,a)\)<br>
+                            \((\mathrm{ii})\) \(\gcd(a,b)=\gcd(a,-b)\)<br>
+                            \((\mathrm{iii})\) \(b\)と互いに素な正整数\(c\)に対して \(\gcd(a,b)=\gcd(ac,b)\)<br>
+                            \((\mathrm{iv})\) 整数\(k\)に対して \(\gcd(a,b)=\gcd(b,a+kb)\)<br>
+                            <br>
+                            これより<br>
+                            \(\gcd(3n^2-4,\,2n-3)\)<br>
+                            \(=\gcd(6n^2-8,\,2n-3)\)（\(\because\ 2n-3\)と\(2\)は互いに素、(iii)）<br>
+                            \(=\gcd(9n-8,\,2n-3)\)（\(6n^2-8=3n(2n-3)+9n-8\)、(iv)）<br>
+                            \(=\gcd(n+4,\,2n-3)\)（\(9n-8=4(2n-3)+n+4\)、(iv)、(i)）<br>
+                            \(=\gcd(n+4,\,-11)\)（\(2n-3=2(n+4)-11\)、(iv)）<br>
+                            \(=\gcd(n+4,\,11)\)（(ii)）<br>
+                            であるから、\(11\)が素数であることに注意して、<br>
+                            \(\therefore\ \gcd(3n^2-4,\,2n-3)\neq1\)となるための必要十分条件は、\(n\)が\(11\)で割って\(7\)余る整数であることである。<br>
+                            <br>
+                            \((3)\) \((3n^2-4)(2n-3)\)が整数の\(2\)乗であると仮定する。\(\gcd(3n^2-4,\,2n-3)\)の値によって場合分けする。<br>
+                            <br>
+                            \((\mathrm{i})\) \(n\)が\(11\)で割って\(7\)余る整数ではないとき、このとき\(3n^2-4\)と\(2n-3\)は互いに素な自然数なので、<br>
+                            \((3n^2-4)(2n-3)\)が整数の\(2\)乗 \(\iff\) \(3n^2-4,\ 2n-3\)がともに整数の\(2\)乗<br>
+                            \((1)\)の結果より、\(2n-3\)は奇数であり、奇数の平方は\(8\)で割った余りが\(1\)であるから、\(2n-3\)が整数の\(2\)乗であるためには\(n\)が\(4\)で割って\(2\)余る整数でなければならない。<br>
+                            しかし、このとき（\(n=4k-2\)とおくと）<br>
+                            \(3n^2-4 = 8(6k^2-6k+1)\)となり、整数の\(2\)乗であるはずの\(3n^2-4\)は素因数\(2\)を奇数個しか含んでおらず、矛盾である。<br>
+                            <br>
+                            \((\mathrm{ii})\) \(n\)が\(11\)で割って\(7\)余る整数のとき、\(\gcd(3n^2-4,\,2n-3)=11\)<br>
+                            \(n=11\ell-4\)とする。このとき、\((3n^2-4)(2n-3)\)<br>
+                            \(=11^2(33\ell^2-24\ell+4)(2\ell-1)\)であり、\(33\ell^2-24\ell+4\)と\(2\ell-1\)は互いに素であるから、これらはともに整数の\(2\)乗でなければならない。<br>
+                            ここで、\(33\ell^2-24\ell+4 = 8(4\ell^2-3\ell)+\ell^2+4\)より、\((1)\)の結果に注意すれば、\(\ell\)は偶数でなければならないが、<br>
+                            このとき\(2\ell-1\)を\(4\)で割った余りは\(3\)、すなわち\(8\)で割った余りが\(1\)ではない。これは奇数\(2\ell-1\)が整数の\(2\)乗ではないことを示しているので矛盾。<br>
+                            <br>
+                            以上より、\((3n^2-4)(2n-3)\)は整数の\(2\)乗ではないことが分かる。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
