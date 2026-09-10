@@ -97,6 +97,25 @@
             fill: #333;
         }
 
+        table.zougen {
+            border-collapse: collapse;
+            margin: 0.75rem auto 1rem;
+        }
+
+        table.zougen th,
+        table.zougen td {
+            border: 1px solid #333;
+            padding: 0.35rem 0.9rem;
+            text-align: center;
+            min-width: 2.5rem;
+        }
+
+        table.zougen th {
+            background: #f8f9fa;
+            font-style: italic;
+            font-weight: normal;
+        }
+
         p span {
             display: inline-block;
         }
@@ -483,8 +502,32 @@
                             \(\displaystyle f'(x) = \frac{2}{(x+1)^2} - \frac{1}{x+1} = \frac{2-(x+1)}{(x+1)^2} =
                             \frac{1-x}{(x+1)^2}\)<br>
                             <br>
-                            \(x \gt 0\)において、\(f(x)\)の増減表は次のようになる。<br>
-                            \(x\)：\(0 \to 1 \to\)、\(f'(x)\)：\(+\ 0\ -\)、\(f(x)\)：\(\nearrow\ \text{極大}\ \searrow\)<br>
+                            \(x \gt 0\)において、\(f(x)\)の増減表は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\(0\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(1\)</td>
+                                <td>\(\cdots\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td></td>
+                                <td>\(+\)</td>
+                                <td>\(0\)</td>
+                                <td>\(-\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f(x)\)</th>
+                                <td></td>
+                                <td>\(\nearrow\)</td>
+                                <td>極大<br>\(1-\log2\)</td>
+                                <td>\(\searrow\)</td>
+                            </tr>
+                        </table>
+                        <p>
                             よって、\(f(x)\)は\(x=1\)で極大値\(1-\log2\)をとる。極小値はなし。<br>
                             <br>
                             また \(\displaystyle \lim_{x\to+0}f(x) = 0-\log1 = 0\)、\(\displaystyle
@@ -519,7 +562,38 @@
                             \lt \alpha \lt 1 \lt \beta\)）とすると、<br>
                             \(0 \lt x \lt \alpha\)、\(\beta \lt x\)において \(f(x) \lt k\)、\(g'(x) \lt 0\)<br>
                             \(\alpha \lt x \lt \beta\)において \(f(x) \gt k\)、\(g'(x) \gt 0\)<br>
-                            よって、\(x \gt 0\)において\(g(x)\)の増減表は\(x=\alpha\)で極小、\(x=\beta\)で極大となる。<br>
+                            よって、\(x \gt 0\)において\(g(x)\)の増減表は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\(0\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\alpha\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\beta\)</td>
+                                <td>\(\cdots\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(g'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td>\(0\)</td>
+                                <td>\(-\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(g(x)\)</th>
+                                <td></td>
+                                <td>\(\searrow\)</td>
+                                <td>極小</td>
+                                <td>\(\nearrow\)</td>
+                                <td>極大</td>
+                                <td>\(\searrow\)</td>
+                            </tr>
+                        </table>
+                        <p>
                             したがって\(g(x)\)は極小値・極大値を\(1\)つずつもつ。<br>
                             <br>
                             \((\mathrm{i})\)、\((\mathrm{ii})\)より、\(g(x)\)が極大値・極小値を\(1\)つずつもつような\(k\)の値の範囲は<br>
