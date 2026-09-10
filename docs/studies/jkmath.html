@@ -688,6 +688,88 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem7" role="button"
+                aria-expanded="false" aria-controls="collapseProblem7">
+                格子点上のランダムウォーク
+                <div id="collapseProblem7" class="collapse">
+                    <div class="card-body">
+                        <p>座標平面上で\(x\)座標と\(y\)座標がいずれも整数である点を格子点という。<br>
+                            点\(P\)は最初\((1,1)\)にあるとし、\(P\)に対して次の操作を繰り返し行う。<br>
+                            <br>
+                            操作：点\(P\)を隣接する\(4\)つの格子点のいずれかに、それぞれ\(\displaystyle \frac14\)の確率で移動させる。<br>
+                            <br>
+                            また、\(P\)が\(x\)軸または\(y\)軸上の点に移動したら操作を終了するものとする。<br>
+                            <br>
+                            \((1)\) 操作を\(4\)回行った後に、点\(P\)が\((1,1)\)にある確率を求めよ。<br>
+                            \((2)\) \(n\)を\(2\)以上の自然数とする。操作を\(2n\)回行った後に、点\(P\)が\((n-1,n-1)\)にある確率を求めよ。<br>
+                            <br>
+                            注意：「隣接する格子点」とは、\(x\)座標もしくは\(y\)座標のいずれか一方のみが\(1\)だけ増減した点のことである。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution7" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution7">
+                    格子点上のランダムウォーク 解答
+                </div>
+                <div id="collapseSolution7" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(x\)座標が増加、減少する操作が行われる回数をそれぞれ\(\alpha,\beta\)とする。同様に、\(y\)座標が増加、減少する操作が行われる回数をそれぞれ\(\gamma,\delta\)とする。以下、それぞれの方向を\(a\)方向（\(x\)増加）、\(b\)方向（\(x\)減少）、\(c\)方向（\(y\)増加）、\(d\)方向（\(y\)減少）と呼ぶ。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 200 160" width="200" height="160"
+                            aria-label="4方向の呼び方。右がa(x増加)、左がb(x減少)、上がc(y増加)、下がd(y減少)">
+                            <line x1="30" y1="80" x2="170" y2="80" stroke="#333" stroke-width="1.5" />
+                            <polygon points="170,80 160,75 160,85" fill="#333" />
+                            <polygon points="30,80 40,75 40,85" fill="#333" />
+                            <line x1="100" y1="140" x2="100" y2="20" stroke="#333" stroke-width="1.5" />
+                            <polygon points="100,20 95,30 105,30" fill="#333" />
+                            <polygon points="100,140 95,130 105,130" fill="#333" />
+                            <text x="152" y="72" text-anchor="middle" font-size="15">a</text>
+                            <text x="48" y="72" text-anchor="middle" font-size="15">b</text>
+                            <text x="108" y="34" text-anchor="middle" font-size="15">c</text>
+                            <text x="108" y="132" text-anchor="middle" font-size="15">d</text>
+                        </svg>
+                        <p>
+                            \((1)\) このとき、<br>
+                            \(\alpha+\beta+\gamma+\delta=4\)、\(\alpha-\beta=0\)、\(\gamma-\delta=0\)<br>
+                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)<br>
+                            <br>
+                            \(\bullet\ \beta=2\)のとき、\(\alpha=2\)、よって\(\gamma=\delta=0\)である。\(y\)座標は変化しないので\(x\)軸には達しないが、\(x\)座標が\(0\)（\(y\)軸）に達しないという条件から、\(1\)回目の移動は\(a\)方向でなければならない。この条件のもとで数え上げると、<br>
+                            \(a,a,b,b\)を並べる\(6\)通りのうち、\(x\)座標が一度も\(0\)にならないのは\(\to\to\gets\gets\)、\(\to\gets\to\gets\)の\(2\)通りのみである。<br>
+                            これは\(\beta=0\)（\(\delta=2\)）の場合も同様に\(2\)通りである。<br>
+                            <br>
+                            \(\bullet\ \beta=1\)のとき、\(\alpha=\beta=\gamma=\delta=1\)である。\(a,b\)方向への移動\(1\)回ずつのうち\(x\)座標を\(0\)にしないためには\(a\)が\(b\)より先でなければならず、\(c,d\)についても同様に\(c\)が\(d\)より先でなければならない。<br>
+                            \(4\)回のうちどの\(2\)回が\(a,b\)（残り\(2\)回が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{4}{2}=6\)通りあり、それぞれ\(a,b\)の順序・\(c,d\)の順序は一意に定まるので、移動の総数は\(6\)通りである。<br>
+                            <br>
+                            以上より、条件を満たす移動の総数は\(2+2+6=10\)通りであり、各移動は独立に確率\(\displaystyle\frac14\)で起こるから、求める確率は<br>
+                            \(\therefore\ \displaystyle \frac{10}{4^4} = \frac{10}{256} = \frac{5}{128}\)<br>
+                            <br>
+                            \((2)\) \((1)\)と同様に、目標\((n-1,n-1)\)に達する条件は<br>
+                            \(\alpha+\beta+\gamma+\delta=2n\)、\(\alpha-\beta=n-2\)、\(\gamma-\delta=n-2\)<br>
+                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)と、\((1)\)と全く同じ\(3\)つの場合に分かれる。<br>
+                            <br>
+                            \(\bullet\ \beta=2\)のとき、\(\alpha=n\)、\(\gamma=n-2,\ \delta=0\)である。\(y\)座標は単調に増加するので\(x\)軸には達しない。\(x\)座標が\(0\)にならないためには、\(n\)個の\(a\)と\(2\)個の\(b\)からなる部分列（相対的な順序）が、すべての接頭辞で\(a\)の個数が\(b\)の個数以上でなければならない（\(1\)回目は\(a\)、というのが\((1)\)の議論の一般化）。<br>
+                            このような部分列の数は、いわゆる投票問題（\(\mathrm{ballot\ problem}\)）の公式より\(\displaystyle \frac{(n+2)(n-1)}{2}\)通りであり（\(n=2\)のとき\(2\)通りとなり\((1)\)と一致する）、この部分列を\(2n\)個の位置のうち\(n+2\)個に配置する方法が\(\displaystyle\binom{2n}{n+2}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n+2}\cdot\frac{(n+2)(n-1)}{2}\)通りである。<br>
+                            \(\beta=0\)（\(\delta=2\)）の場合も、\(x,y\)の対称性より同じ総数となる。<br>
+                            <br>
+                            \(\bullet\ \beta=\delta=1\)のとき、\(\alpha=\gamma=n-1\)である。\(a,b\)方向への移動（\(n-1\)個の\(a\)と\(1\)個の\(b\)）のうち、\(x\)座標を\(0\)にしないためには\(b\)が先頭に来なければよく、その並べ方は\(n-1\)通り（\(n\)通りの位置のうち先頭を除く）である。\(c,d\)についても同様に\(n-1\)通り。<br>
+                            \(2n\)個のうちどの\(n\)個が\(a,b\)（残り\(n\)個が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{2n}{n}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n}(n-1)^2\)通りである。<br>
+                            <br>
+                            以上をすべて合計すると（この和は\(\displaystyle\binom{2n+1}{n}(n-1)^2\)に一致する）、条件を満たす移動の総数は\(\displaystyle \binom{2n+1}{n}(n-1)^2\)通りであるから、求める確率は<br>
+                            \(\therefore\ \displaystyle \frac{\dbinom{2n+1}{n}(n-1)^2}{4^{2n}}\)<br>
+                            （\(n=2\)のとき、この式は\(\displaystyle \frac{\binom{5}{2}\cdot1}{256}=\frac{10}{256}=\frac{5}{128}\)となり、\((1)\)の結果と一致する。）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
