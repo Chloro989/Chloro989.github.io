@@ -140,24 +140,63 @@
         </button>
 
         <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem1" role="button" aria-expanded="false"
-                aria-controls="collapseProblem1">
-                数列と図形の複合問題
-                <div id="collapseProblem1" class="collapse">
+            <div class="card-body">
+                <h5>目次</h5>
+                <p class="text-muted" style="margin-bottom:1rem;">高校数学の教科書の単元順に並んでいます。</p>
+                <p style="margin-bottom:0.3rem;"><b>数学A：場合の数と確率</b></p>
+                <ul>
+                    <li><a href="#problem8">立方体の頂点への数字配置</a></li>
+                    <li><a href="#problem2">確率・ゲーム</a></li>
+                    <li><a href="#problem7">格子点上のランダムウォーク</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学A：整数の性質</b></p>
+                <ul>
+                    <li><a href="#problem6">合同式と最大公約数</a></li>
+                    <li><a href="#problem4">整数と数列</a></li>
+                    <li><a href="#problem12">素数のべきと二項係数の余り</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学B：数列</b></p>
+                <ul>
+                    <li><a href="#problem1">数列と図形の複合問題</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学B・C：ベクトル</b></p>
+                <ul>
+                    <li><a href="#problem3">空間ベクトルと円錐</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学C：複素数平面</b></p>
+                <ul>
+                    <li><a href="#problem11">正三角形と対称点の複素数平面</a></li>
+                    <li><a href="#problem14">複素数平面上の長方形と4次方程式</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学III：極限</b></p>
+                <ul>
+                    <li><a href="#problem10">ガウス記号で定まる数列とその極限</a></li>
+                </ul>
+                <p style="margin-bottom:0.3rem;"><b>数学III：微分法</b></p>
+                <ul>
+                    <li><a href="#problem5">関数の増減とグラフ</a></li>
+                    <li><a href="#problem13">べき関数を用いた不等式の証明</a></li>
+                    <li><a href="#problem9">曲線の共有点とkの範囲</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="problem8">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem8" role="button"
+                aria-expanded="false" aria-controls="collapseProblem8">
+                立方体の頂点への数字配置
+                <div id="collapseProblem8" class="collapse">
                     <div class="card-body">
-                        <svg class="problem-diagram" viewBox="0 0 240 200" width="220" height="183"
-                            aria-label="鋭角三角形ABC、辺a=BC、b=CA、c=AB">
-                            <polygon points="120,20 30,170 210,170" fill="none" stroke="#333" stroke-width="2" />
-                            <text x="120" y="14" text-anchor="middle" font-size="16">A</text>
-                            <text x="16" y="180" text-anchor="middle" font-size="16">B</text>
-                            <text x="224" y="180" text-anchor="middle" font-size="16">C</text>
-                            <text x="120" y="190" text-anchor="middle" font-size="14">a</text>
-                            <text x="182" y="90" text-anchor="middle" font-size="14">b</text>
-                            <text x="58" y="90" text-anchor="middle" font-size="14">c</text>
-                        </svg>
-                        <p>鋭角三角形ABCがある。数列 \(\displaystyle \frac {1}{tanA} \), \(\displaystyle \frac {1}{tanB} \),
-                            \(\displaystyle \frac {1}{tanC} \) が等差数列であるとき、
-                            3点の長さの平方がなす数列 \(CA^2\), \(AB^2\), \(BC^2\) も等差数列であることを示せ。
+                        <p>\(1\)つの立方体の\(8\)個の各頂点に、\(1,2,3,4,5,6,7,8\)の\(8\)個の数字を\(1\)個ずつ配置する。ただし、同じ数字を\(2\)個以上の頂点に配置しない。このとき、立方体の対角線に関する次の(条件)を考える。<br>
+                            <br>
+                            (条件) 対角線の両端の頂点に配置された\(2\)つの数字の和が\(9\)となる。<br>
+                            <br>
+                            ここで、立方体の対角線とは、立方体の\(2\)つの頂点を結ぶ線分のうち立方体の中心を通るものを指し、\(1\)つの立方体に対角線は\(4\)本ある。<br>
+                            <br>
+                            以下の\((1)\)、\((2)\)のような\(8\)個の数字の配置の仕方は何通りあるか、それぞれ答えよ。ただし、立方体を回転させることで\(8\)個の数字の配置が一致するものは同じ配置とみなす。<br>
+                            <br>
+                            \((1)\) 立方体の\(4\)本すべての対角線が(条件)をみたす。<br>
+                            \((2)\) 立方体の\(4\)本の対角線のうち、ちょうど\(2\)本の対角線が(条件)をみたす。
                         </p>
                     </div>
                 </div>
@@ -166,41 +205,74 @@
 
         <div class="card">
             <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution1" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution1">
-                    数列と図形の複合問題 解答
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution8" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution8">
+                    立方体の頂点への数字配置 解答
                 </div>
-                <div id="collapseSolution1" class="collapse">
+                <div id="collapseSolution8" class="collapse">
                     <div class="card-body">
                         <p>
-                            3辺\(BC,CA,AB\)の長さをそれぞれ\(a,b,c\)とおく。さらに三角形\(ABC\)の外接円の半径を\(R\)とおく。<br>
-                            正弦定理より、\( \displaystyle \frac {a}{sinA} = 2R \)、すなわち、\( \displaystyle \frac {1}{sinA} =
-                            \displaystyle \frac {2R}{a} \) <br>
-                            余弦定理より、\( cosA = \displaystyle \frac {b^2+c^2-a^2}{2bc} \) であるから、<br>
-                            \( \displaystyle \frac {1}{tanA} \)=\( \displaystyle \frac {consA}{sinA}
-                            \)\( \displaystyle
-                            \frac {R(b^2+c^2-a^2)}{abc} \)<br>
-                            同様にして、<br>
-                            \( \displaystyle \frac {1}{tanB} = \displaystyle \frac {R(a^2+c^2-b^2)}{abc} \) <br>
-                            \( \displaystyle \frac {1}{tanC} = \displaystyle \frac {R(a^2+b^2-c^2)}{abc} \) <br>
-                            となる。 <br>
-                            よって、数列 \( \displaystyle \frac {1}{tamA}\),\( \displaystyle \frac {1}{tamB}\),\(
-                            \displaystyle \frac {1}{tamC}\) が等差数列であるとき、すなわち、<br>
-                            \( \displaystyle \frac {2}{tanB} = \displaystyle \frac {1}{tanA} = \displaystyle \frac
-                            {1}{tanC}\) が成り立つとき、<br>
-                            \(\ \displaystyle \frac {2R(c^2+a^2-b^2)}{abc} =\) \( \displaystyle
-                            \frac
-                            {R(b^2+c^2-a^2)}{abc} =\) \(\displaystyle \frac {R(b^2+a^2-c^2)}{abc}\) <br>
-                            \( \therefore \) \(a^2+b^2 = 2b^2\) <br>
-                            すなわち、\(2CA^2 = AB^2 + BC^2\) となることから数列\(CA^2\), \(AB^2\), \(BC^2\) も等差数列である。
-
+                            \(8\)個の数字のうち、和が\(9\)となる組は\((1,8),\ (2,7),\ (3,6),\ (4,5)\)の\(4\)組である。<br>
+                            <br>
+                            立方体の回転群の位数は\(24\)であり、頂点\(1\)を置く場所を決めると回転による重複のうち\(8\)通り分（どの頂点に\(1\)を置くか）が解消される。さらに、頂点\(1\)を固定した状態でも、頂点\(1\)とその対角線の反対側の頂点\(Q\)を結ぶ軸のまわりに\(120^\circ,\ 240^\circ\)回転させると立方体は自身に重なるため、\(3\)通りの重複がなお残る。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 220 170" width="220" height="170"
+                            aria-label="立方体の頂点にP(1)、Q(8)、およびそれぞれに隣接するA1,A2,A3とB1,B2,B3を配置した図。AκとBκが対角線をなす">
+                            <line x1="60" y1="150" x2="150" y2="150" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="150" x2="150" y2="70" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="70" x2="60" y2="70" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="70" x2="60" y2="150" stroke="#333" stroke-width="1.5" />
+                            <line x1="105" y1="110" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="195" y1="110" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="195" y1="30" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="105" y1="30" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="150" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="150" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="70" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="70" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="150" x2="195" y2="30" stroke="#999" stroke-width="1" stroke-dasharray="3,3" />
+                            <circle cx="60" cy="150" r="2.5" fill="#333" />
+                            <circle cx="150" cy="150" r="2.5" fill="#333" />
+                            <circle cx="150" cy="70" r="2.5" fill="#333" />
+                            <circle cx="60" cy="70" r="2.5" fill="#333" />
+                            <circle cx="105" cy="110" r="2.5" fill="#333" />
+                            <circle cx="195" cy="110" r="2.5" fill="#333" />
+                            <circle cx="195" cy="30" r="2.5" fill="#333" />
+                            <circle cx="105" cy="30" r="2.5" fill="#333" />
+                            <text x="46" y="158" text-anchor="middle" font-size="13">P(1)</text>
+                            <text x="163" y="158" text-anchor="middle" font-size="13">A1</text>
+                            <text x="150" y="60" text-anchor="middle" font-size="13">B3</text>
+                            <text x="48" y="62" text-anchor="middle" font-size="13">A2</text>
+                            <text x="93" y="122" text-anchor="middle" font-size="13">A3</text>
+                            <text x="208" y="114" text-anchor="middle" font-size="13">B2</text>
+                            <text x="208" y="24" text-anchor="middle" font-size="13">Q(8)</text>
+                            <text x="93" y="22" text-anchor="middle" font-size="13">B1</text>
+                        </svg>
+                        <p>
+                            頂点\(P\)に数字\(1\)を、\(P\)に隣接する\(3\)頂点を\(A_1,A_2,A_3\)、\(P\)の対角線の反対側の頂点を\(Q\)、\(Q\)に隣接する\(3\)頂点を\(B_1,B_2,B_3\)とする（\(A_\kappa\)と\(B_\kappa\)が対角線をなすように番号を対応させる）。<br>
+                            <br>
+                            \((1)\) \(4\)本すべての対角線が(条件)をみたすとき、対角線\(P\text{-}Q\)も条件をみたすから、\(Q\)には\(8\)が入る。<br>
+                            残る\(3\)本の対角線\(A_1B_1,\ A_2B_2,\ A_3B_3\)に、残りの\(3\)組\((2,7),\ (3,6),\ (4,5)\)を\(1\)組ずつ配置すればよい。<br>
+                            組をどの対角線に対応させるか：\(3!\)通り。各組の左右（\(A_\kappa,B_\kappa\)のどちらに大きい方を置くか）：\(2^3\)通り。<br>
+                            \(3! \times 2^3 = 48\)通り。<br>
+                            \(P\)を固定した後も、\(P\text{-}Q\)軸まわりの\(120^\circ,240^\circ\)回転で\((A_1,A_2,A_3)\to(A_2,A_3,A_1)\)と重複するため、\(3\)で割って<br>
+                            \(\therefore\ \displaystyle \frac{48}{3} = 16\)通り<br>
+                            <br>
+                            \((2)\) この場合は\(Q\)が必ずしも\(8\)とは限らないため、頂点を区別した（回転で同一視する前の）配置の総数を数えてから最後に\(24\)で割る方が見通しがよい。\(8\)個の数字はすべて異なるので、どの配置も非自明な回転で自分自身とは重ならない。したがって（条件を満たす、頂点を区別した配置の総数）\(\div 24\)が求める個数に等しい。<br>
+                            <br>
+                            Step\(1\)：\(4\)本の対角線のうち、条件をみたす\(2\)本を選ぶ：\(\displaystyle\binom{4}{2}=6\)通り。<br>
+                            Step\(2\)：\((1,8),(2,7),(3,6),(4,5)\)の\(4\)組から\(2\)組を選び、Step\(1\)で選んだ\(2\)本の対角線に割り当てる：組の選び方\(\displaystyle\binom{4}{2}=6\)通り、どちらの対角線に対応させるか\(2!\)通り、各組の左右\(2\times2\)通り。\(6\times2\times4=48\)通り。<br>
+                            Step\(3\)：残る\(2\)本の対角線に、残った\(4\)個の数字（未使用の\(2\)組）を、どちらの対角線も和が\(9\)にならないように配置する。例えば残りが\(\{3,6\}\)、\(\{4,5\}\)の場合、\(4\)個から\(2\)個を選んで一方の対角線に配る\(\displaystyle\binom{4}{2}=6\)通りのうち、\(\{3,6\}\)または\(\{4,5\}\)のまま（すなわち和が\(9\)のまま）になるのは\(2\)通りのみで、残る\(4\)通りはどちらの対角線も和が\(9\)にならない。各対角線内の左右\(2\times2\)通りをかけて、\(4\times4=16\)通り。<br>
+                            <br>
+                            以上より、頂点を区別した配置の総数は\(6\times48\times16=4608\)通り。回転による重複\(24\)で割って、<br>
+                            \(\therefore\ \displaystyle \frac{4608}{24} = 192\)通り
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="problem2">
             <div class="card-header" data-toggle="collapse" href="#collapseProblem2" role="button" aria-expanded="false"
                 aria-controls="collapseProblem2">
                 確率・ゲーム
@@ -279,7 +351,384 @@
             </div>
         </div>
 
+        <div class="card" id="problem7">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem7" role="button"
+                aria-expanded="false" aria-controls="collapseProblem7">
+                格子点上のランダムウォーク
+                <div id="collapseProblem7" class="collapse">
+                    <div class="card-body">
+                        <p>座標平面上で\(x\)座標と\(y\)座標がいずれも整数である点を格子点という。<br>
+                            点\(P\)は最初\((1,1)\)にあるとし、\(P\)に対して次の操作を繰り返し行う。<br>
+                            <br>
+                            操作：点\(P\)を隣接する\(4\)つの格子点のいずれかに、それぞれ\(\displaystyle \frac14\)の確率で移動させる。<br>
+                            <br>
+                            また、\(P\)が\(x\)軸または\(y\)軸上の点に移動したら操作を終了するものとする。<br>
+                            <br>
+                            \((1)\) 操作を\(4\)回行った後に、点\(P\)が\((1,1)\)にある確率を求めよ。<br>
+                            \((2)\) \(n\)を\(2\)以上の自然数とする。操作を\(2n\)回行った後に、点\(P\)が\((n-1,n-1)\)にある確率を求めよ。<br>
+                            <br>
+                            注意：「隣接する格子点」とは、\(x\)座標もしくは\(y\)座標のいずれか一方のみが\(1\)だけ増減した点のことである。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution7" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution7">
+                    格子点上のランダムウォーク 解答
+                </div>
+                <div id="collapseSolution7" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(x\)座標が増加、減少する操作が行われる回数をそれぞれ\(\alpha,\beta\)とする。同様に、\(y\)座標が増加、減少する操作が行われる回数をそれぞれ\(\gamma,\delta\)とする。以下、それぞれの方向を\(a\)方向（\(x\)増加）、\(b\)方向（\(x\)減少）、\(c\)方向（\(y\)増加）、\(d\)方向（\(y\)減少）と呼ぶ。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 200 160" width="200" height="160"
+                            aria-label="4方向の呼び方。右がa(x増加)、左がb(x減少)、上がc(y増加)、下がd(y減少)">
+                            <line x1="30" y1="80" x2="170" y2="80" stroke="#333" stroke-width="1.5" />
+                            <polygon points="170,80 160,75 160,85" fill="#333" />
+                            <polygon points="30,80 40,75 40,85" fill="#333" />
+                            <line x1="100" y1="140" x2="100" y2="20" stroke="#333" stroke-width="1.5" />
+                            <polygon points="100,20 95,30 105,30" fill="#333" />
+                            <polygon points="100,140 95,130 105,130" fill="#333" />
+                            <text x="152" y="72" text-anchor="middle" font-size="15">a</text>
+                            <text x="48" y="72" text-anchor="middle" font-size="15">b</text>
+                            <text x="108" y="34" text-anchor="middle" font-size="15">c</text>
+                            <text x="108" y="132" text-anchor="middle" font-size="15">d</text>
+                        </svg>
+                        <p>
+                            \((1)\) このとき、<br>
+                            \(\alpha+\beta+\gamma+\delta=4\)、\(\alpha-\beta=0\)、\(\gamma-\delta=0\)<br>
+                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)<br>
+                            <br>
+                            \(\bullet\ \beta=2\)のとき、\(\alpha=2\)、よって\(\gamma=\delta=0\)である。\(y\)座標は変化しないので\(x\)軸には達しないが、\(x\)座標が\(0\)（\(y\)軸）に達しないという条件から、\(1\)回目の移動は\(a\)方向でなければならない。この条件のもとで数え上げると、<br>
+                            \(a,a,b,b\)を並べる\(6\)通りのうち、\(x\)座標が一度も\(0\)にならないのは\(\to\to\gets\gets\)、\(\to\gets\to\gets\)の\(2\)通りのみである。<br>
+                            これは\(\beta=0\)（\(\delta=2\)）の場合も同様に\(2\)通りである。<br>
+                            <br>
+                            \(\bullet\ \beta=1\)のとき、\(\alpha=\beta=\gamma=\delta=1\)である。\(a,b\)方向への移動\(1\)回ずつのうち\(x\)座標を\(0\)にしないためには\(a\)が\(b\)より先でなければならず、\(c,d\)についても同様に\(c\)が\(d\)より先でなければならない。<br>
+                            \(4\)回のうちどの\(2\)回が\(a,b\)（残り\(2\)回が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{4}{2}=6\)通りあり、それぞれ\(a,b\)の順序・\(c,d\)の順序は一意に定まるので、移動の総数は\(6\)通りである。<br>
+                            <br>
+                            以上より、条件を満たす移動の総数は\(2+2+6=10\)通りであり、各移動は独立に確率\(\displaystyle\frac14\)で起こるから、求める確率は<br>
+                            \(\therefore\ \displaystyle \frac{10}{4^4} = \frac{10}{256} = \frac{5}{128}\)<br>
+                            <br>
+                            \((2)\) \((1)\)と同様に、目標\((n-1,n-1)\)に達する条件は<br>
+                            \(\alpha+\beta+\gamma+\delta=2n\)、\(\alpha-\beta=n-2\)、\(\gamma-\delta=n-2\)<br>
+                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)と、\((1)\)と全く同じ\(3\)つの場合に分かれる。<br>
+                            <br>
+                            \(\bullet\ \beta=2\)のとき、\(\alpha=n\)、\(\gamma=n-2,\ \delta=0\)である。\(y\)座標は単調に増加するので\(x\)軸には達しない。\(x\)座標が\(0\)にならないためには、\(n\)個の\(a\)と\(2\)個の\(b\)からなる部分列（相対的な順序）が、すべての接頭辞で\(a\)の個数が\(b\)の個数以上でなければならない（\(1\)回目は\(a\)、というのが\((1)\)の議論の一般化）。<br>
+                            このような部分列の数は、いわゆる投票問題（\(\mathrm{ballot\ problem}\)）の公式より\(\displaystyle \frac{(n+2)(n-1)}{2}\)通りであり（\(n=2\)のとき\(2\)通りとなり\((1)\)と一致する）、この部分列を\(2n\)個の位置のうち\(n+2\)個に配置する方法が\(\displaystyle\binom{2n}{n+2}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n+2}\cdot\frac{(n+2)(n-1)}{2}\)通りである。<br>
+                            \(\beta=0\)（\(\delta=2\)）の場合も、\(x,y\)の対称性より同じ総数となる。<br>
+                            <br>
+                            \(\bullet\ \beta=\delta=1\)のとき、\(\alpha=\gamma=n-1\)である。\(a,b\)方向への移動（\(n-1\)個の\(a\)と\(1\)個の\(b\)）のうち、\(x\)座標を\(0\)にしないためには\(b\)が先頭に来なければよく、その並べ方は\(n-1\)通り（\(n\)通りの位置のうち先頭を除く）である。\(c,d\)についても同様に\(n-1\)通り。<br>
+                            \(2n\)個のうちどの\(n\)個が\(a,b\)（残り\(n\)個が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{2n}{n}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n}(n-1)^2\)通りである。<br>
+                            <br>
+                            以上をすべて合計すると（この和は\(\displaystyle\binom{2n+1}{n}(n-1)^2\)に一致する）、条件を満たす移動の総数は\(\displaystyle \binom{2n+1}{n}(n-1)^2\)通りであるから、求める確率は<br>
+                            \(\therefore\ \displaystyle \frac{\dbinom{2n+1}{n}(n-1)^2}{4^{2n}}\)<br>
+                            （\(n=2\)のとき、この式は\(\displaystyle \frac{\binom{5}{2}\cdot1}{256}=\frac{10}{256}=\frac{5}{128}\)となり、\((1)\)の結果と一致する。）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem6">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem6" role="button"
+                aria-expanded="false" aria-controls="collapseProblem6">
+                合同式と最大公約数
+                <div id="collapseProblem6" class="collapse">
+                    <div class="card-body">
+                        <p>\(m\)を\(1\)以上の整数、\(n\)を\(2\)以上の整数とする。以下の問いに答えよ。ただし、\((1)\)については結論のみ書けばよい。<br>
+                            <br>
+                            \((1)\) \(m^2\)を\(8\)で割った余りとしてありうるものをすべて求めよ。<br>
+                            \((2)\) \(3n^2-4\)と\(2n-3\)の最大公約数が\(1\)でないための必要十分条件を求めよ。<br>
+                            \((3)\) \((3n^2-4)(2n-3)\)は整数の\(2\)乗にならないことを示せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution6" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution6">
+                    合同式と最大公約数 解答
+                </div>
+                <div id="collapseSolution6" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) \(k\)を整数として<br>
+                            \((4k)^2 = 16k^2\)<br>
+                            \((4k\pm1)^2 = 16k^2\pm8k+1\)（複号同順）<br>
+                            \((4k+2)^2 = 16k^2+16k+4\)<br>
+                            より、求めるものは \(0,\ 1,\ 4\) である。<br>
+                            <br>
+                            \((2)\) 少なくとも\(1\)つが\(0\)でない整数\(a,b\)について、\(a\)と\(b\)の最大公約数（\(a\)と\(b\)をともに割り切る最大の正の整数）を\(\gcd(a,b)\)と書くことにする。このとき、次の性質が成り立つ。<br>
+                            \((\mathrm{i})\) \(\gcd(a,b)=\gcd(b,a)\)<br>
+                            \((\mathrm{ii})\) \(\gcd(a,b)=\gcd(a,-b)\)<br>
+                            \((\mathrm{iii})\) \(b\)と互いに素な正整数\(c\)に対して \(\gcd(a,b)=\gcd(ac,b)\)<br>
+                            \((\mathrm{iv})\) 整数\(k\)に対して \(\gcd(a,b)=\gcd(b,a+kb)\)<br>
+                            <br>
+                            これより<br>
+                            \(\gcd(3n^2-4,\,2n-3)\)<br>
+                            \(=\gcd(6n^2-8,\,2n-3)\)（\(\because\ 2n-3\)と\(2\)は互いに素、(iii)）<br>
+                            \(=\gcd(9n-8,\,2n-3)\)（\(6n^2-8=3n(2n-3)+9n-8\)、(iv)）<br>
+                            \(=\gcd(n+4,\,2n-3)\)（\(9n-8=4(2n-3)+n+4\)、(iv)、(i)）<br>
+                            \(=\gcd(n+4,\,-11)\)（\(2n-3=2(n+4)-11\)、(iv)）<br>
+                            \(=\gcd(n+4,\,11)\)（(ii)）<br>
+                            であるから、\(11\)が素数であることに注意して、<br>
+                            \(\therefore\ \gcd(3n^2-4,\,2n-3)\neq1\)となるための必要十分条件は、\(n\)が\(11\)で割って\(7\)余る整数であることである。<br>
+                            <br>
+                            \((3)\) \((3n^2-4)(2n-3)\)が整数の\(2\)乗であると仮定する。\(\gcd(3n^2-4,\,2n-3)\)の値によって場合分けする。<br>
+                            <br>
+                            \((\mathrm{i})\) \(n\)が\(11\)で割って\(7\)余る整数ではないとき、このとき\(3n^2-4\)と\(2n-3\)は互いに素な自然数なので、<br>
+                            \((3n^2-4)(2n-3)\)が整数の\(2\)乗 \(\iff\) \(3n^2-4,\ 2n-3\)がともに整数の\(2\)乗<br>
+                            \((1)\)の結果より、\(2n-3\)は奇数であり、奇数の平方は\(8\)で割った余りが\(1\)であるから、\(2n-3\)が整数の\(2\)乗であるためには\(n\)が\(4\)で割って\(2\)余る整数でなければならない。<br>
+                            しかし、このとき（\(n=4k-2\)とおくと）<br>
+                            \(3n^2-4 = 8(6k^2-6k+1)\)となり、整数の\(2\)乗であるはずの\(3n^2-4\)は素因数\(2\)を奇数個しか含んでおらず、矛盾である。<br>
+                            <br>
+                            \((\mathrm{ii})\) \(n\)が\(11\)で割って\(7\)余る整数のとき、\(\gcd(3n^2-4,\,2n-3)=11\)<br>
+                            \(n=11\ell-4\)とする。このとき、\((3n^2-4)(2n-3)\)<br>
+                            \(=11^2(33\ell^2-24\ell+4)(2\ell-1)\)であり、\(33\ell^2-24\ell+4\)と\(2\ell-1\)は互いに素であるから、これらはともに整数の\(2\)乗でなければならない。<br>
+                            ここで、\(33\ell^2-24\ell+4 = 8(4\ell^2-3\ell)+\ell^2+4\)より、\((1)\)の結果に注意すれば、\(\ell\)は偶数でなければならないが、<br>
+                            このとき\(2\ell-1\)を\(4\)で割った余りは\(3\)、すなわち\(8\)で割った余りが\(1\)ではない。これは奇数\(2\ell-1\)が整数の\(2\)乗ではないことを示しているので矛盾。<br>
+                            <br>
+                            以上より、\((3n^2-4)(2n-3)\)は整数の\(2\)乗ではないことが分かる。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem4">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem4" role="button"
+                aria-expanded="false" aria-controls="collapseProblem4">
+                整数と数列
+                <div id="collapseProblem4" class="collapse">
+                    <div class="card-body">
+                        <p>\(p\)、\(q\)を正の整数とし、\(p \lt q\)とする。<br>
+                            \(a_n = p^n+q^n\)（\(n=1,2,3,\cdots\)）とすると、\(a_2=34\)である。<br>
+                            <br>
+                            \((1)\) \(p\)、\(q\)の値をそれぞれ求めよ。<br>
+                            \((2)\) \(a_{n+4}-a_n\)が\(40\)で割り切れることを証明せよ。<br>
+                            \((3)\) \(\displaystyle b_n =
+                            \frac{1}{40}\left\{(p^n+q^n)(p^{2n}+q^{2n})-4\right\}\)（\(n=1,2,3,\cdots\)）とする。\(b_n\)が整数となる\(n\)の条件を求めよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution4" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution4">
+                    整数と数列 解答
+                </div>
+                <div id="collapseSolution4" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) \(a_2=34\)より \(p^2+q^2=34\)<br>
+                            \(0 \lt p \lt q\)より\(p^2 \lt q^2\)であるから、\(2p^2 \lt 34\)、すなわち\(p^2 \lt 17\)<br>
+                            \(p\)は正の整数より \(p=1,2,3,4\)の可能性があり、それぞれ\(q^2=33,30,25,18\)となる。<br>
+                            この中で\(q^2\)が平方数になるのは\(p=3\)のとき\(q^2=25\)、すなわち\(q=5\)のみ。<br>
+                            \(\therefore\ p=3,\ q=5\)<br>
+                            <br>
+                            \((2)\) \((1)\)より \(a_n=3^n+5^n\)<br>
+                            \(a_{n+4}-a_n = (3^{n+4}+5^{n+4})-(3^n+5^n) = 3^n(3^4-1)+5^n(5^4-1) = 80\cdot3^n +
+                            624\cdot5^n\)<br>
+                            \(= 40\cdot2\cdot3^n + 40\cdot78\cdot5^{\,n-1} = 40\left(2\cdot3^n +
+                            78\cdot5^{\,n-1}\right)\)<br>
+                            \(n\geqq1\)より\(2\cdot3^n+78\cdot5^{\,n-1}\)は整数であるから、\(a_{n+4}-a_n\)は\(40\)で割り切れる。<br>
+                            <br>
+                            \((3)\) \(\displaystyle b_n = \frac{1}{40}(a_n\cdot a_{2n}-4)\)であるから、\(b_n\)が整数となるのは
+                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)のときである。<br>
+                            \((2)\)より、\(a_n\)を\(40\)で割った余りは周期\(4\)で繰り返すので、実際に計算すると<br>
+                            \(a_1=8\)を\(40\)で割った余りは\(8\)<br>
+                            \(a_2=34\)を\(40\)で割った余りは\(34\)<br>
+                            \(a_3=152\)を\(40\)で割った余りは\(32\)<br>
+                            \(a_4=706\)を\(40\)で割った余りは\(26\)<br>
+                            より、\(n\)を\(4\)で割った余りに応じて\(a_n\equiv8,34,32,26\pmod{40}\)（余り\(1,2,3,0\)のとき）を繰り返す。<br>
+                            <br>
+                            また\(2n\)を\(4\)で割った余りは、\(n\)が奇数のとき\(2\)（よって\(a_{2n}\equiv a_2\equiv34\)）、\(n\)が偶数のとき\(0\)（よって\(a_{2n}\equiv
+                            a_4\equiv26\)）となる。<br>
+                            <br>
+                            これらを\(n\)を\(4\)で割った余りごとにまとめると、<br>
+                            余り\(1\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv8\times34=272\equiv32\pmod{40}\)<br>
+                            余り\(2\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv34\times26=884\equiv4\pmod{40}\)<br>
+                            余り\(3\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv32\times34=1088\equiv8\pmod{40}\)<br>
+                            余り\(0\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv26\times26=676\equiv36\pmod{40}\)<br>
+                            <br>
+                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)となるのは\(n\)を\(4\)で割った余りが\(2\)のときのみである。<br>
+                            \(\therefore\ b_n\)が整数となる\(n\)の条件は \(n\equiv2\pmod4\)（すなわち\(n=4k+2\)、\(k=0,1,2,\cdots\)）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem12">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem12" role="button"
+                aria-expanded="false" aria-controls="collapseProblem12">
+                素数のべきと二項係数の余り
+                <div id="collapseProblem12" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(p\)を\(3\)以上の素数とする。二項係数\(\displaystyle {}_{n}\mathrm{C}_{k}=\frac{n(n-1)(n-2)\cdots(n-(k-1))}{k!}\)について次の問に答えよ。
+                        </p>
+                        <p>
+                            (1) \({}_{p^2}\mathrm{C}_p\)は\(p\)の倍数であることを示せ。<br>
+                            (2) \({}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)であることを示せ。<br>
+                            (3) \((p-1)\)個の整数\(\displaystyle \frac{(p-1)!}{1},\ \frac{(p-1)!}{2},\ \frac{(p-1)!}{3},\ \cdots,\ \frac{(p-1)!}{p-1}\)を\(p\)で割った余りはすべて異なることを示せ。また、\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを\(p\)で表せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution12" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution12">
+                    素数のべきと二項係数の余り 解答
+                </div>
+                <div id="collapseSolution12" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(\displaystyle {}_{p^2}\mathrm{C}_p=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p!}=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p\cdot(p-1)!}\)<br>
+                            \(\displaystyle =p\cdot\frac{(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{(p-1)!}=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)<br>
+                            ここで、\({}_{p^2-1}\mathrm{C}_{p-1}\)は二項係数であるから整数である。<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)は\(p\)の倍数である。(証明終)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            (1)の\(\displaystyle {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)を用いる。以下、簡単のため\(p^2=N\)とおくと、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{(N-1)(N-2)\cdots(N-(p-1))}{(p-1)!}\ \cdots\text{①}\)<br>
+                            <br>
+                            分子を調べるために、文字\(x\)についての多項式\(f(x)=(x-1)(x-2)\cdots(x-(p-1))\)を考え、これを展開したものを<br>
+                            \(f(x)=x^{p-1}-A_1x^{p-2}+A_2x^{p-3}-\cdots+A_{p-3}x^3-A_{p-2}x+A_{p-1}\)<br>
+                            とする。係数\(A_k\ (k=1,2,\cdots,p-1)\)は、\(1,2,\cdots,p-1\)から異なる\(k\)個を選んで作った積を選び方すべてについて加えたもの（基本対称式）であるから、すべて正の整数である。\(p\)は\(3\)以上の素数だから奇数であり、\(p-1\)は偶数なので、定数項の係数は<br>
+                            \(A_{p-1}=(-1)^{p-1}(p-1)!=(p-1)!\)<br>
+                            である。<br>
+                            <br>
+                            よって①の分子は、\(N=p^2\)に注意すると、<br>
+                            \(f(N)=N^{p-1}-A_1N^{p-2}+\cdots+A_{p-3}N^2-A_{p-2}N+A_{p-1}\)<br>
+                            であり、右辺のうち\(N^2\)以上の次数をもつ項はすべて\(N^2=p^4\)の倍数であるから、<br>
+                            \(f(N)=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\)<br>
+                            この右辺のうち\((p^4\text{の倍数})-A_{p-2}p^2\)の部分は明らかに\(p^2\)の倍数であるから、<br>
+                            \(f(N)=p^2L+(p-1)!\)（\(L\)は整数）<br>
+                            と表せる。これを①に代入すると、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^2L+(p-1)!}{(p-1)!}=\frac{p^2L}{(p-1)!}+1\)<br>
+                            <br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}\)は整数であるから\(\displaystyle\frac{p^2L}{(p-1)!}\)も整数である。\(p\)は素数であるから、分子の\(p^2\)と分母の\((p-1)!\)は互いに素であり、この両者の間で約分は起こらない。よって約分は分子の\(L\)と分母の\((p-1)!\)の間だけで起こるから、\(\displaystyle\frac{L}{(p-1)!}\)は整数である。これを\(m\)とおけば、<br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^2m+1\)<br>
+                            と表され、したがって、<br>
+                            \({}_{p^2}\mathrm{C}_p=p(p^2m+1)=p^3m+p\)<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)である。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)</b><br>
+                            \(\displaystyle a_k=\frac{(p-1)!}{k}\ (k=1,2,\cdots,p-1)\)とおき、\(a_k\)を\(p\)で割った余りを\(r_k\)とする。<br>
+                            <br>
+                            \(r_k\)がすべて異なることを背理法で示す。\(1\leqq i \lt j \leqq p-1\)かつ\(r_i=r_j\)である組\((i,j)\)が存在すると仮定すると、<br>
+                            \(\displaystyle a_i-a_j=(p-1)!\left(\frac1i-\frac1j\right)=\frac{(j-i)(p-1)!}{ij}\)<br>
+                            は\(p\)の倍数である。分母の\(ij\)は（\(1\leqq i,j\leqq p-1\)より）\(p\)の倍数でないから、分子の\((j-i)(p-1)!\)が\(p\)の倍数である。ところが\(p\)は素数であり、\((p-1)!\)は素因数\(p\)を持たないから、\(j-i\)が\(p\)の倍数でなければならない。しかし\(0\lt j-i \lt p\)であるから、これは不可能である。<br>
+                            \(\displaystyle\therefore\)余り\(r_k\ (k=1,2,\cdots,p-1)\)はすべて異なる。(証明終)<br>
+                            <br>
+                            さらに、\(a_k\cdot k=(p-1)!\)は\(p\)の倍数でないから\(a_k\)も\(p\)の倍数でなく、\(r_k\ne0\)である。したがって\((p-1)\)個の余り\(r_1,\cdots,r_{p-1}\)は\(1\)から\(p-1\)までの中の互いに異なる値であり、ちょうど\((p-1)\)個あるから、これらを並べ替えると\(1,2,3,\cdots,p-1\)に一致する。<br>
+                            <br>
+                            次に\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを考える。(2)の\(f(N)\)の展開式より、\(N=p^2\)に注意すると、<br>
+                            \(f(N)=(N^2\text{の倍数})-A_{p-2}N+A_{p-1}=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\ \cdots\text{②}\)<br>
+                            であった。ここで、多項式\(f(x)\)の展開における係数\(A_{p-2}\)（\(x^1\)の係数）は、\(1\)から\(p-1\)までの\((p-1)\)個の整数のうち\(1\)個を除いた残りすべての積を、除く数のとり方すべてについて加えたものであるから、<br>
+                            \(\displaystyle A_{p-2}=\frac{(p-1)!}{1}+\frac{(p-1)!}{2}+\cdots+\frac{(p-1)!}{p-1}=a_1+a_2+\cdots+a_{p-1}\)<br>
+                            となる。\(a_k=p\cdot(\text{整数})+r_k\)と表せるので、<br>
+                            \(A_{p-2}=(p\text{の倍数})+(r_1+r_2+\cdots+r_{p-1})\)<br>
+                            であり、上で示したことから\(r_1,\cdots,r_{p-1}\)は\(1,\cdots,p-1\)の並べ替えだから、<br>
+                            \(\displaystyle r_1+r_2+\cdots+r_{p-1}=1+2+\cdots+(p-1)=\frac{p(p-1)}{2}\)<br>
+                            \(p\)は奇数の素数であり\(\displaystyle\frac{p-1}{2}\)は整数であることに注意すると、\(\displaystyle\frac{p(p-1)}{2}=p\cdot\frac{p-1}{2}\)は\(p\)の倍数である。よって、<br>
+                            \(A_{p-2}=(p\text{の倍数})+(p\text{の倍数})=(p\text{の倍数})\)<br>
+                            すなわち\(A_{p-2}\)は\(p\)の倍数である。<br>
+                            <br>
+                            \(A_{p-2}=ps\)（\(s\)は整数）とおくと、\(-A_{p-2}p^2=-p^3s\)は\(p^3\)の倍数であり、\((p^4\text{の倍数})\)も\(p^3\)の倍数であるから、②より、<br>
+                            \(f(N)=p^3M'+(p-1)!\)（\(M'\)は整数）<br>
+                            と表せる。これを①に代入すると、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^3M'+(p-1)!}{(p-1)!}=\frac{p^3M'}{(p-1)!}+1\)<br>
+                            (2)と同様に、\(p\)は素数であるから\(p^3\)と\((p-1)!\)は互いに素であり、\({}_{p^2-1}\mathrm{C}_{p-1}\)が整数であることから\(\displaystyle\frac{p^3M'}{(p-1)!}\)も整数、したがって\(\displaystyle\frac{M'}{(p-1)!}\)も整数である。これを\(t\)とおけば、<br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^3t+1\)<br>
+                            と表され、したがって、<br>
+                            \({}_{p^2}\mathrm{C}_p=p(p^3t+1)=p^4t+p\)<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りは\(p\)である。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem1">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem1" role="button" aria-expanded="false"
+                aria-controls="collapseProblem1">
+                数列と図形の複合問題
+                <div id="collapseProblem1" class="collapse">
+                    <div class="card-body">
+                        <svg class="problem-diagram" viewBox="0 0 240 200" width="220" height="183"
+                            aria-label="鋭角三角形ABC、辺a=BC、b=CA、c=AB">
+                            <polygon points="120,20 30,170 210,170" fill="none" stroke="#333" stroke-width="2" />
+                            <text x="120" y="14" text-anchor="middle" font-size="16">A</text>
+                            <text x="16" y="180" text-anchor="middle" font-size="16">B</text>
+                            <text x="224" y="180" text-anchor="middle" font-size="16">C</text>
+                            <text x="120" y="190" text-anchor="middle" font-size="14">a</text>
+                            <text x="182" y="90" text-anchor="middle" font-size="14">b</text>
+                            <text x="58" y="90" text-anchor="middle" font-size="14">c</text>
+                        </svg>
+                        <p>鋭角三角形ABCがある。数列 \(\displaystyle \frac {1}{tanA} \), \(\displaystyle \frac {1}{tanB} \),
+                            \(\displaystyle \frac {1}{tanC} \) が等差数列であるとき、
+                            3点の長さの平方がなす数列 \(CA^2\), \(AB^2\), \(BC^2\) も等差数列であることを示せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution1" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution1">
+                    数列と図形の複合問題 解答
+                </div>
+                <div id="collapseSolution1" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            3辺\(BC,CA,AB\)の長さをそれぞれ\(a,b,c\)とおく。さらに三角形\(ABC\)の外接円の半径を\(R\)とおく。<br>
+                            正弦定理より、\( \displaystyle \frac {a}{sinA} = 2R \)、すなわち、\( \displaystyle \frac {1}{sinA} =
+                            \displaystyle \frac {2R}{a} \) <br>
+                            余弦定理より、\( cosA = \displaystyle \frac {b^2+c^2-a^2}{2bc} \) であるから、<br>
+                            \( \displaystyle \frac {1}{tanA} \)=\( \displaystyle \frac {consA}{sinA}
+                            \)\( \displaystyle
+                            \frac {R(b^2+c^2-a^2)}{abc} \)<br>
+                            同様にして、<br>
+                            \( \displaystyle \frac {1}{tanB} = \displaystyle \frac {R(a^2+c^2-b^2)}{abc} \) <br>
+                            \( \displaystyle \frac {1}{tanC} = \displaystyle \frac {R(a^2+b^2-c^2)}{abc} \) <br>
+                            となる。 <br>
+                            よって、数列 \( \displaystyle \frac {1}{tamA}\),\( \displaystyle \frac {1}{tamB}\),\(
+                            \displaystyle \frac {1}{tamC}\) が等差数列であるとき、すなわち、<br>
+                            \( \displaystyle \frac {2}{tanB} = \displaystyle \frac {1}{tanA} = \displaystyle \frac
+                            {1}{tanC}\) が成り立つとき、<br>
+                            \(\ \displaystyle \frac {2R(c^2+a^2-b^2)}{abc} =\) \( \displaystyle
+                            \frac
+                            {R(b^2+c^2-a^2)}{abc} =\) \(\displaystyle \frac {R(b^2+a^2-c^2)}{abc}\) <br>
+                            \( \therefore \) \(a^2+b^2 = 2b^2\) <br>
+                            すなわち、\(2CA^2 = AB^2 + BC^2\) となることから数列\(CA^2\), \(AB^2\), \(BC^2\) も等差数列である。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem3">
             <div class="card-header" data-toggle="collapse" href="#collapseProblem3" role="button"
                 aria-expanded="false" aria-controls="collapseProblem3">
                 空間ベクトルと円錐
@@ -402,19 +851,46 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem4" role="button"
-                aria-expanded="false" aria-controls="collapseProblem4">
-                整数と数列
-                <div id="collapseProblem4" class="collapse">
+        <div class="card" id="problem11">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem11" role="button"
+                aria-expanded="false" aria-controls="collapseProblem11">
+                正三角形と対称点の複素数平面
+                <div id="collapseProblem11" class="collapse">
                     <div class="card-body">
-                        <p>\(p\)、\(q\)を正の整数とし、\(p \lt q\)とする。<br>
-                            \(a_n = p^n+q^n\)（\(n=1,2,3,\cdots\)）とすると、\(a_2=34\)である。<br>
-                            <br>
-                            \((1)\) \(p\)、\(q\)の値をそれぞれ求めよ。<br>
-                            \((2)\) \(a_{n+4}-a_n\)が\(40\)で割り切れることを証明せよ。<br>
-                            \((3)\) \(\displaystyle b_n =
-                            \frac{1}{40}\left\{(p^n+q^n)(p^{2n}+q^{2n})-4\right\}\)（\(n=1,2,3,\cdots\)）とする。\(b_n\)が整数となる\(n\)の条件を求めよ。
+                        <svg class="problem-diagram" viewBox="0 0 335 250" width="335" height="250"
+                            aria-label="原点Oを中心とする単位円K上に正三角形ABCと点Pがあり、Pを直線BC、直線ABに関してそれぞれ対称移動した点Q、Rを原点Oを通る一直線が結んでいる">
+                            <circle cx="185" cy="150" r="90" fill="none" stroke="#999" stroke-width="1.2" />
+                            <polygon points="275,150 140,72 140,228" fill="none" stroke="#333" stroke-width="2" />
+                            <line x1="5" y1="198" x2="320" y2="114" stroke="#999" stroke-width="1.2"
+                                stroke-dasharray="4,3" />
+                            <line x1="263" y1="195" x2="17" y2="195" stroke="#999" stroke-width="1"
+                                stroke-dasharray="3,3" />
+                            <line x1="263" y1="195" x2="308" y2="117" stroke="#999" stroke-width="1"
+                                stroke-dasharray="3,3" />
+                            <circle cx="185" cy="150" r="2.5" fill="#333" />
+                            <circle cx="275" cy="150" r="2.5" fill="#333" />
+                            <circle cx="140" cy="72" r="2.5" fill="#333" />
+                            <circle cx="140" cy="228" r="2.5" fill="#333" />
+                            <circle cx="263" cy="195" r="2.5" fill="#333" />
+                            <circle cx="17" cy="195" r="2.5" fill="#333" />
+                            <circle cx="308" cy="117" r="2.5" fill="#333" />
+                            <text x="191" y="143" font-size="14">O</text>
+                            <text x="283" y="153" font-size="15">A</text>
+                            <text x="140" y="60" text-anchor="middle" font-size="15">B</text>
+                            <text x="140" y="244" text-anchor="middle" font-size="15">C</text>
+                            <text x="271" y="201" font-size="14">P</text>
+                            <text x="4" y="184" font-size="14">Q</text>
+                            <text x="313" y="112" font-size="14">R</text>
+                            <text x="185" y="56" text-anchor="middle" font-size="13" fill="#777">K</text>
+                        </svg>
+                        <p>
+                            \(O\)を原点とする複素数平面上に、\(3\)点\(A(1),\ B(\omega),\ C(\omega^2)\)を頂点とする正三角形\(ABC\)がある。ただし、\(\displaystyle\omega=\frac{-1+\sqrt3\,i}{2}\)（\(i\)は虚数単位）である。<br>
+                            また、正三角形\(ABC\)の外接円、すなわち\(O\)を中心とする半径\(1\)の円を\(K\)とする。<br>
+                            \(K\)上に\(3\)頂点\(A,\ B,\ C\)とは異なる点\(P(\alpha)\)をとる。直線\(BC\)に関して点\(P\)と対称な点を\(Q\)とし、直線\(AB\)に関して点\(P\)と対称な点を\(R\)とする。
+                        </p>
+                        <p>
+                            (1) 点\(Q\)を表す複素数を\(\beta\)とする。\(\displaystyle\beta+\frac{1}{\alpha}\)の値を求めよ。<br>
+                            (2) \(3\)点\(O,\ Q,\ R\)は同一直線上にあることを示せ。
                         </p>
                     </div>
                 </div>
@@ -423,46 +899,81 @@
 
         <div class="card">
             <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution4" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution4">
-                    整数と数列 解答
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution11" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution11">
+                    正三角形と対称点の複素数平面 解答
                 </div>
-                <div id="collapseSolution4" class="collapse">
+                <div id="collapseSolution11" class="collapse">
                     <div class="card-body">
                         <p>
-                            \((1)\) \(a_2=34\)より \(p^2+q^2=34\)<br>
-                            \(0 \lt p \lt q\)より\(p^2 \lt q^2\)であるから、\(2p^2 \lt 34\)、すなわち\(p^2 \lt 17\)<br>
-                            \(p\)は正の整数より \(p=1,2,3,4\)の可能性があり、それぞれ\(q^2=33,30,25,18\)となる。<br>
-                            この中で\(q^2\)が平方数になるのは\(p=3\)のとき\(q^2=25\)、すなわち\(q=5\)のみ。<br>
-                            \(\therefore\ p=3,\ q=5\)<br>
+                            <b>(1)</b><br>
+                            \(P(\alpha)\)は単位円\(K\)上にあり、\(P\)は\(A,B,C\)のいずれとも異なるので、\(\alpha=\cos\theta+i\sin\theta\)（\(\cos\theta\ne1,\ \cos\theta\ne-\dfrac12\)）と表せる（\(\cos\theta=1\)は\(P=A\)、\(\cos\theta=-\dfrac12\)は\(P=B\)または\(P=C\)にあたるため除く）。<br>
                             <br>
-                            \((2)\) \((1)\)より \(a_n=3^n+5^n\)<br>
-                            \(a_{n+4}-a_n = (3^{n+4}+5^{n+4})-(3^n+5^n) = 3^n(3^4-1)+5^n(5^4-1) = 80\cdot3^n +
-                            624\cdot5^n\)<br>
-                            \(= 40\cdot2\cdot3^n + 40\cdot78\cdot5^{\,n-1} = 40\left(2\cdot3^n +
-                            78\cdot5^{\,n-1}\right)\)<br>
-                            \(n\geqq1\)より\(2\cdot3^n+78\cdot5^{\,n-1}\)は整数であるから、\(a_{n+4}-a_n\)は\(40\)で割り切れる。<br>
+                            \(\beta=u+iv\)とおき、複素数平面を\(xy\)平面とみなすと、\(P(\cos\theta,\sin\theta)\)、\(Q(u,v)\)である。<br>
+                            \(\displaystyle\omega=\cos120^\circ+i\sin120^\circ=\left(-\frac12,\frac{\sqrt3}{2}\right)\)、\(\displaystyle\omega^2=\cos240^\circ+i\sin240^\circ=\left(-\frac12,-\frac{\sqrt3}{2}\right)\)であるから、\(B,C\)はともに実部が\(-\dfrac12\)であり、直線\(BC\)は実軸に垂直な直線\(\displaystyle x=-\frac12\)である。<br>
+                            \(P\)と\(Q\)がこの直線に関して対称であるための条件は、線分\(PQ\)の中点の\(x\)座標が\(-\dfrac12\)であり、かつ\(PQ\)が\(x\)軸に平行（直線\(BC\)に垂直）であることだから、<br>
+                            \(\left\{\begin{array}{l}\dfrac12(u+\cos\theta)=-\dfrac12\\ v=\sin\theta\end{array}\right.\)<br>
+                            第\(1\)式より\(u=-\cos\theta-1\)なので、<br>
+                            \(\beta=(-\cos\theta-1)+i\sin\theta\)<br>
                             <br>
-                            \((3)\) \(\displaystyle b_n = \frac{1}{40}(a_n\cdot a_{2n}-4)\)であるから、\(b_n\)が整数となるのは
-                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)のときである。<br>
-                            \((2)\)より、\(a_n\)を\(40\)で割った余りは周期\(4\)で繰り返すので、実際に計算すると<br>
-                            \(a_1=8\)を\(40\)で割った余りは\(8\)<br>
-                            \(a_2=34\)を\(40\)で割った余りは\(34\)<br>
-                            \(a_3=152\)を\(40\)で割った余りは\(32\)<br>
-                            \(a_4=706\)を\(40\)で割った余りは\(26\)<br>
-                            より、\(n\)を\(4\)で割った余りに応じて\(a_n\equiv8,34,32,26\pmod{40}\)（余り\(1,2,3,0\)のとき）を繰り返す。<br>
+                            \(|\alpha|=1\)より\(\dfrac1\alpha=\bar\alpha=\cos\theta-i\sin\theta\)であるから、<br>
+                            \(\beta+\dfrac1\alpha=(-\cos\theta-1+i\sin\theta)+(\cos\theta-i\sin\theta)=-1\)<br>
+                            \(\displaystyle\therefore\ \beta+\frac1\alpha=-1\)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            \(R\)を表す複素数を\(\gamma\)とする。まず、異なる\(2\)点\(a,b\)を通る直線に関して点\(z\)と対称な点\(z'\)を表す式を用意する。<br>
+                            \(b-a\)の偏角を\(\varphi\)とすると、\(z\)を\(a\)を中心に\(-\varphi\)だけ回転した点は\(a+e^{-i\varphi}(z-a)\)であり、この回転で直線\(ab\)は実軸に平行な直線に重なる。実軸に関する対称移動は共役をとることに対応するので、対称点を同じく\(-\varphi\)だけ回転した像は\(\overline{e^{-i\varphi}(z-a)}\)となる。これを\(\varphi\)だけ回転し戻せば対称点\(z'\)が得られるから、<br>
+                            \(z'=a+e^{i\varphi}\overline{e^{-i\varphi}(z-a)}=a+e^{2i\varphi}\overline{z-a}\)<br>
+                            ここで\(\displaystyle e^{i\varphi}=\frac{b-a}{|b-a|}\)より\(\displaystyle e^{2i\varphi}=\frac{(b-a)^2}{|b-a|^2}=\frac{(b-a)^2}{(b-a)\overline{(b-a)}}=\frac{b-a}{\overline{b-a}}\)であるから、<br>
+                            \(\displaystyle z'=a+\frac{b-a}{\overline{b-a}}\,\overline{z-a}\ \cdots\text{(*)}\)<br>
                             <br>
-                            また\(2n\)を\(4\)で割った余りは、\(n\)が奇数のとき\(2\)（よって\(a_{2n}\equiv a_2\equiv34\)）、\(n\)が偶数のとき\(0\)（よって\(a_{2n}\equiv
-                            a_4\equiv26\)）となる。<br>
+                            (*)を\(a=A=1,\ b=B=\omega,\ z=\alpha\)として用いると、<br>
+                            \(\displaystyle\gamma=1+\frac{\omega-1}{\overline{\omega-1}}\,\overline{\alpha-1}\)<br>
+                            \(|\omega|=1\)かつ\(\omega^3=1\)（\(\omega\ne1\)）であることから\(\bar\omega=\dfrac1\omega=\omega^2\)であり、<br>
+                            \(\overline{\omega-1}=\omega^2-1=(\omega-1)(\omega+1)\)<br>
+                            なので、<br>
+                            \(\displaystyle\frac{\omega-1}{\overline{\omega-1}}=\frac{1}{\omega+1}\)<br>
+                            また、\(\displaystyle\omega+1=\frac12+\frac{\sqrt3}{2}i\)であり、\(\left|\dfrac12+\dfrac{\sqrt3}{2}i\right|=1\)より、これは絶対値\(1\)の複素数であるから、<br>
+                            \(\gamma=1+(\omega+1)^{-1}(\bar\alpha-1)=(\omega+1)+(\omega^2+1)\bar\alpha\ \cdots\text{(**)}\)<br>
+                            が成り立つ（\((\omega+1)^{-1}=\overline{\omega+1}=\omega^2+1\)、および\(1-(\omega+1)^{-1}=1-(\omega^2+1)=-\omega^2=\omega+1\)、すなわち\((\omega+1)^{-1}\)を用いて整理すると係数が\(\omega+1\)と\(\omega^2+1\)になることによる）。<br>
+                            \(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)なので、(**)は、<br>
+                            \(\displaystyle\gamma=(\omega+1)+\frac{\omega^2+1}{\alpha}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\)<br>
                             <br>
-                            これらを\(n\)を\(4\)で割った余りごとにまとめると、<br>
-                            余り\(1\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv8\times34=272\equiv32\pmod{40}\)<br>
-                            余り\(2\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv34\times26=884\equiv4\pmod{40}\)<br>
-                            余り\(3\)（\(n\)奇数）：\(a_n\cdot a_{2n}\equiv32\times34=1088\equiv8\pmod{40}\)<br>
-                            余り\(0\)（\(n\)偶数）：\(a_n\cdot a_{2n}\equiv26\times26=676\equiv36\pmod{40}\)<br>
+                            一方、(1)の結果より\(\displaystyle\beta=-1-\frac1\alpha=-\frac{\alpha+1}{\alpha}\)である。<br>
+                            \(\beta\ne0\)（すなわち\(\alpha\ne-1\)）のとき、\(3\)点\(O,Q,R\)が同一直線上にあるための条件は\(\displaystyle\frac{\gamma}{\beta}\)が実数であることだから、この値を計算すると、<br>
+                            \(\displaystyle\frac{\gamma}{\beta}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\div\left(-\frac{\alpha+1}{\alpha}\right)=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}\ \left(=E\text{とおく}\right)\)<br>
                             <br>
-                            \(a_n\cdot a_{2n}\equiv4\pmod{40}\)となるのは\(n\)を\(4\)で割った余りが\(2\)のときのみである。<br>
-                            \(\therefore\ b_n\)が整数となる\(n\)の条件は \(n\equiv2\pmod4\)（すなわち\(n=4k+2\)、\(k=0,1,2,\cdots\)）
+                            \(E\)が実数であることを、\(\bar E=E\)を示すことで確かめる。\(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)、\(\bar\omega=\omega^2\)、\(\overline{\omega^2}=\omega\)であるから、<br>
+                            \(\displaystyle\bar E=-\frac{\bar\alpha\bar\omega+\bar\alpha+\overline{\omega^2}+1}{\bar\alpha+1}=-\frac{\dfrac1\alpha\omega^2+\dfrac1\alpha+\omega+1}{\dfrac1\alpha+1}\)<br>
+                            分母・分子に\(\alpha\)を掛けると、<br>
+                            \(\displaystyle\bar E=-\frac{\omega^2+1+\alpha(\omega+1)}{1+\alpha}=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}=E\)<br>
+                            よって\(\bar E=E\)、すなわち\(E=\dfrac{\gamma}{\beta}\)は実数である。<br>
+                            <br>
+                            （\(\alpha=-1\)のときは\(\beta=0\)、すなわち\(Q\)は\(O\)と一致するから、\(O,Q,R\)は自明に同一直線上にある。）<br>
+                            <br>
+                            以上より、すべての場合について\(3\)点\(O,Q,R\)は同一直線上にある。(証明終)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem14">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem14" role="button"
+                aria-expanded="false" aria-controls="collapseProblem14">
+                複素数平面上の長方形と4次方程式
+                <div id="collapseProblem14" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            複素数\(\alpha,\ \beta,\ \gamma,\ \delta,\ p\)が、次の\(3\)条件を満たしながら動く。<br>
+                            条件\(1\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は相異なる。<br>
+                            条件\(2\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解である。<br>
+                            条件\(3\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は複素数平面上で長方形の\(4\)頂点である。
+                        </p>
+                        <p>
+                            (1) 複素数\(\alpha\)が動きうる範囲を複素数平面上に図示せよ。<br>
+                            (2) 複素数\(p\)が動きうる範囲を複素数平面上に図示せよ。
                         </p>
                     </div>
                 </div>
@@ -470,6 +981,200 @@
         </div>
 
         <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution14" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution14">
+                    複素数平面上の長方形と4次方程式 解答
+                </div>
+                <div id="collapseSolution14" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            条件\(2\)より、\(\alpha,\beta,\gamma,\delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解であるから、<br>
+                            \(z^4+pz^2-4=(z-\alpha)(z-\beta)(z-\gamma)(z-\delta)\ \cdots\text{①}\)<br>
+                            と因数分解できる。①の両辺の\(z^3\)の係数を比較すると、左辺の\(z^3\)の係数は\(0\)であるから、<br>
+                            \(0=-(\alpha+\beta+\gamma+\delta)\ \ \therefore\ \alpha+\beta+\gamma+\delta=0\)<br>
+                            <br>
+                            これは、\(4\)点\(\alpha,\beta,\gamma,\delta\)の重心\(\dfrac{\alpha+\beta+\gamma+\delta}{4}\)が原点\(O\)であることを意味する。条件\(3\)より、これらは長方形の\(4\)頂点であり、長方形（平行四辺形）の対角線の交点は\(4\)頂点の重心と一致し、対角線は互いに他を二等分するから、原点\(O\)が対角線の交点であるとき、各対角線の両端点は原点に関して互いに対称、すなわち互いに\(-1\)倍の関係にある。<br>
+                            よって、\(\alpha,\beta,\gamma,\delta\)は、必要なら順序を入れ替えて、\(\pm\alpha,\ \pm\beta\)の形に表される。さらに、長方形の\(2\)本の対角線の長さは等しく（\(2|\alpha|=2|\beta|\)）、また\(4\)頂点が相異なる（\(\alpha\ne\pm\beta\)）ことから、<br>
+                            \(|\alpha|=|\beta|\) かつ \(\alpha\ne\pm\beta\ \cdots\text{②}\)<br>
+                            が成り立つ。逆に②が成り立てば、\(4\)点\(\pm\alpha,\pm\beta\)は対角線が原点で直交せずとも互いに等しい長さで二等分し合う平行四辺形、すなわち長方形の\(4\)頂点となる。<br>
+                            <br>
+                            このとき、①は、<br>
+                            \(z^4+pz^2-4=(z-\alpha)(z+\alpha)(z-\beta)(z+\beta)=(z^2-\alpha^2)(z^2-\beta^2)=z^4-(\alpha^2+\beta^2)z^2+\alpha^2\beta^2\)<br>
+                            となるから、両辺の係数を比較して、<br>
+                            \(p=-(\alpha^2+\beta^2)\ \cdots\text{③}\)、\(\ \alpha^2\beta^2=-4\ \cdots\text{④}\)<br>
+                            が成り立つ。
+                        </p>
+                        <p>
+                            <b>(1)</b><br>
+                            \(\alpha\)が動きうる範囲は、\(\alpha\)を与えたとき、②かつ④を満たす\(\beta\)が存在する範囲である。<br>
+                            <br>
+                            \(\alpha=0\)のときは、④を満たす\(\beta\)が存在しない。<br>
+                            \(\therefore\ \alpha\ne0\ \cdots\text{⑤}\)<br>
+                            <br>
+                            \(\alpha\ne0\)のとき、④より、<br>
+                            \(\displaystyle\beta^2=-\frac{4}{\alpha^2}\ \ \therefore\ \beta=\pm\frac{2i}{\alpha}\ \cdots\text{⑥}\)<br>
+                            であり、この中に②を満たす\(\beta\)が存在する条件は、<br>
+                            \(\displaystyle|\alpha|=\left|\pm\frac{2i}{\alpha}\right|\) かつ \(\displaystyle\alpha\ne\pm\frac{2i}{\alpha}\)<br>
+                            \(\displaystyle\therefore\ |\alpha|=\sqrt2\ \cdots\text{⑦}\) かつ \(\alpha^2\ne\pm2i\ \cdots\text{⑧}\)<br>
+である（⑦は\(\displaystyle|\alpha|=\frac{|{\pm2i}|}{|\alpha|}=\frac{2}{|\alpha|}\)を解いたもの、⑧は\(\alpha\ne\pm\dfrac{2i}{\alpha}\)の両辺に\(\alpha\ (\ne0)\)をかけて整理したもの）。<br>
+                            <br>
+                            ⑦より、\(\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \cdots\text{⑨}\)とおけて、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)であるから、⑧は\(\cos2\theta+i\sin2\theta\ne\pm i\)となり、<br>
+                            \(\therefore\ \theta\ne\pm\dfrac{\pi}{4}+k\pi\ \ (k\in\mathbb{Z})\ \cdots\text{⑩}\)<br>
+                            <br>
+                            以上、⑤、⑨、⑩より、\(\alpha\)が動きうる範囲は、原点\(O\)を中心とする半径\(\sqrt2\)の円から、\(4\)点\(1+i,\ -1+i,\ -1-i,\ 1-i\)（偏角\(\pm\dfrac{\pi}{4},\ \pi\pm\dfrac{\pi}{4}\)にあたる点）を除いたものである。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 280 260" width="280" height="260"
+                            aria-label="原点中心、半径ルート2の円から45度刻みの4点を除いた図">
+                            <line x1="15" y1="130" x2="255" y2="130" stroke="#999" stroke-width="1" />
+                            <line x1="130" y1="15" x2="130" y2="245" stroke="#999" stroke-width="1" />
+                            <circle cx="130" cy="130" r="90" fill="none" stroke="#333" stroke-width="2.2" />
+                            <circle cx="193.6" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="66.4" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="66.4" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="193.6" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <text x="199" y="60" font-size="13" font-style="italic">1+i</text>
+                            <text x="4" y="60" font-size="13" font-style="italic">-1+i</text>
+                            <text x="0" y="208" font-size="13" font-style="italic">-1-i</text>
+                            <text x="194" y="208" font-size="13" font-style="italic">1-i</text>
+                            <text x="258" y="126" font-size="13" fill="#777">Re</text>
+                            <text x="136" y="20" font-size="13" fill="#777">Im</text>
+                            <text x="136" y="144" font-size="12" fill="#777">O</text>
+                            <text x="208" y="145" font-size="12" fill="#777" font-style="italic">√2</text>
+                        </svg>
+                        <p>
+                            <b>(2)</b><br>
+                            (1)より、\(\alpha\)は\(\displaystyle\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \ (\theta\ne\pm\tfrac{\pi}{4}+k\pi,\ k\in\mathbb{Z})\)と表され、これと⑥を満たす\(\beta\)に対して、③により\(p\)が定まる。<br>
+                            <br>
+                            ③、④より、\(\displaystyle\beta^2=-\frac{4}{\alpha^2}\)であるから、<br>
+                            \(\displaystyle p=-(\alpha^2+\beta^2)=-\left(\alpha^2-\frac{4}{\alpha^2}\right)\)<br>
+                            <br>
+                            ここで、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)、\(\displaystyle\frac{4}{\alpha^2}=2(\cos2\theta-i\sin2\theta)\)であるから、<br>
+                            \(\displaystyle \alpha^2-\frac{4}{\alpha^2}=2(\cos2\theta+i\sin2\theta)-2(\cos2\theta-i\sin2\theta)=4i\sin2\theta\)<br>
+                            \(\therefore\ p=-4i\sin2\theta\)<br>
+                            <br>
+                            \(\theta\ne\pm\dfrac{\pi}{4}+k\pi\)より\(2\theta\ne\pm\dfrac{\pi}{2}+2k\pi\)であるから、\(-1\lt\sin2\theta\lt1\)である（\(\theta\)がこの範囲を動くとき\(\sin2\theta\)はこの開区間のすべての値をとる）。<br>
+                            <br>
+                            よって、\(p\)が動きうる範囲は、虚軸上の線分（\(-4i\)から\(4i\)まで）から両端点\(\pm4i\)を除いたものである。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 260 260" width="260" height="260"
+                            aria-label="虚軸上の-4iから4iまでの線分から両端点を除いた図">
+                            <line x1="15" y1="130" x2="225" y2="130" stroke="#999" stroke-width="1" />
+                            <line x1="110" y1="15" x2="110" y2="245" stroke="#999" stroke-width="1" />
+                            <line x1="110" y1="40" x2="110" y2="220" stroke="#333" stroke-width="2.5" />
+                            <circle cx="110" cy="40" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="110" cy="220" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <text x="120" y="38" font-size="13" font-style="italic">4i</text>
+                            <text x="120" y="228" font-size="13" font-style="italic">-4i</text>
+                            <text x="232" y="134" font-size="13" fill="#777">Re</text>
+                            <text x="116" y="24" font-size="13" fill="#777">Im</text>
+                            <text x="116" y="144" font-size="12" fill="#777">O</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="card" id="problem10">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem10" role="button"
+                aria-expanded="false" aria-controls="collapseProblem10">
+                ガウス記号で定まる数列とその極限
+                <div id="collapseProblem10" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            実数\(x\)に対して、\(x\)以下の最大の整数を\([x]\)で表す。数列\(\{a_n\}\ (n=1,2,3,\cdots)\)を<br>
+                            \(a_n=[\sqrt2\,n]\)<br>
+                            で定め、\(\{a_n\}\)の項に現れない正の整数を、小さい順に並べてできる数列を\(\{b_n\}\ (n=1,2,3,\cdots)\)とする。例えば、<br>
+                            \(\sqrt2=1.414\cdots,\ 2\sqrt2=2.828\cdots,\ 3\sqrt2=4.242\cdots,\ 4\sqrt2=5.656\cdots,\ 5\sqrt2=7.071\cdots\)<br>
+                            であるから、\(a_1=1,\ a_2=2,\ a_3=4,\ a_4=5,\ a_5=7\)となり、また、\(b_1=3,\ b_2=6\)となる。
+                        </p>
+                        <p>
+                            (1) \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}\)を求めよ。<br>
+                            (2) \(a_{n+1}-a_n\)の値は\(1\)または\(2\)であることを示せ。<br>
+                            (3) 次の(i), (ii)に答えよ。ただし、(ii)を先に答えてもよい。<br>
+                            &emsp;(i) \(\{a_n\}\)の項に現れない正の整数は無限に存在すること、すなわち、\(\{b_n\}\)は無限に多くの項からなる数列であることを示せ。<br>
+                            &emsp;(ii) \(\displaystyle\lim_{n\to\infty}\frac{b_n}{n}\)を求めよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution10" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution10">
+                    ガウス記号で定まる数列とその極限 解答
+                </div>
+                <div id="collapseSolution10" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(a_n\)は\(\sqrt2\,n\)以下の最大の整数であるから、<br>
+                            \(a_n \leqq \sqrt2\,n \lt a_n+1\)<br>
+                            すなわち<br>
+                            \(\sqrt2\,n-1 \lt a_n \leqq \sqrt2\,n\ \cdots\text{①}\)<br>
+                            ①の両辺を\(n\)で割ると、<br>
+                            \(\displaystyle \sqrt2-\frac1n \lt \frac{a_n}{n} \leqq \sqrt2\)<br>
+                            \(\displaystyle\lim_{n\to\infty}\left(\sqrt2-\frac1n\right)=\sqrt2\)であるから、はさみうちの原理により、<br>
+                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            ①は\(n\)によらず成り立つので、\(n+1\)についても、<br>
+                            \(\sqrt2\,(n+1)-1 \lt a_{n+1} \leqq \sqrt2\,(n+1)\ \cdots\text{②}\)<br>
+                            が成り立つ。①より\(-\sqrt2\,n \leqq -a_n \lt -\sqrt2\,n+1\)であるから、これと②を辺々加えると、<br>
+                            \(\sqrt2\,(n+1)-1-\sqrt2\,n \lt a_{n+1}-a_n \lt \sqrt2\,(n+1)-\sqrt2\,n+1\)<br>
+                            \(\therefore\ \sqrt2-1 \lt a_{n+1}-a_n \lt \sqrt2+1\)<br>
+                            \(1\lt\sqrt2\lt2\)より\(0 \lt a_{n+1}-a_n \lt 3\)であり、\(a_{n+1}-a_n\)は整数であるから、<br>
+                            \(\therefore\ a_{n+1}-a_n=1\)または\(a_{n+1}-a_n=2\)である。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)(i)</b><br>
+                            (2)より、\(a_{n+1}-a_n\)の値は\(1\)または\(2\)である。<br>
+                            \(\cdot\ a_{n+1}-a_n=1\)のとき、\(a_n\)と\(a_{n+1}\)は連続する\(2\)つの正の整数であるから、この間に入る整数はなく、したがって\(\{b_n\}\)の項もこの間には現れない。<br>
+                            \(\cdot\ a_{n+1}-a_n=2\)のとき、\(a_n\)と\(a_{n+1}\)の間に入る正の整数はただ\(1\)つ存在し、それは\(\{a_n\}\)の項ではないから\(\{b_n\}\)の項である。<br>
+                            <br>
+                            ここで、\(\{b_n\}\)が有限個の項からなる数列であると仮定する。\(\{a_n\}\)は(2)より狭義単調増加であるから、異なる\(n\)に対する区間\((a_n,a_{n+1})\)は互いに素であり、上の考察より、\(a_{n+1}-a_n=2\)を満たす\(n\)一つひとつに対して\(\{b_n\}\)の項がちょうど\(1\)個ずつ、しかも互いに異なるものが対応する。よって\(\{b_n\}\)が有限個の項からなるならば、\(a_{n+1}-a_n=2\)を満たす\(n\)も有限個である。<br>
+                            <br>
+                            よって、ある番号\(p\)が存在して、\(n\geqq p\)に対して常に\(a_{n+1}-a_n=1\)となる。このとき\(\{a_n\}\)は\(n\geqq p\)の範囲で公差\(1\)の等差数列となるから、<br>
+                            \(a_n=a_p+(n-p)=n+(a_p-p)\ \ (n\geqq p)\)<br>
+                            と表される。したがって、<br>
+                            \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\lim_{n\to\infty}\left(1+\frac{a_p-p}{n}\right)=1\)<br>
+                            となるが、これは(1)の結果\(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)に矛盾する。<br>
+                            <br>
+                            よって、\(\{b_n\}\)は有限個の項からなる数列ではない。すなわち、\(\{a_n\}\)の項に現れない正の整数は無限に存在する。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)(ii)</b><br>
+                            数列\(\{a_n\}\)を\(A\)、数列\(\{b_n\}\)を\(B\)と呼ぶことにする。(2)より\(A\)は狭義単調増加であり、\(a_1=1\)であるから、\(A\)は正の整数からなる単調増加数列である。このことと\(B\)の定義から、\(A\)と\(B\)の項をすべて合わせて小さい順に並べたものは、正の整数を\(1\)から順に並べた数列に一致する。この数列を\(S\)と書く。<br>
+                            <br>
+                            \(b_n=m\)とおく。数列\(S\)の最初の\(m\)項、すなわち\(1,2,\cdots,m\)のうち、\(n\)個が数列\(B\)の項であり、残りの\(m-n\)個が数列\(A\)の項である。そこで\(k=m-n\)とおくと、数列\(S\)において\(b_n=m\)の直前までに現れる数列\(A\)の項はちょうど\(a_1,a_2,\cdots,a_k\)である。つまり、<br>
+                            \(S:\ a_1=1,\ a_2=2,\ b_1=3,\ \cdots,\ a_k,\ \cdots,\ b_n=m,\ \cdots,\ a_{k+1},\ \cdots\)<br>
+                            となっているから、不等式<br>
+                            \(a_k \lt m \lt a_{k+1}\)<br>
+                            が成り立つ。<br>
+                            <br>
+                            ①を\(n=k\)および\(n=k+1\)に適用すると、\(a_k \gt \sqrt2\,k-1\)、\(a_{k+1} \leqq \sqrt2\,(k+1)\)であるから、これと上の不等式を合わせて、<br>
+                            \(\sqrt2\,k-1 \lt m \lt \sqrt2\,(k+1)\)<br>
+                            が成り立つ。\(k=m-n\)を代入して\(m\)について整理すると、<br>
+                            \(\displaystyle \frac{\sqrt2\,(n-1)}{\sqrt2-1} \lt m \lt \frac{\sqrt2\,n+1}{\sqrt2-1}\)<br>
+                            両辺を\(n\ (\gt0)\)で割り、\(\dfrac{m}{n}=\dfrac{b_n}{n}\)に注意すると、<br>
+                            \(\displaystyle \frac{\sqrt2\,(n-1)}{(\sqrt2-1)n} \lt \frac{b_n}{n} \lt \frac{\sqrt2\,n+1}{(\sqrt2-1)n}\)<br>
+                            <br>
+                            \(n\to\infty\)のとき、左辺、右辺はともに<br>
+                            \(\displaystyle \frac{\sqrt2}{\sqrt2-1}=\frac{\sqrt2\,(\sqrt2+1)}{(\sqrt2-1)(\sqrt2+1)}=\sqrt2\,(\sqrt2+1)=2+\sqrt2\)<br>
+                            に収束するから、はさみうちの原理により、<br>
+                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{b_n}{n}=2+\sqrt2\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="problem5">
             <div class="card-header" data-toggle="collapse" href="#collapseProblem5" role="button"
                 aria-expanded="false" aria-controls="collapseProblem5">
                 関数の増減とグラフ
@@ -619,17 +1324,26 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem6" role="button"
-                aria-expanded="false" aria-controls="collapseProblem6">
-                合同式と最大公約数
-                <div id="collapseProblem6" class="collapse">
+        <div class="card" id="problem13">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem13" role="button"
+                aria-expanded="false" aria-controls="collapseProblem13">
+                べき関数を用いた不等式の証明
+                <div id="collapseProblem13" class="collapse">
                     <div class="card-body">
-                        <p>\(m\)を\(1\)以上の整数、\(n\)を\(2\)以上の整数とする。以下の問いに答えよ。ただし、\((1)\)については結論のみ書けばよい。<br>
-                            <br>
-                            \((1)\) \(m^2\)を\(8\)で割った余りとしてありうるものをすべて求めよ。<br>
-                            \((2)\) \(3n^2-4\)と\(2n-3\)の最大公約数が\(1\)でないための必要十分条件を求めよ。<br>
-                            \((3)\) \((3n^2-4)(2n-3)\)は整数の\(2\)乗にならないことを示せ。
+                        <p>
+                            \(n\)は正の整数とする。
+                        </p>
+                        <p>
+                            (1) 正の実数\(x\)に対して、<br>
+                            \(x^{n+1}\geqq(n+1)x-n\)<br>
+                            が成り立つことを示せ。
+                        </p>
+                        <p>
+                            (2) 正の実数\(a,\ b,\ c,\ d\)が<br>
+                            \(a\geqq b,\ \ d^{n+1}=\{(n+1)c-na\}b^n\)<br>
+                            を満たすとき、<br>
+                            \(c\geqq d\)<br>
+                            が成り立つことを示せ。
                         </p>
                     </div>
                 </div>
@@ -638,230 +1352,76 @@
 
         <div class="card">
             <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution6" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution6">
-                    合同式と最大公約数 解答
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution13" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution13">
+                    べき関数を用いた不等式の証明 解答
                 </div>
-                <div id="collapseSolution6" class="collapse">
+                <div id="collapseSolution13" class="collapse">
                     <div class="card-body">
                         <p>
-                            \((1)\) \(k\)を整数として<br>
-                            \((4k)^2 = 16k^2\)<br>
-                            \((4k\pm1)^2 = 16k^2\pm8k+1\)（複号同順）<br>
-                            \((4k+2)^2 = 16k^2+16k+4\)<br>
-                            より、求めるものは \(0,\ 1,\ 4\) である。<br>
+                            <b>(1)</b><br>
+                            \(f(x)=x^{n+1}-\{(n+1)x-n\}\)とおくと、<br>
+                            \(f'(x)=(n+1)x^n-(n+1)=(n+1)(x^n-1)\)<br>
                             <br>
-                            \((2)\) 少なくとも\(1\)つが\(0\)でない整数\(a,b\)について、\(a\)と\(b\)の最大公約数（\(a\)と\(b\)をともに割り切る最大の正の整数）を\(\gcd(a,b)\)と書くことにする。このとき、次の性質が成り立つ。<br>
-                            \((\mathrm{i})\) \(\gcd(a,b)=\gcd(b,a)\)<br>
-                            \((\mathrm{ii})\) \(\gcd(a,b)=\gcd(a,-b)\)<br>
-                            \((\mathrm{iii})\) \(b\)と互いに素な正整数\(c\)に対して \(\gcd(a,b)=\gcd(ac,b)\)<br>
-                            \((\mathrm{iv})\) 整数\(k\)に対して \(\gcd(a,b)=\gcd(b,a+kb)\)<br>
+                            \(x\gt0\)のとき、\(x^n-1\)の符号は\(x=1\)を境に変わる。<br>
+                            (i) \(0\lt x\lt1\)のとき、\(x^n\lt1\)であるから\(x^n-1\lt0\)<br>
+                            (ii) \(x\gt1\)のとき、\(x^n\gt1\)であるから\(x^n-1\gt0\)<br>
                             <br>
-                            これより<br>
-                            \(\gcd(3n^2-4,\,2n-3)\)<br>
-                            \(=\gcd(6n^2-8,\,2n-3)\)（\(\because\ 2n-3\)と\(2\)は互いに素、(iii)）<br>
-                            \(=\gcd(9n-8,\,2n-3)\)（\(6n^2-8=3n(2n-3)+9n-8\)、(iv)）<br>
-                            \(=\gcd(n+4,\,2n-3)\)（\(9n-8=4(2n-3)+n+4\)、(iv)、(i)）<br>
-                            \(=\gcd(n+4,\,-11)\)（\(2n-3=2(n+4)-11\)、(iv)）<br>
-                            \(=\gcd(n+4,\,11)\)（(ii)）<br>
-                            であるから、\(11\)が素数であることに注意して、<br>
-                            \(\therefore\ \gcd(3n^2-4,\,2n-3)\neq1\)となるための必要十分条件は、\(n\)が\(11\)で割って\(7\)余る整数であることである。<br>
+                            したがって、\(x\gt0\)における\(f(x)\)の増減表は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(1\)</td>
+                                <td>\(\cdots\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f(x)\)</th>
+                                <td></td>
+                                <td>\(\searrow\)</td>
+                                <td>\(0\)</td>
+                                <td>\(\nearrow\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            ここで、\(f(1)=1^{n+1}-\{(n+1)\cdot1-n\}=1-1=0\)である。<br>
+                            この増減表より、\(f(x)\)は\(x=1\)で最小値\(0\)をとるから、\(x\gt0\)のとき\(f(x)\geqq0\)である。<br>
+                            \(\displaystyle\therefore\ x^{n+1}\geqq(n+1)x-n\)（等号成立は\(x=1\)のとき）(証明終)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            条件\(d^{n+1}=\{(n+1)c-na\}b^n\)の両辺を\(b^{n+1}\ (\gt0)\)で割ると、<br>
+                            \(\displaystyle\left(\frac db\right)^{n+1}=\frac{(n+1)c-na}{b}\)<br>
                             <br>
-                            \((3)\) \((3n^2-4)(2n-3)\)が整数の\(2\)乗であると仮定する。\(\gcd(3n^2-4,\,2n-3)\)の値によって場合分けする。<br>
+                            (1)の不等式において\(\displaystyle x=\frac db\ (\gt0)\)とおくと、<br>
+                            \(\displaystyle\left(\frac db\right)^{n+1}\geqq(n+1)\cdot\frac db-n\)<br>
                             <br>
-                            \((\mathrm{i})\) \(n\)が\(11\)で割って\(7\)余る整数ではないとき、このとき\(3n^2-4\)と\(2n-3\)は互いに素な自然数なので、<br>
-                            \((3n^2-4)(2n-3)\)が整数の\(2\)乗 \(\iff\) \(3n^2-4,\ 2n-3\)がともに整数の\(2\)乗<br>
-                            \((1)\)の結果より、\(2n-3\)は奇数であり、奇数の平方は\(8\)で割った余りが\(1\)であるから、\(2n-3\)が整数の\(2\)乗であるためには\(n\)が\(4\)で割って\(2\)余る整数でなければならない。<br>
-                            しかし、このとき（\(n=4k-2\)とおくと）<br>
-                            \(3n^2-4 = 8(6k^2-6k+1)\)となり、整数の\(2\)乗であるはずの\(3n^2-4\)は素因数\(2\)を奇数個しか含んでおらず、矛盾である。<br>
+                            これと上の等式を合わせると、<br>
+                            \(\displaystyle\frac{(n+1)c-na}{b}\geqq(n+1)\frac db-n\)<br>
+                            この両辺に\(b\ (\gt0)\)をかけて整理すると、<br>
+                            \((n+1)c-na\geqq(n+1)d-nb\)<br>
+                            \(\displaystyle\therefore\ (n+1)(c-d)\geqq n(a-b)\)<br>
                             <br>
-                            \((\mathrm{ii})\) \(n\)が\(11\)で割って\(7\)余る整数のとき、\(\gcd(3n^2-4,\,2n-3)=11\)<br>
-                            \(n=11\ell-4\)とする。このとき、\((3n^2-4)(2n-3)\)<br>
-                            \(=11^2(33\ell^2-24\ell+4)(2\ell-1)\)であり、\(33\ell^2-24\ell+4\)と\(2\ell-1\)は互いに素であるから、これらはともに整数の\(2\)乗でなければならない。<br>
-                            ここで、\(33\ell^2-24\ell+4 = 8(4\ell^2-3\ell)+\ell^2+4\)より、\((1)\)の結果に注意すれば、\(\ell\)は偶数でなければならないが、<br>
-                            このとき\(2\ell-1\)を\(4\)で割った余りは\(3\)、すなわち\(8\)で割った余りが\(1\)ではない。これは奇数\(2\ell-1\)が整数の\(2\)乗ではないことを示しているので矛盾。<br>
-                            <br>
-                            以上より、\((3n^2-4)(2n-3)\)は整数の\(2\)乗ではないことが分かる。
+                            \(a\geqq b\)より\(a-b\geqq0\)であり、\(n\)は正の整数だから\(n\gt0\)なので、\(n(a-b)\geqq0\)である。よって、<br>
+                            \((n+1)(c-d)\geqq0\)<br>
+                            \(n+1\gt0\)であるから、両辺を\(n+1\)で割って、<br>
+                            \(\displaystyle\therefore\ c\geqq d\) (証明終)
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem7" role="button"
-                aria-expanded="false" aria-controls="collapseProblem7">
-                格子点上のランダムウォーク
-                <div id="collapseProblem7" class="collapse">
-                    <div class="card-body">
-                        <p>座標平面上で\(x\)座標と\(y\)座標がいずれも整数である点を格子点という。<br>
-                            点\(P\)は最初\((1,1)\)にあるとし、\(P\)に対して次の操作を繰り返し行う。<br>
-                            <br>
-                            操作：点\(P\)を隣接する\(4\)つの格子点のいずれかに、それぞれ\(\displaystyle \frac14\)の確率で移動させる。<br>
-                            <br>
-                            また、\(P\)が\(x\)軸または\(y\)軸上の点に移動したら操作を終了するものとする。<br>
-                            <br>
-                            \((1)\) 操作を\(4\)回行った後に、点\(P\)が\((1,1)\)にある確率を求めよ。<br>
-                            \((2)\) \(n\)を\(2\)以上の自然数とする。操作を\(2n\)回行った後に、点\(P\)が\((n-1,n-1)\)にある確率を求めよ。<br>
-                            <br>
-                            注意：「隣接する格子点」とは、\(x\)座標もしくは\(y\)座標のいずれか一方のみが\(1\)だけ増減した点のことである。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution7" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution7">
-                    格子点上のランダムウォーク 解答
-                </div>
-                <div id="collapseSolution7" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            \(x\)座標が増加、減少する操作が行われる回数をそれぞれ\(\alpha,\beta\)とする。同様に、\(y\)座標が増加、減少する操作が行われる回数をそれぞれ\(\gamma,\delta\)とする。以下、それぞれの方向を\(a\)方向（\(x\)増加）、\(b\)方向（\(x\)減少）、\(c\)方向（\(y\)増加）、\(d\)方向（\(y\)減少）と呼ぶ。
-                        </p>
-                        <svg class="problem-diagram" viewBox="0 0 200 160" width="200" height="160"
-                            aria-label="4方向の呼び方。右がa(x増加)、左がb(x減少)、上がc(y増加)、下がd(y減少)">
-                            <line x1="30" y1="80" x2="170" y2="80" stroke="#333" stroke-width="1.5" />
-                            <polygon points="170,80 160,75 160,85" fill="#333" />
-                            <polygon points="30,80 40,75 40,85" fill="#333" />
-                            <line x1="100" y1="140" x2="100" y2="20" stroke="#333" stroke-width="1.5" />
-                            <polygon points="100,20 95,30 105,30" fill="#333" />
-                            <polygon points="100,140 95,130 105,130" fill="#333" />
-                            <text x="152" y="72" text-anchor="middle" font-size="15">a</text>
-                            <text x="48" y="72" text-anchor="middle" font-size="15">b</text>
-                            <text x="108" y="34" text-anchor="middle" font-size="15">c</text>
-                            <text x="108" y="132" text-anchor="middle" font-size="15">d</text>
-                        </svg>
-                        <p>
-                            \((1)\) このとき、<br>
-                            \(\alpha+\beta+\gamma+\delta=4\)、\(\alpha-\beta=0\)、\(\gamma-\delta=0\)<br>
-                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)<br>
-                            <br>
-                            \(\bullet\ \beta=2\)のとき、\(\alpha=2\)、よって\(\gamma=\delta=0\)である。\(y\)座標は変化しないので\(x\)軸には達しないが、\(x\)座標が\(0\)（\(y\)軸）に達しないという条件から、\(1\)回目の移動は\(a\)方向でなければならない。この条件のもとで数え上げると、<br>
-                            \(a,a,b,b\)を並べる\(6\)通りのうち、\(x\)座標が一度も\(0\)にならないのは\(\to\to\gets\gets\)、\(\to\gets\to\gets\)の\(2\)通りのみである。<br>
-                            これは\(\beta=0\)（\(\delta=2\)）の場合も同様に\(2\)通りである。<br>
-                            <br>
-                            \(\bullet\ \beta=1\)のとき、\(\alpha=\beta=\gamma=\delta=1\)である。\(a,b\)方向への移動\(1\)回ずつのうち\(x\)座標を\(0\)にしないためには\(a\)が\(b\)より先でなければならず、\(c,d\)についても同様に\(c\)が\(d\)より先でなければならない。<br>
-                            \(4\)回のうちどの\(2\)回が\(a,b\)（残り\(2\)回が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{4}{2}=6\)通りあり、それぞれ\(a,b\)の順序・\(c,d\)の順序は一意に定まるので、移動の総数は\(6\)通りである。<br>
-                            <br>
-                            以上より、条件を満たす移動の総数は\(2+2+6=10\)通りであり、各移動は独立に確率\(\displaystyle\frac14\)で起こるから、求める確率は<br>
-                            \(\therefore\ \displaystyle \frac{10}{4^4} = \frac{10}{256} = \frac{5}{128}\)<br>
-                            <br>
-                            \((2)\) \((1)\)と同様に、目標\((n-1,n-1)\)に達する条件は<br>
-                            \(\alpha+\beta+\gamma+\delta=2n\)、\(\alpha-\beta=n-2\)、\(\gamma-\delta=n-2\)<br>
-                            より、\(\beta+\delta=2\)であるから、\((\beta,\delta)=(2,0),\ (1,1),\ (0,2)\)と、\((1)\)と全く同じ\(3\)つの場合に分かれる。<br>
-                            <br>
-                            \(\bullet\ \beta=2\)のとき、\(\alpha=n\)、\(\gamma=n-2,\ \delta=0\)である。\(y\)座標は単調に増加するので\(x\)軸には達しない。\(x\)座標が\(0\)にならないためには、\(n\)個の\(a\)と\(2\)個の\(b\)からなる部分列（相対的な順序）が、すべての接頭辞で\(a\)の個数が\(b\)の個数以上でなければならない（\(1\)回目は\(a\)、というのが\((1)\)の議論の一般化）。<br>
-                            このような部分列の数は、いわゆる投票問題（\(\mathrm{ballot\ problem}\)）の公式より\(\displaystyle \frac{(n+2)(n-1)}{2}\)通りであり（\(n=2\)のとき\(2\)通りとなり\((1)\)と一致する）、この部分列を\(2n\)個の位置のうち\(n+2\)個に配置する方法が\(\displaystyle\binom{2n}{n+2}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n+2}\cdot\frac{(n+2)(n-1)}{2}\)通りである。<br>
-                            \(\beta=0\)（\(\delta=2\)）の場合も、\(x,y\)の対称性より同じ総数となる。<br>
-                            <br>
-                            \(\bullet\ \beta=\delta=1\)のとき、\(\alpha=\gamma=n-1\)である。\(a,b\)方向への移動（\(n-1\)個の\(a\)と\(1\)個の\(b\)）のうち、\(x\)座標を\(0\)にしないためには\(b\)が先頭に来なければよく、その並べ方は\(n-1\)通り（\(n\)通りの位置のうち先頭を除く）である。\(c,d\)についても同様に\(n-1\)通り。<br>
-                            \(2n\)個のうちどの\(n\)個が\(a,b\)（残り\(n\)個が\(c,d\)）かを選ぶ方法が\(\displaystyle\binom{2n}{n}\)通りあるから、この場合の総数は\(\displaystyle \binom{2n}{n}(n-1)^2\)通りである。<br>
-                            <br>
-                            以上をすべて合計すると（この和は\(\displaystyle\binom{2n+1}{n}(n-1)^2\)に一致する）、条件を満たす移動の総数は\(\displaystyle \binom{2n+1}{n}(n-1)^2\)通りであるから、求める確率は<br>
-                            \(\therefore\ \displaystyle \frac{\dbinom{2n+1}{n}(n-1)^2}{4^{2n}}\)<br>
-                            （\(n=2\)のとき、この式は\(\displaystyle \frac{\binom{5}{2}\cdot1}{256}=\frac{10}{256}=\frac{5}{128}\)となり、\((1)\)の結果と一致する。）
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem8" role="button"
-                aria-expanded="false" aria-controls="collapseProblem8">
-                立方体の頂点への数字配置
-                <div id="collapseProblem8" class="collapse">
-                    <div class="card-body">
-                        <p>\(1\)つの立方体の\(8\)個の各頂点に、\(1,2,3,4,5,6,7,8\)の\(8\)個の数字を\(1\)個ずつ配置する。ただし、同じ数字を\(2\)個以上の頂点に配置しない。このとき、立方体の対角線に関する次の(条件)を考える。<br>
-                            <br>
-                            (条件) 対角線の両端の頂点に配置された\(2\)つの数字の和が\(9\)となる。<br>
-                            <br>
-                            ここで、立方体の対角線とは、立方体の\(2\)つの頂点を結ぶ線分のうち立方体の中心を通るものを指し、\(1\)つの立方体に対角線は\(4\)本ある。<br>
-                            <br>
-                            以下の\((1)\)、\((2)\)のような\(8\)個の数字の配置の仕方は何通りあるか、それぞれ答えよ。ただし、立方体を回転させることで\(8\)個の数字の配置が一致するものは同じ配置とみなす。<br>
-                            <br>
-                            \((1)\) 立方体の\(4\)本すべての対角線が(条件)をみたす。<br>
-                            \((2)\) 立方体の\(4\)本の対角線のうち、ちょうど\(2\)本の対角線が(条件)をみたす。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution8" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution8">
-                    立方体の頂点への数字配置 解答
-                </div>
-                <div id="collapseSolution8" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            \(8\)個の数字のうち、和が\(9\)となる組は\((1,8),\ (2,7),\ (3,6),\ (4,5)\)の\(4\)組である。<br>
-                            <br>
-                            立方体の回転群の位数は\(24\)であり、頂点\(1\)を置く場所を決めると回転による重複のうち\(8\)通り分（どの頂点に\(1\)を置くか）が解消される。さらに、頂点\(1\)を固定した状態でも、頂点\(1\)とその対角線の反対側の頂点\(Q\)を結ぶ軸のまわりに\(120^\circ,\ 240^\circ\)回転させると立方体は自身に重なるため、\(3\)通りの重複がなお残る。
-                        </p>
-                        <svg class="problem-diagram" viewBox="0 0 220 170" width="220" height="170"
-                            aria-label="立方体の頂点にP(1)、Q(8)、およびそれぞれに隣接するA1,A2,A3とB1,B2,B3を配置した図。AκとBκが対角線をなす">
-                            <line x1="60" y1="150" x2="150" y2="150" stroke="#333" stroke-width="1.5" />
-                            <line x1="150" y1="150" x2="150" y2="70" stroke="#333" stroke-width="1.5" />
-                            <line x1="150" y1="70" x2="60" y2="70" stroke="#333" stroke-width="1.5" />
-                            <line x1="60" y1="70" x2="60" y2="150" stroke="#333" stroke-width="1.5" />
-                            <line x1="105" y1="110" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
-                            <line x1="195" y1="110" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
-                            <line x1="195" y1="30" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
-                            <line x1="105" y1="30" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
-                            <line x1="60" y1="150" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
-                            <line x1="150" y1="150" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
-                            <line x1="150" y1="70" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
-                            <line x1="60" y1="70" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
-                            <line x1="60" y1="150" x2="195" y2="30" stroke="#999" stroke-width="1" stroke-dasharray="3,3" />
-                            <circle cx="60" cy="150" r="2.5" fill="#333" />
-                            <circle cx="150" cy="150" r="2.5" fill="#333" />
-                            <circle cx="150" cy="70" r="2.5" fill="#333" />
-                            <circle cx="60" cy="70" r="2.5" fill="#333" />
-                            <circle cx="105" cy="110" r="2.5" fill="#333" />
-                            <circle cx="195" cy="110" r="2.5" fill="#333" />
-                            <circle cx="195" cy="30" r="2.5" fill="#333" />
-                            <circle cx="105" cy="30" r="2.5" fill="#333" />
-                            <text x="46" y="158" text-anchor="middle" font-size="13">P(1)</text>
-                            <text x="163" y="158" text-anchor="middle" font-size="13">A1</text>
-                            <text x="150" y="60" text-anchor="middle" font-size="13">B3</text>
-                            <text x="48" y="62" text-anchor="middle" font-size="13">A2</text>
-                            <text x="93" y="122" text-anchor="middle" font-size="13">A3</text>
-                            <text x="208" y="114" text-anchor="middle" font-size="13">B2</text>
-                            <text x="208" y="24" text-anchor="middle" font-size="13">Q(8)</text>
-                            <text x="93" y="22" text-anchor="middle" font-size="13">B1</text>
-                        </svg>
-                        <p>
-                            頂点\(P\)に数字\(1\)を、\(P\)に隣接する\(3\)頂点を\(A_1,A_2,A_3\)、\(P\)の対角線の反対側の頂点を\(Q\)、\(Q\)に隣接する\(3\)頂点を\(B_1,B_2,B_3\)とする（\(A_\kappa\)と\(B_\kappa\)が対角線をなすように番号を対応させる）。<br>
-                            <br>
-                            \((1)\) \(4\)本すべての対角線が(条件)をみたすとき、対角線\(P\text{-}Q\)も条件をみたすから、\(Q\)には\(8\)が入る。<br>
-                            残る\(3\)本の対角線\(A_1B_1,\ A_2B_2,\ A_3B_3\)に、残りの\(3\)組\((2,7),\ (3,6),\ (4,5)\)を\(1\)組ずつ配置すればよい。<br>
-                            組をどの対角線に対応させるか：\(3!\)通り。各組の左右（\(A_\kappa,B_\kappa\)のどちらに大きい方を置くか）：\(2^3\)通り。<br>
-                            \(3! \times 2^3 = 48\)通り。<br>
-                            \(P\)を固定した後も、\(P\text{-}Q\)軸まわりの\(120^\circ,240^\circ\)回転で\((A_1,A_2,A_3)\to(A_2,A_3,A_1)\)と重複するため、\(3\)で割って<br>
-                            \(\therefore\ \displaystyle \frac{48}{3} = 16\)通り<br>
-                            <br>
-                            \((2)\) この場合は\(Q\)が必ずしも\(8\)とは限らないため、頂点を区別した（回転で同一視する前の）配置の総数を数えてから最後に\(24\)で割る方が見通しがよい。\(8\)個の数字はすべて異なるので、どの配置も非自明な回転で自分自身とは重ならない。したがって（条件を満たす、頂点を区別した配置の総数）\(\div 24\)が求める個数に等しい。<br>
-                            <br>
-                            Step\(1\)：\(4\)本の対角線のうち、条件をみたす\(2\)本を選ぶ：\(\displaystyle\binom{4}{2}=6\)通り。<br>
-                            Step\(2\)：\((1,8),(2,7),(3,6),(4,5)\)の\(4\)組から\(2\)組を選び、Step\(1\)で選んだ\(2\)本の対角線に割り当てる：組の選び方\(\displaystyle\binom{4}{2}=6\)通り、どちらの対角線に対応させるか\(2!\)通り、各組の左右\(2\times2\)通り。\(6\times2\times4=48\)通り。<br>
-                            Step\(3\)：残る\(2\)本の対角線に、残った\(4\)個の数字（未使用の\(2\)組）を、どちらの対角線も和が\(9\)にならないように配置する。例えば残りが\(\{3,6\}\)、\(\{4,5\}\)の場合、\(4\)個から\(2\)個を選んで一方の対角線に配る\(\displaystyle\binom{4}{2}=6\)通りのうち、\(\{3,6\}\)または\(\{4,5\}\)のまま（すなわち和が\(9\)のまま）になるのは\(2\)通りのみで、残る\(4\)通りはどちらの対角線も和が\(9\)にならない。各対角線内の左右\(2\times2\)通りをかけて、\(4\times4=16\)通り。<br>
-                            <br>
-                            以上より、頂点を区別した配置の総数は\(6\times48\times16=4608\)通り。回転による重複\(24\)で割って、<br>
-                            \(\therefore\ \displaystyle \frac{4608}{24} = 192\)通り
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
+        <div class="card" id="problem9">
             <div class="card-header" data-toggle="collapse" href="#collapseProblem9" role="button"
                 aria-expanded="false" aria-controls="collapseProblem9">
                 曲線の共有点とkの範囲
@@ -1043,522 +1603,6 @@
                             以上の\((\mathrm{i})\)、\((\mathrm{ii})\)より、\(f(x)=0\)を満たす\(x\)が\(0 \lt x \lt 1\)に存在するための条件は、<br>
                             \(\therefore\ k \geqq 4\log2\)
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem10" role="button"
-                aria-expanded="false" aria-controls="collapseProblem10">
-                ガウス記号で定まる数列とその極限
-                <div id="collapseProblem10" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            実数\(x\)に対して、\(x\)以下の最大の整数を\([x]\)で表す。数列\(\{a_n\}\ (n=1,2,3,\cdots)\)を<br>
-                            \(a_n=[\sqrt2\,n]\)<br>
-                            で定め、\(\{a_n\}\)の項に現れない正の整数を、小さい順に並べてできる数列を\(\{b_n\}\ (n=1,2,3,\cdots)\)とする。例えば、<br>
-                            \(\sqrt2=1.414\cdots,\ 2\sqrt2=2.828\cdots,\ 3\sqrt2=4.242\cdots,\ 4\sqrt2=5.656\cdots,\ 5\sqrt2=7.071\cdots\)<br>
-                            であるから、\(a_1=1,\ a_2=2,\ a_3=4,\ a_4=5,\ a_5=7\)となり、また、\(b_1=3,\ b_2=6\)となる。
-                        </p>
-                        <p>
-                            (1) \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}\)を求めよ。<br>
-                            (2) \(a_{n+1}-a_n\)の値は\(1\)または\(2\)であることを示せ。<br>
-                            (3) 次の(i), (ii)に答えよ。ただし、(ii)を先に答えてもよい。<br>
-                            &emsp;(i) \(\{a_n\}\)の項に現れない正の整数は無限に存在すること、すなわち、\(\{b_n\}\)は無限に多くの項からなる数列であることを示せ。<br>
-                            &emsp;(ii) \(\displaystyle\lim_{n\to\infty}\frac{b_n}{n}\)を求めよ。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution10" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution10">
-                    ガウス記号で定まる数列とその極限 解答
-                </div>
-                <div id="collapseSolution10" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            <b>(1)</b><br>
-                            \(a_n\)は\(\sqrt2\,n\)以下の最大の整数であるから、<br>
-                            \(a_n \leqq \sqrt2\,n \lt a_n+1\)<br>
-                            すなわち<br>
-                            \(\sqrt2\,n-1 \lt a_n \leqq \sqrt2\,n\ \cdots\text{①}\)<br>
-                            ①の両辺を\(n\)で割ると、<br>
-                            \(\displaystyle \sqrt2-\frac1n \lt \frac{a_n}{n} \leqq \sqrt2\)<br>
-                            \(\displaystyle\lim_{n\to\infty}\left(\sqrt2-\frac1n\right)=\sqrt2\)であるから、はさみうちの原理により、<br>
-                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)
-                        </p>
-                        <p>
-                            <b>(2)</b><br>
-                            ①は\(n\)によらず成り立つので、\(n+1\)についても、<br>
-                            \(\sqrt2\,(n+1)-1 \lt a_{n+1} \leqq \sqrt2\,(n+1)\ \cdots\text{②}\)<br>
-                            が成り立つ。①より\(-\sqrt2\,n \leqq -a_n \lt -\sqrt2\,n+1\)であるから、これと②を辺々加えると、<br>
-                            \(\sqrt2\,(n+1)-1-\sqrt2\,n \lt a_{n+1}-a_n \lt \sqrt2\,(n+1)-\sqrt2\,n+1\)<br>
-                            \(\therefore\ \sqrt2-1 \lt a_{n+1}-a_n \lt \sqrt2+1\)<br>
-                            \(1\lt\sqrt2\lt2\)より\(0 \lt a_{n+1}-a_n \lt 3\)であり、\(a_{n+1}-a_n\)は整数であるから、<br>
-                            \(\therefore\ a_{n+1}-a_n=1\)または\(a_{n+1}-a_n=2\)である。(証明終)
-                        </p>
-                        <p>
-                            <b>(3)(i)</b><br>
-                            (2)より、\(a_{n+1}-a_n\)の値は\(1\)または\(2\)である。<br>
-                            \(\cdot\ a_{n+1}-a_n=1\)のとき、\(a_n\)と\(a_{n+1}\)は連続する\(2\)つの正の整数であるから、この間に入る整数はなく、したがって\(\{b_n\}\)の項もこの間には現れない。<br>
-                            \(\cdot\ a_{n+1}-a_n=2\)のとき、\(a_n\)と\(a_{n+1}\)の間に入る正の整数はただ\(1\)つ存在し、それは\(\{a_n\}\)の項ではないから\(\{b_n\}\)の項である。<br>
-                            <br>
-                            ここで、\(\{b_n\}\)が有限個の項からなる数列であると仮定する。\(\{a_n\}\)は(2)より狭義単調増加であるから、異なる\(n\)に対する区間\((a_n,a_{n+1})\)は互いに素であり、上の考察より、\(a_{n+1}-a_n=2\)を満たす\(n\)一つひとつに対して\(\{b_n\}\)の項がちょうど\(1\)個ずつ、しかも互いに異なるものが対応する。よって\(\{b_n\}\)が有限個の項からなるならば、\(a_{n+1}-a_n=2\)を満たす\(n\)も有限個である。<br>
-                            <br>
-                            よって、ある番号\(p\)が存在して、\(n\geqq p\)に対して常に\(a_{n+1}-a_n=1\)となる。このとき\(\{a_n\}\)は\(n\geqq p\)の範囲で公差\(1\)の等差数列となるから、<br>
-                            \(a_n=a_p+(n-p)=n+(a_p-p)\ \ (n\geqq p)\)<br>
-                            と表される。したがって、<br>
-                            \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\lim_{n\to\infty}\left(1+\frac{a_p-p}{n}\right)=1\)<br>
-                            となるが、これは(1)の結果\(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)に矛盾する。<br>
-                            <br>
-                            よって、\(\{b_n\}\)は有限個の項からなる数列ではない。すなわち、\(\{a_n\}\)の項に現れない正の整数は無限に存在する。(証明終)
-                        </p>
-                        <p>
-                            <b>(3)(ii)</b><br>
-                            数列\(\{a_n\}\)を\(A\)、数列\(\{b_n\}\)を\(B\)と呼ぶことにする。(2)より\(A\)は狭義単調増加であり、\(a_1=1\)であるから、\(A\)は正の整数からなる単調増加数列である。このことと\(B\)の定義から、\(A\)と\(B\)の項をすべて合わせて小さい順に並べたものは、正の整数を\(1\)から順に並べた数列に一致する。この数列を\(S\)と書く。<br>
-                            <br>
-                            \(b_n=m\)とおく。数列\(S\)の最初の\(m\)項、すなわち\(1,2,\cdots,m\)のうち、\(n\)個が数列\(B\)の項であり、残りの\(m-n\)個が数列\(A\)の項である。そこで\(k=m-n\)とおくと、数列\(S\)において\(b_n=m\)の直前までに現れる数列\(A\)の項はちょうど\(a_1,a_2,\cdots,a_k\)である。つまり、<br>
-                            \(S:\ a_1=1,\ a_2=2,\ b_1=3,\ \cdots,\ a_k,\ \cdots,\ b_n=m,\ \cdots,\ a_{k+1},\ \cdots\)<br>
-                            となっているから、不等式<br>
-                            \(a_k \lt m \lt a_{k+1}\)<br>
-                            が成り立つ。<br>
-                            <br>
-                            ①を\(n=k\)および\(n=k+1\)に適用すると、\(a_k \gt \sqrt2\,k-1\)、\(a_{k+1} \leqq \sqrt2\,(k+1)\)であるから、これと上の不等式を合わせて、<br>
-                            \(\sqrt2\,k-1 \lt m \lt \sqrt2\,(k+1)\)<br>
-                            が成り立つ。\(k=m-n\)を代入して\(m\)について整理すると、<br>
-                            \(\displaystyle \frac{\sqrt2\,(n-1)}{\sqrt2-1} \lt m \lt \frac{\sqrt2\,n+1}{\sqrt2-1}\)<br>
-                            両辺を\(n\ (\gt0)\)で割り、\(\dfrac{m}{n}=\dfrac{b_n}{n}\)に注意すると、<br>
-                            \(\displaystyle \frac{\sqrt2\,(n-1)}{(\sqrt2-1)n} \lt \frac{b_n}{n} \lt \frac{\sqrt2\,n+1}{(\sqrt2-1)n}\)<br>
-                            <br>
-                            \(n\to\infty\)のとき、左辺、右辺はともに<br>
-                            \(\displaystyle \frac{\sqrt2}{\sqrt2-1}=\frac{\sqrt2\,(\sqrt2+1)}{(\sqrt2-1)(\sqrt2+1)}=\sqrt2\,(\sqrt2+1)=2+\sqrt2\)<br>
-                            に収束するから、はさみうちの原理により、<br>
-                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{b_n}{n}=2+\sqrt2\)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem11" role="button"
-                aria-expanded="false" aria-controls="collapseProblem11">
-                正三角形と対称点の複素数平面
-                <div id="collapseProblem11" class="collapse">
-                    <div class="card-body">
-                        <svg class="problem-diagram" viewBox="0 0 335 250" width="335" height="250"
-                            aria-label="原点Oを中心とする単位円K上に正三角形ABCと点Pがあり、Pを直線BC、直線ABに関してそれぞれ対称移動した点Q、Rを原点Oを通る一直線が結んでいる">
-                            <circle cx="185" cy="150" r="90" fill="none" stroke="#999" stroke-width="1.2" />
-                            <polygon points="275,150 140,72 140,228" fill="none" stroke="#333" stroke-width="2" />
-                            <line x1="5" y1="198" x2="320" y2="114" stroke="#999" stroke-width="1.2"
-                                stroke-dasharray="4,3" />
-                            <line x1="263" y1="195" x2="17" y2="195" stroke="#999" stroke-width="1"
-                                stroke-dasharray="3,3" />
-                            <line x1="263" y1="195" x2="308" y2="117" stroke="#999" stroke-width="1"
-                                stroke-dasharray="3,3" />
-                            <circle cx="185" cy="150" r="2.5" fill="#333" />
-                            <circle cx="275" cy="150" r="2.5" fill="#333" />
-                            <circle cx="140" cy="72" r="2.5" fill="#333" />
-                            <circle cx="140" cy="228" r="2.5" fill="#333" />
-                            <circle cx="263" cy="195" r="2.5" fill="#333" />
-                            <circle cx="17" cy="195" r="2.5" fill="#333" />
-                            <circle cx="308" cy="117" r="2.5" fill="#333" />
-                            <text x="191" y="143" font-size="14">O</text>
-                            <text x="283" y="153" font-size="15">A</text>
-                            <text x="140" y="60" text-anchor="middle" font-size="15">B</text>
-                            <text x="140" y="244" text-anchor="middle" font-size="15">C</text>
-                            <text x="271" y="201" font-size="14">P</text>
-                            <text x="4" y="184" font-size="14">Q</text>
-                            <text x="313" y="112" font-size="14">R</text>
-                            <text x="185" y="56" text-anchor="middle" font-size="13" fill="#777">K</text>
-                        </svg>
-                        <p>
-                            \(O\)を原点とする複素数平面上に、\(3\)点\(A(1),\ B(\omega),\ C(\omega^2)\)を頂点とする正三角形\(ABC\)がある。ただし、\(\displaystyle\omega=\frac{-1+\sqrt3\,i}{2}\)（\(i\)は虚数単位）である。<br>
-                            また、正三角形\(ABC\)の外接円、すなわち\(O\)を中心とする半径\(1\)の円を\(K\)とする。<br>
-                            \(K\)上に\(3\)頂点\(A,\ B,\ C\)とは異なる点\(P(\alpha)\)をとる。直線\(BC\)に関して点\(P\)と対称な点を\(Q\)とし、直線\(AB\)に関して点\(P\)と対称な点を\(R\)とする。
-                        </p>
-                        <p>
-                            (1) 点\(Q\)を表す複素数を\(\beta\)とする。\(\displaystyle\beta+\frac{1}{\alpha}\)の値を求めよ。<br>
-                            (2) \(3\)点\(O,\ Q,\ R\)は同一直線上にあることを示せ。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution11" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution11">
-                    正三角形と対称点の複素数平面 解答
-                </div>
-                <div id="collapseSolution11" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            <b>(1)</b><br>
-                            \(P(\alpha)\)は単位円\(K\)上にあり、\(P\)は\(A,B,C\)のいずれとも異なるので、\(\alpha=\cos\theta+i\sin\theta\)（\(\cos\theta\ne1,\ \cos\theta\ne-\dfrac12\)）と表せる（\(\cos\theta=1\)は\(P=A\)、\(\cos\theta=-\dfrac12\)は\(P=B\)または\(P=C\)にあたるため除く）。<br>
-                            <br>
-                            \(\beta=u+iv\)とおき、複素数平面を\(xy\)平面とみなすと、\(P(\cos\theta,\sin\theta)\)、\(Q(u,v)\)である。<br>
-                            \(\displaystyle\omega=\cos120^\circ+i\sin120^\circ=\left(-\frac12,\frac{\sqrt3}{2}\right)\)、\(\displaystyle\omega^2=\cos240^\circ+i\sin240^\circ=\left(-\frac12,-\frac{\sqrt3}{2}\right)\)であるから、\(B,C\)はともに実部が\(-\dfrac12\)であり、直線\(BC\)は実軸に垂直な直線\(\displaystyle x=-\frac12\)である。<br>
-                            \(P\)と\(Q\)がこの直線に関して対称であるための条件は、線分\(PQ\)の中点の\(x\)座標が\(-\dfrac12\)であり、かつ\(PQ\)が\(x\)軸に平行（直線\(BC\)に垂直）であることだから、<br>
-                            \(\left\{\begin{array}{l}\dfrac12(u+\cos\theta)=-\dfrac12\\ v=\sin\theta\end{array}\right.\)<br>
-                            第\(1\)式より\(u=-\cos\theta-1\)なので、<br>
-                            \(\beta=(-\cos\theta-1)+i\sin\theta\)<br>
-                            <br>
-                            \(|\alpha|=1\)より\(\dfrac1\alpha=\bar\alpha=\cos\theta-i\sin\theta\)であるから、<br>
-                            \(\beta+\dfrac1\alpha=(-\cos\theta-1+i\sin\theta)+(\cos\theta-i\sin\theta)=-1\)<br>
-                            \(\displaystyle\therefore\ \beta+\frac1\alpha=-1\)
-                        </p>
-                        <p>
-                            <b>(2)</b><br>
-                            \(R\)を表す複素数を\(\gamma\)とする。まず、異なる\(2\)点\(a,b\)を通る直線に関して点\(z\)と対称な点\(z'\)を表す式を用意する。<br>
-                            \(b-a\)の偏角を\(\varphi\)とすると、\(z\)を\(a\)を中心に\(-\varphi\)だけ回転した点は\(a+e^{-i\varphi}(z-a)\)であり、この回転で直線\(ab\)は実軸に平行な直線に重なる。実軸に関する対称移動は共役をとることに対応するので、対称点を同じく\(-\varphi\)だけ回転した像は\(\overline{e^{-i\varphi}(z-a)}\)となる。これを\(\varphi\)だけ回転し戻せば対称点\(z'\)が得られるから、<br>
-                            \(z'=a+e^{i\varphi}\overline{e^{-i\varphi}(z-a)}=a+e^{2i\varphi}\overline{z-a}\)<br>
-                            ここで\(\displaystyle e^{i\varphi}=\frac{b-a}{|b-a|}\)より\(\displaystyle e^{2i\varphi}=\frac{(b-a)^2}{|b-a|^2}=\frac{(b-a)^2}{(b-a)\overline{(b-a)}}=\frac{b-a}{\overline{b-a}}\)であるから、<br>
-                            \(\displaystyle z'=a+\frac{b-a}{\overline{b-a}}\,\overline{z-a}\ \cdots\text{(*)}\)<br>
-                            <br>
-                            (*)を\(a=A=1,\ b=B=\omega,\ z=\alpha\)として用いると、<br>
-                            \(\displaystyle\gamma=1+\frac{\omega-1}{\overline{\omega-1}}\,\overline{\alpha-1}\)<br>
-                            \(|\omega|=1\)かつ\(\omega^3=1\)（\(\omega\ne1\)）であることから\(\bar\omega=\dfrac1\omega=\omega^2\)であり、<br>
-                            \(\overline{\omega-1}=\omega^2-1=(\omega-1)(\omega+1)\)<br>
-                            なので、<br>
-                            \(\displaystyle\frac{\omega-1}{\overline{\omega-1}}=\frac{1}{\omega+1}\)<br>
-                            また、\(\displaystyle\omega+1=\frac12+\frac{\sqrt3}{2}i\)であり、\(\left|\dfrac12+\dfrac{\sqrt3}{2}i\right|=1\)より、これは絶対値\(1\)の複素数であるから、<br>
-                            \(\gamma=1+(\omega+1)^{-1}(\bar\alpha-1)=(\omega+1)+(\omega^2+1)\bar\alpha\ \cdots\text{(**)}\)<br>
-                            が成り立つ（\((\omega+1)^{-1}=\overline{\omega+1}=\omega^2+1\)、および\(1-(\omega+1)^{-1}=1-(\omega^2+1)=-\omega^2=\omega+1\)、すなわち\((\omega+1)^{-1}\)を用いて整理すると係数が\(\omega+1\)と\(\omega^2+1\)になることによる）。<br>
-                            \(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)なので、(**)は、<br>
-                            \(\displaystyle\gamma=(\omega+1)+\frac{\omega^2+1}{\alpha}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\)<br>
-                            <br>
-                            一方、(1)の結果より\(\displaystyle\beta=-1-\frac1\alpha=-\frac{\alpha+1}{\alpha}\)である。<br>
-                            \(\beta\ne0\)（すなわち\(\alpha\ne-1\)）のとき、\(3\)点\(O,Q,R\)が同一直線上にあるための条件は\(\displaystyle\frac{\gamma}{\beta}\)が実数であることだから、この値を計算すると、<br>
-                            \(\displaystyle\frac{\gamma}{\beta}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\div\left(-\frac{\alpha+1}{\alpha}\right)=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}\ \left(=E\text{とおく}\right)\)<br>
-                            <br>
-                            \(E\)が実数であることを、\(\bar E=E\)を示すことで確かめる。\(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)、\(\bar\omega=\omega^2\)、\(\overline{\omega^2}=\omega\)であるから、<br>
-                            \(\displaystyle\bar E=-\frac{\bar\alpha\bar\omega+\bar\alpha+\overline{\omega^2}+1}{\bar\alpha+1}=-\frac{\dfrac1\alpha\omega^2+\dfrac1\alpha+\omega+1}{\dfrac1\alpha+1}\)<br>
-                            分母・分子に\(\alpha\)を掛けると、<br>
-                            \(\displaystyle\bar E=-\frac{\omega^2+1+\alpha(\omega+1)}{1+\alpha}=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}=E\)<br>
-                            よって\(\bar E=E\)、すなわち\(E=\dfrac{\gamma}{\beta}\)は実数である。<br>
-                            <br>
-                            （\(\alpha=-1\)のときは\(\beta=0\)、すなわち\(Q\)は\(O\)と一致するから、\(O,Q,R\)は自明に同一直線上にある。）<br>
-                            <br>
-                            以上より、すべての場合について\(3\)点\(O,Q,R\)は同一直線上にある。(証明終)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem12" role="button"
-                aria-expanded="false" aria-controls="collapseProblem12">
-                素数のべきと二項係数の余り
-                <div id="collapseProblem12" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            \(p\)を\(3\)以上の素数とする。二項係数\(\displaystyle {}_{n}\mathrm{C}_{k}=\frac{n(n-1)(n-2)\cdots(n-(k-1))}{k!}\)について次の問に答えよ。
-                        </p>
-                        <p>
-                            (1) \({}_{p^2}\mathrm{C}_p\)は\(p\)の倍数であることを示せ。<br>
-                            (2) \({}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)であることを示せ。<br>
-                            (3) \((p-1)\)個の整数\(\displaystyle \frac{(p-1)!}{1},\ \frac{(p-1)!}{2},\ \frac{(p-1)!}{3},\ \cdots,\ \frac{(p-1)!}{p-1}\)を\(p\)で割った余りはすべて異なることを示せ。また、\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを\(p\)で表せ。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution12" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution12">
-                    素数のべきと二項係数の余り 解答
-                </div>
-                <div id="collapseSolution12" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            <b>(1)</b><br>
-                            \(\displaystyle {}_{p^2}\mathrm{C}_p=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p!}=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p\cdot(p-1)!}\)<br>
-                            \(\displaystyle =p\cdot\frac{(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{(p-1)!}=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)<br>
-                            ここで、\({}_{p^2-1}\mathrm{C}_{p-1}\)は二項係数であるから整数である。<br>
-                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)は\(p\)の倍数である。(証明終)
-                        </p>
-                        <p>
-                            <b>(2)</b><br>
-                            (1)の\(\displaystyle {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)を用いる。以下、簡単のため\(p^2=N\)とおくと、<br>
-                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{(N-1)(N-2)\cdots(N-(p-1))}{(p-1)!}\ \cdots\text{①}\)<br>
-                            <br>
-                            分子を調べるために、文字\(x\)についての多項式\(f(x)=(x-1)(x-2)\cdots(x-(p-1))\)を考え、これを展開したものを<br>
-                            \(f(x)=x^{p-1}-A_1x^{p-2}+A_2x^{p-3}-\cdots+A_{p-3}x^3-A_{p-2}x+A_{p-1}\)<br>
-                            とする。係数\(A_k\ (k=1,2,\cdots,p-1)\)は、\(1,2,\cdots,p-1\)から異なる\(k\)個を選んで作った積を選び方すべてについて加えたもの（基本対称式）であるから、すべて正の整数である。\(p\)は\(3\)以上の素数だから奇数であり、\(p-1\)は偶数なので、定数項の係数は<br>
-                            \(A_{p-1}=(-1)^{p-1}(p-1)!=(p-1)!\)<br>
-                            である。<br>
-                            <br>
-                            よって①の分子は、\(N=p^2\)に注意すると、<br>
-                            \(f(N)=N^{p-1}-A_1N^{p-2}+\cdots+A_{p-3}N^2-A_{p-2}N+A_{p-1}\)<br>
-                            であり、右辺のうち\(N^2\)以上の次数をもつ項はすべて\(N^2=p^4\)の倍数であるから、<br>
-                            \(f(N)=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\)<br>
-                            この右辺のうち\((p^4\text{の倍数})-A_{p-2}p^2\)の部分は明らかに\(p^2\)の倍数であるから、<br>
-                            \(f(N)=p^2L+(p-1)!\)（\(L\)は整数）<br>
-                            と表せる。これを①に代入すると、<br>
-                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^2L+(p-1)!}{(p-1)!}=\frac{p^2L}{(p-1)!}+1\)<br>
-                            <br>
-                            \({}_{p^2-1}\mathrm{C}_{p-1}\)は整数であるから\(\displaystyle\frac{p^2L}{(p-1)!}\)も整数である。\(p\)は素数であるから、分子の\(p^2\)と分母の\((p-1)!\)は互いに素であり、この両者の間で約分は起こらない。よって約分は分子の\(L\)と分母の\((p-1)!\)の間だけで起こるから、\(\displaystyle\frac{L}{(p-1)!}\)は整数である。これを\(m\)とおけば、<br>
-                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^2m+1\)<br>
-                            と表され、したがって、<br>
-                            \({}_{p^2}\mathrm{C}_p=p(p^2m+1)=p^3m+p\)<br>
-                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)である。(証明終)
-                        </p>
-                        <p>
-                            <b>(3)</b><br>
-                            \(\displaystyle a_k=\frac{(p-1)!}{k}\ (k=1,2,\cdots,p-1)\)とおき、\(a_k\)を\(p\)で割った余りを\(r_k\)とする。<br>
-                            <br>
-                            \(r_k\)がすべて異なることを背理法で示す。\(1\leqq i \lt j \leqq p-1\)かつ\(r_i=r_j\)である組\((i,j)\)が存在すると仮定すると、<br>
-                            \(\displaystyle a_i-a_j=(p-1)!\left(\frac1i-\frac1j\right)=\frac{(j-i)(p-1)!}{ij}\)<br>
-                            は\(p\)の倍数である。分母の\(ij\)は（\(1\leqq i,j\leqq p-1\)より）\(p\)の倍数でないから、分子の\((j-i)(p-1)!\)が\(p\)の倍数である。ところが\(p\)は素数であり、\((p-1)!\)は素因数\(p\)を持たないから、\(j-i\)が\(p\)の倍数でなければならない。しかし\(0\lt j-i \lt p\)であるから、これは不可能である。<br>
-                            \(\displaystyle\therefore\)余り\(r_k\ (k=1,2,\cdots,p-1)\)はすべて異なる。(証明終)<br>
-                            <br>
-                            さらに、\(a_k\cdot k=(p-1)!\)は\(p\)の倍数でないから\(a_k\)も\(p\)の倍数でなく、\(r_k\ne0\)である。したがって\((p-1)\)個の余り\(r_1,\cdots,r_{p-1}\)は\(1\)から\(p-1\)までの中の互いに異なる値であり、ちょうど\((p-1)\)個あるから、これらを並べ替えると\(1,2,3,\cdots,p-1\)に一致する。<br>
-                            <br>
-                            次に\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを考える。(2)の\(f(N)\)の展開式より、\(N=p^2\)に注意すると、<br>
-                            \(f(N)=(N^2\text{の倍数})-A_{p-2}N+A_{p-1}=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\ \cdots\text{②}\)<br>
-                            であった。ここで、多項式\(f(x)\)の展開における係数\(A_{p-2}\)（\(x^1\)の係数）は、\(1\)から\(p-1\)までの\((p-1)\)個の整数のうち\(1\)個を除いた残りすべての積を、除く数のとり方すべてについて加えたものであるから、<br>
-                            \(\displaystyle A_{p-2}=\frac{(p-1)!}{1}+\frac{(p-1)!}{2}+\cdots+\frac{(p-1)!}{p-1}=a_1+a_2+\cdots+a_{p-1}\)<br>
-                            となる。\(a_k=p\cdot(\text{整数})+r_k\)と表せるので、<br>
-                            \(A_{p-2}=(p\text{の倍数})+(r_1+r_2+\cdots+r_{p-1})\)<br>
-                            であり、上で示したことから\(r_1,\cdots,r_{p-1}\)は\(1,\cdots,p-1\)の並べ替えだから、<br>
-                            \(\displaystyle r_1+r_2+\cdots+r_{p-1}=1+2+\cdots+(p-1)=\frac{p(p-1)}{2}\)<br>
-                            \(p\)は奇数の素数であり\(\displaystyle\frac{p-1}{2}\)は整数であることに注意すると、\(\displaystyle\frac{p(p-1)}{2}=p\cdot\frac{p-1}{2}\)は\(p\)の倍数である。よって、<br>
-                            \(A_{p-2}=(p\text{の倍数})+(p\text{の倍数})=(p\text{の倍数})\)<br>
-                            すなわち\(A_{p-2}\)は\(p\)の倍数である。<br>
-                            <br>
-                            \(A_{p-2}=ps\)（\(s\)は整数）とおくと、\(-A_{p-2}p^2=-p^3s\)は\(p^3\)の倍数であり、\((p^4\text{の倍数})\)も\(p^3\)の倍数であるから、②より、<br>
-                            \(f(N)=p^3M'+(p-1)!\)（\(M'\)は整数）<br>
-                            と表せる。これを①に代入すると、<br>
-                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^3M'+(p-1)!}{(p-1)!}=\frac{p^3M'}{(p-1)!}+1\)<br>
-                            (2)と同様に、\(p\)は素数であるから\(p^3\)と\((p-1)!\)は互いに素であり、\({}_{p^2-1}\mathrm{C}_{p-1}\)が整数であることから\(\displaystyle\frac{p^3M'}{(p-1)!}\)も整数、したがって\(\displaystyle\frac{M'}{(p-1)!}\)も整数である。これを\(t\)とおけば、<br>
-                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^3t+1\)<br>
-                            と表され、したがって、<br>
-                            \({}_{p^2}\mathrm{C}_p=p(p^3t+1)=p^4t+p\)<br>
-                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りは\(p\)である。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem13" role="button"
-                aria-expanded="false" aria-controls="collapseProblem13">
-                べき関数を用いた不等式の証明
-                <div id="collapseProblem13" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            \(n\)は正の整数とする。
-                        </p>
-                        <p>
-                            (1) 正の実数\(x\)に対して、<br>
-                            \(x^{n+1}\geqq(n+1)x-n\)<br>
-                            が成り立つことを示せ。
-                        </p>
-                        <p>
-                            (2) 正の実数\(a,\ b,\ c,\ d\)が<br>
-                            \(a\geqq b,\ \ d^{n+1}=\{(n+1)c-na\}b^n\)<br>
-                            を満たすとき、<br>
-                            \(c\geqq d\)<br>
-                            が成り立つことを示せ。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution13" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution13">
-                    べき関数を用いた不等式の証明 解答
-                </div>
-                <div id="collapseSolution13" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            <b>(1)</b><br>
-                            \(f(x)=x^{n+1}-\{(n+1)x-n\}\)とおくと、<br>
-                            \(f'(x)=(n+1)x^n-(n+1)=(n+1)(x^n-1)\)<br>
-                            <br>
-                            \(x\gt0\)のとき、\(x^n-1\)の符号は\(x=1\)を境に変わる。<br>
-                            (i) \(0\lt x\lt1\)のとき、\(x^n\lt1\)であるから\(x^n-1\lt0\)<br>
-                            (ii) \(x\gt1\)のとき、\(x^n\gt1\)であるから\(x^n-1\gt0\)<br>
-                            <br>
-                            したがって、\(x\gt0\)における\(f(x)\)の増減表は次のようになる。
-                        </p>
-                        <table class="zougen">
-                            <tr>
-                                <th>\(x\)</th>
-                                <td>\((0)\)</td>
-                                <td>\(\cdots\)</td>
-                                <td>\(1\)</td>
-                                <td>\(\cdots\)</td>
-                            </tr>
-                            <tr>
-                                <th>\(f'(x)\)</th>
-                                <td></td>
-                                <td>\(-\)</td>
-                                <td>\(0\)</td>
-                                <td>\(+\)</td>
-                            </tr>
-                            <tr>
-                                <th>\(f(x)\)</th>
-                                <td></td>
-                                <td>\(\searrow\)</td>
-                                <td>\(0\)</td>
-                                <td>\(\nearrow\)</td>
-                            </tr>
-                        </table>
-                        <p>
-                            ここで、\(f(1)=1^{n+1}-\{(n+1)\cdot1-n\}=1-1=0\)である。<br>
-                            この増減表より、\(f(x)\)は\(x=1\)で最小値\(0\)をとるから、\(x\gt0\)のとき\(f(x)\geqq0\)である。<br>
-                            \(\displaystyle\therefore\ x^{n+1}\geqq(n+1)x-n\)（等号成立は\(x=1\)のとき）(証明終)
-                        </p>
-                        <p>
-                            <b>(2)</b><br>
-                            条件\(d^{n+1}=\{(n+1)c-na\}b^n\)の両辺を\(b^{n+1}\ (\gt0)\)で割ると、<br>
-                            \(\displaystyle\left(\frac db\right)^{n+1}=\frac{(n+1)c-na}{b}\)<br>
-                            <br>
-                            (1)の不等式において\(\displaystyle x=\frac db\ (\gt0)\)とおくと、<br>
-                            \(\displaystyle\left(\frac db\right)^{n+1}\geqq(n+1)\cdot\frac db-n\)<br>
-                            <br>
-                            これと上の等式を合わせると、<br>
-                            \(\displaystyle\frac{(n+1)c-na}{b}\geqq(n+1)\frac db-n\)<br>
-                            この両辺に\(b\ (\gt0)\)をかけて整理すると、<br>
-                            \((n+1)c-na\geqq(n+1)d-nb\)<br>
-                            \(\displaystyle\therefore\ (n+1)(c-d)\geqq n(a-b)\)<br>
-                            <br>
-                            \(a\geqq b\)より\(a-b\geqq0\)であり、\(n\)は正の整数だから\(n\gt0\)なので、\(n(a-b)\geqq0\)である。よって、<br>
-                            \((n+1)(c-d)\geqq0\)<br>
-                            \(n+1\gt0\)であるから、両辺を\(n+1\)で割って、<br>
-                            \(\displaystyle\therefore\ c\geqq d\) (証明終)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseProblem14" role="button"
-                aria-expanded="false" aria-controls="collapseProblem14">
-                複素数平面上の長方形と4次方程式
-                <div id="collapseProblem14" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            複素数\(\alpha,\ \beta,\ \gamma,\ \delta,\ p\)が、次の\(3\)条件を満たしながら動く。<br>
-                            条件\(1\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は相異なる。<br>
-                            条件\(2\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解である。<br>
-                            条件\(3\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は複素数平面上で長方形の\(4\)頂点である。
-                        </p>
-                        <p>
-                            (1) 複素数\(\alpha\)が動きうる範囲を複素数平面上に図示せよ。<br>
-                            (2) 複素数\(p\)が動きうる範囲を複素数平面上に図示せよ。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card">
-                <div class="card-header" data-toggle="collapse" href="#collapseSolution14" role="button"
-                    aria-expanded="false" aria-controls="collapseSolution14">
-                    複素数平面上の長方形と4次方程式 解答
-                </div>
-                <div id="collapseSolution14" class="collapse">
-                    <div class="card-body">
-                        <p>
-                            条件\(2\)より、\(\alpha,\beta,\gamma,\delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解であるから、<br>
-                            \(z^4+pz^2-4=(z-\alpha)(z-\beta)(z-\gamma)(z-\delta)\ \cdots\text{①}\)<br>
-                            と因数分解できる。①の両辺の\(z^3\)の係数を比較すると、左辺の\(z^3\)の係数は\(0\)であるから、<br>
-                            \(0=-(\alpha+\beta+\gamma+\delta)\ \ \therefore\ \alpha+\beta+\gamma+\delta=0\)<br>
-                            <br>
-                            これは、\(4\)点\(\alpha,\beta,\gamma,\delta\)の重心\(\dfrac{\alpha+\beta+\gamma+\delta}{4}\)が原点\(O\)であることを意味する。条件\(3\)より、これらは長方形の\(4\)頂点であり、長方形（平行四辺形）の対角線の交点は\(4\)頂点の重心と一致し、対角線は互いに他を二等分するから、原点\(O\)が対角線の交点であるとき、各対角線の両端点は原点に関して互いに対称、すなわち互いに\(-1\)倍の関係にある。<br>
-                            よって、\(\alpha,\beta,\gamma,\delta\)は、必要なら順序を入れ替えて、\(\pm\alpha,\ \pm\beta\)の形に表される。さらに、長方形の\(2\)本の対角線の長さは等しく（\(2|\alpha|=2|\beta|\)）、また\(4\)頂点が相異なる（\(\alpha\ne\pm\beta\)）ことから、<br>
-                            \(|\alpha|=|\beta|\) かつ \(\alpha\ne\pm\beta\ \cdots\text{②}\)<br>
-                            が成り立つ。逆に②が成り立てば、\(4\)点\(\pm\alpha,\pm\beta\)は対角線が原点で直交せずとも互いに等しい長さで二等分し合う平行四辺形、すなわち長方形の\(4\)頂点となる。<br>
-                            <br>
-                            このとき、①は、<br>
-                            \(z^4+pz^2-4=(z-\alpha)(z+\alpha)(z-\beta)(z+\beta)=(z^2-\alpha^2)(z^2-\beta^2)=z^4-(\alpha^2+\beta^2)z^2+\alpha^2\beta^2\)<br>
-                            となるから、両辺の係数を比較して、<br>
-                            \(p=-(\alpha^2+\beta^2)\ \cdots\text{③}\)、\(\ \alpha^2\beta^2=-4\ \cdots\text{④}\)<br>
-                            が成り立つ。
-                        </p>
-                        <p>
-                            <b>(1)</b><br>
-                            \(\alpha\)が動きうる範囲は、\(\alpha\)を与えたとき、②かつ④を満たす\(\beta\)が存在する範囲である。<br>
-                            <br>
-                            \(\alpha=0\)のときは、④を満たす\(\beta\)が存在しない。<br>
-                            \(\therefore\ \alpha\ne0\ \cdots\text{⑤}\)<br>
-                            <br>
-                            \(\alpha\ne0\)のとき、④より、<br>
-                            \(\displaystyle\beta^2=-\frac{4}{\alpha^2}\ \ \therefore\ \beta=\pm\frac{2i}{\alpha}\ \cdots\text{⑥}\)<br>
-                            であり、この中に②を満たす\(\beta\)が存在する条件は、<br>
-                            \(\displaystyle|\alpha|=\left|\pm\frac{2i}{\alpha}\right|\) かつ \(\displaystyle\alpha\ne\pm\frac{2i}{\alpha}\)<br>
-                            \(\displaystyle\therefore\ |\alpha|=\sqrt2\ \cdots\text{⑦}\) かつ \(\alpha^2\ne\pm2i\ \cdots\text{⑧}\)<br>
-である（⑦は\(\displaystyle|\alpha|=\frac{|{\pm2i}|}{|\alpha|}=\frac{2}{|\alpha|}\)を解いたもの、⑧は\(\alpha\ne\pm\dfrac{2i}{\alpha}\)の両辺に\(\alpha\ (\ne0)\)をかけて整理したもの）。<br>
-                            <br>
-                            ⑦より、\(\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \cdots\text{⑨}\)とおけて、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)であるから、⑧は\(\cos2\theta+i\sin2\theta\ne\pm i\)となり、<br>
-                            \(\therefore\ \theta\ne\pm\dfrac{\pi}{4}+k\pi\ \ (k\in\mathbb{Z})\ \cdots\text{⑩}\)<br>
-                            <br>
-                            以上、⑤、⑨、⑩より、\(\alpha\)が動きうる範囲は、原点\(O\)を中心とする半径\(\sqrt2\)の円から、\(4\)点\(1+i,\ -1+i,\ -1-i,\ 1-i\)（偏角\(\pm\dfrac{\pi}{4},\ \pi\pm\dfrac{\pi}{4}\)にあたる点）を除いたものである。
-                        </p>
-                        <svg class="problem-diagram" viewBox="0 0 280 260" width="280" height="260"
-                            aria-label="原点中心、半径ルート2の円から45度刻みの4点を除いた図">
-                            <line x1="15" y1="130" x2="255" y2="130" stroke="#999" stroke-width="1" />
-                            <line x1="130" y1="15" x2="130" y2="245" stroke="#999" stroke-width="1" />
-                            <circle cx="130" cy="130" r="90" fill="none" stroke="#333" stroke-width="2.2" />
-                            <circle cx="193.6" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <circle cx="66.4" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <circle cx="66.4" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <circle cx="193.6" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <text x="199" y="60" font-size="13" font-style="italic">1+i</text>
-                            <text x="4" y="60" font-size="13" font-style="italic">-1+i</text>
-                            <text x="0" y="208" font-size="13" font-style="italic">-1-i</text>
-                            <text x="194" y="208" font-size="13" font-style="italic">1-i</text>
-                            <text x="258" y="126" font-size="13" fill="#777">Re</text>
-                            <text x="136" y="20" font-size="13" fill="#777">Im</text>
-                            <text x="136" y="144" font-size="12" fill="#777">O</text>
-                            <text x="208" y="145" font-size="12" fill="#777" font-style="italic">√2</text>
-                        </svg>
-                        <p>
-                            <b>(2)</b><br>
-                            (1)より、\(\alpha\)は\(\displaystyle\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \ (\theta\ne\pm\tfrac{\pi}{4}+k\pi,\ k\in\mathbb{Z})\)と表され、これと⑥を満たす\(\beta\)に対して、③により\(p\)が定まる。<br>
-                            <br>
-                            ③、④より、\(\displaystyle\beta^2=-\frac{4}{\alpha^2}\)であるから、<br>
-                            \(\displaystyle p=-(\alpha^2+\beta^2)=-\left(\alpha^2-\frac{4}{\alpha^2}\right)\)<br>
-                            <br>
-                            ここで、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)、\(\displaystyle\frac{4}{\alpha^2}=2(\cos2\theta-i\sin2\theta)\)であるから、<br>
-                            \(\displaystyle \alpha^2-\frac{4}{\alpha^2}=2(\cos2\theta+i\sin2\theta)-2(\cos2\theta-i\sin2\theta)=4i\sin2\theta\)<br>
-                            \(\therefore\ p=-4i\sin2\theta\)<br>
-                            <br>
-                            \(\theta\ne\pm\dfrac{\pi}{4}+k\pi\)より\(2\theta\ne\pm\dfrac{\pi}{2}+2k\pi\)であるから、\(-1\lt\sin2\theta\lt1\)である（\(\theta\)がこの範囲を動くとき\(\sin2\theta\)はこの開区間のすべての値をとる）。<br>
-                            <br>
-                            よって、\(p\)が動きうる範囲は、虚軸上の線分（\(-4i\)から\(4i\)まで）から両端点\(\pm4i\)を除いたものである。
-                        </p>
-                        <svg class="problem-diagram" viewBox="0 0 260 260" width="260" height="260"
-                            aria-label="虚軸上の-4iから4iまでの線分から両端点を除いた図">
-                            <line x1="15" y1="130" x2="225" y2="130" stroke="#999" stroke-width="1" />
-                            <line x1="110" y1="15" x2="110" y2="245" stroke="#999" stroke-width="1" />
-                            <line x1="110" y1="40" x2="110" y2="220" stroke="#333" stroke-width="2.5" />
-                            <circle cx="110" cy="40" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <circle cx="110" cy="220" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
-                            <text x="120" y="38" font-size="13" font-style="italic">4i</text>
-                            <text x="120" y="228" font-size="13" font-style="italic">-4i</text>
-                            <text x="232" y="134" font-size="13" fill="#777">Re</text>
-                            <text x="116" y="24" font-size="13" fill="#777">Im</text>
-                            <text x="116" y="144" font-size="12" fill="#777">O</text>
-                        </svg>
                     </div>
                 </div>
             </div>
