@@ -1253,6 +1253,104 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem12" role="button"
+                aria-expanded="false" aria-controls="collapseProblem12">
+                素数のべきと二項係数の余り
+                <div id="collapseProblem12" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(p\)を\(3\)以上の素数とする。二項係数\(\displaystyle {}_{n}\mathrm{C}_{k}=\frac{n(n-1)(n-2)\cdots(n-(k-1))}{k!}\)について次の問に答えよ。
+                        </p>
+                        <p>
+                            (1) \({}_{p^2}\mathrm{C}_p\)は\(p\)の倍数であることを示せ。<br>
+                            (2) \({}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)であることを示せ。<br>
+                            (3) \((p-1)\)個の整数\(\displaystyle \frac{(p-1)!}{1},\ \frac{(p-1)!}{2},\ \frac{(p-1)!}{3},\ \cdots,\ \frac{(p-1)!}{p-1}\)を\(p\)で割った余りはすべて異なることを示せ。また、\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを\(p\)で表せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution12" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution12">
+                    素数のべきと二項係数の余り 解答
+                </div>
+                <div id="collapseSolution12" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(\displaystyle {}_{p^2}\mathrm{C}_p=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p!}=\frac{p^2(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{p\cdot(p-1)!}\)<br>
+                            \(\displaystyle =p\cdot\frac{(p^2-1)(p^2-2)\cdots(p^2-(p-1))}{(p-1)!}=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)<br>
+                            ここで、\({}_{p^2-1}\mathrm{C}_{p-1}\)は二項係数であるから整数である。<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)は\(p\)の倍数である。(証明終)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            (1)の\(\displaystyle {}_{p^2}\mathrm{C}_p=p\cdot{}_{p^2-1}\mathrm{C}_{p-1}\)を用いる。以下、簡単のため\(p^2=N\)とおくと、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{(N-1)(N-2)\cdots(N-(p-1))}{(p-1)!}\ \cdots\text{①}\)<br>
+                            <br>
+                            分子を調べるために、文字\(x\)についての多項式\(f(x)=(x-1)(x-2)\cdots(x-(p-1))\)を考え、これを展開したものを<br>
+                            \(f(x)=x^{p-1}-A_1x^{p-2}+A_2x^{p-3}-\cdots+A_{p-3}x^3-A_{p-2}x+A_{p-1}\)<br>
+                            とする。係数\(A_k\ (k=1,2,\cdots,p-1)\)は、\(1,2,\cdots,p-1\)から異なる\(k\)個を選んで作った積を選び方すべてについて加えたもの（基本対称式）であるから、すべて正の整数である。\(p\)は\(3\)以上の素数だから奇数であり、\(p-1\)は偶数なので、定数項の係数は<br>
+                            \(A_{p-1}=(-1)^{p-1}(p-1)!=(p-1)!\)<br>
+                            である。<br>
+                            <br>
+                            よって①の分子は、\(N=p^2\)に注意すると、<br>
+                            \(f(N)=N^{p-1}-A_1N^{p-2}+\cdots+A_{p-3}N^2-A_{p-2}N+A_{p-1}\)<br>
+                            であり、右辺のうち\(N^2\)以上の次数をもつ項はすべて\(N^2=p^4\)の倍数であるから、<br>
+                            \(f(N)=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\)<br>
+                            この右辺のうち\((p^4\text{の倍数})-A_{p-2}p^2\)の部分は明らかに\(p^2\)の倍数であるから、<br>
+                            \(f(N)=p^2L+(p-1)!\)（\(L\)は整数）<br>
+                            と表せる。これを①に代入すると、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^2L+(p-1)!}{(p-1)!}=\frac{p^2L}{(p-1)!}+1\)<br>
+                            <br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}\)は整数であるから\(\displaystyle\frac{p^2L}{(p-1)!}\)も整数である。\(p\)は素数であるから、分子の\(p^2\)と分母の\((p-1)!\)は互いに素であり、この両者の間で約分は起こらない。よって約分は分子の\(L\)と分母の\((p-1)!\)の間だけで起こるから、\(\displaystyle\frac{L}{(p-1)!}\)は整数である。これを\(m\)とおけば、<br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^2m+1\)<br>
+                            と表され、したがって、<br>
+                            \({}_{p^2}\mathrm{C}_p=p(p^2m+1)=p^3m+p\)<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^3\)で割った余りは\(p\)である。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)</b><br>
+                            \(\displaystyle a_k=\frac{(p-1)!}{k}\ (k=1,2,\cdots,p-1)\)とおき、\(a_k\)を\(p\)で割った余りを\(r_k\)とする。<br>
+                            <br>
+                            \(r_k\)がすべて異なることを背理法で示す。\(1\leqq i \lt j \leqq p-1\)かつ\(r_i=r_j\)である組\((i,j)\)が存在すると仮定すると、<br>
+                            \(\displaystyle a_i-a_j=(p-1)!\left(\frac1i-\frac1j\right)=\frac{(j-i)(p-1)!}{ij}\)<br>
+                            は\(p\)の倍数である。分母の\(ij\)は（\(1\leqq i,j\leqq p-1\)より）\(p\)の倍数でないから、分子の\((j-i)(p-1)!\)が\(p\)の倍数である。ところが\(p\)は素数であり、\((p-1)!\)は素因数\(p\)を持たないから、\(j-i\)が\(p\)の倍数でなければならない。しかし\(0\lt j-i \lt p\)であるから、これは不可能である。<br>
+                            \(\displaystyle\therefore\)余り\(r_k\ (k=1,2,\cdots,p-1)\)はすべて異なる。(証明終)<br>
+                            <br>
+                            さらに、\(a_k\cdot k=(p-1)!\)は\(p\)の倍数でないから\(a_k\)も\(p\)の倍数でなく、\(r_k\ne0\)である。したがって\((p-1)\)個の余り\(r_1,\cdots,r_{p-1}\)は\(1\)から\(p-1\)までの中の互いに異なる値であり、ちょうど\((p-1)\)個あるから、これらを並べ替えると\(1,2,3,\cdots,p-1\)に一致する。<br>
+                            <br>
+                            次に\({}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りを考える。(2)の\(f(N)\)の展開式より、\(N=p^2\)に注意すると、<br>
+                            \(f(N)=(N^2\text{の倍数})-A_{p-2}N+A_{p-1}=(p^4\text{の倍数})-A_{p-2}p^2+(p-1)!\ \cdots\text{②}\)<br>
+                            であった。ここで、多項式\(f(x)\)の展開における係数\(A_{p-2}\)（\(x^1\)の係数）は、\(1\)から\(p-1\)までの\((p-1)\)個の整数のうち\(1\)個を除いた残りすべての積を、除く数のとり方すべてについて加えたものであるから、<br>
+                            \(\displaystyle A_{p-2}=\frac{(p-1)!}{1}+\frac{(p-1)!}{2}+\cdots+\frac{(p-1)!}{p-1}=a_1+a_2+\cdots+a_{p-1}\)<br>
+                            となる。\(a_k=p\cdot(\text{整数})+r_k\)と表せるので、<br>
+                            \(A_{p-2}=(p\text{の倍数})+(r_1+r_2+\cdots+r_{p-1})\)<br>
+                            であり、上で示したことから\(r_1,\cdots,r_{p-1}\)は\(1,\cdots,p-1\)の並べ替えだから、<br>
+                            \(\displaystyle r_1+r_2+\cdots+r_{p-1}=1+2+\cdots+(p-1)=\frac{p(p-1)}{2}\)<br>
+                            \(p\)は奇数の素数であり\(\displaystyle\frac{p-1}{2}\)は整数であることに注意すると、\(\displaystyle\frac{p(p-1)}{2}=p\cdot\frac{p-1}{2}\)は\(p\)の倍数である。よって、<br>
+                            \(A_{p-2}=(p\text{の倍数})+(p\text{の倍数})=(p\text{の倍数})\)<br>
+                            すなわち\(A_{p-2}\)は\(p\)の倍数である。<br>
+                            <br>
+                            \(A_{p-2}=ps\)（\(s\)は整数）とおくと、\(-A_{p-2}p^2=-p^3s\)は\(p^3\)の倍数であり、\((p^4\text{の倍数})\)も\(p^3\)の倍数であるから、②より、<br>
+                            \(f(N)=p^3M'+(p-1)!\)（\(M'\)は整数）<br>
+                            と表せる。これを①に代入すると、<br>
+                            \(\displaystyle {}_{p^2-1}\mathrm{C}_{p-1}=\frac{p^3M'+(p-1)!}{(p-1)!}=\frac{p^3M'}{(p-1)!}+1\)<br>
+                            (2)と同様に、\(p\)は素数であるから\(p^3\)と\((p-1)!\)は互いに素であり、\({}_{p^2-1}\mathrm{C}_{p-1}\)が整数であることから\(\displaystyle\frac{p^3M'}{(p-1)!}\)も整数、したがって\(\displaystyle\frac{M'}{(p-1)!}\)も整数である。これを\(t\)とおけば、<br>
+                            \({}_{p^2-1}\mathrm{C}_{p-1}=p^3t+1\)<br>
+                            と表され、したがって、<br>
+                            \({}_{p^2}\mathrm{C}_p=p(p^3t+1)=p^4t+p\)<br>
+                            \(\displaystyle\therefore\ {}_{p^2}\mathrm{C}_p\)を\(p^4\)で割った余りは\(p\)である。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
