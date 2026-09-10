@@ -1145,6 +1145,114 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem11" role="button"
+                aria-expanded="false" aria-controls="collapseProblem11">
+                正三角形と対称点の複素数平面
+                <div id="collapseProblem11" class="collapse">
+                    <div class="card-body">
+                        <svg class="problem-diagram" viewBox="0 0 335 250" width="335" height="250"
+                            aria-label="原点Oを中心とする単位円K上に正三角形ABCと点Pがあり、Pを直線BC、直線ABに関してそれぞれ対称移動した点Q、Rを原点Oを通る一直線が結んでいる">
+                            <circle cx="185" cy="150" r="90" fill="none" stroke="#999" stroke-width="1.2" />
+                            <polygon points="275,150 140,72 140,228" fill="none" stroke="#333" stroke-width="2" />
+                            <line x1="5" y1="198" x2="320" y2="114" stroke="#999" stroke-width="1.2"
+                                stroke-dasharray="4,3" />
+                            <line x1="263" y1="195" x2="17" y2="195" stroke="#999" stroke-width="1"
+                                stroke-dasharray="3,3" />
+                            <line x1="263" y1="195" x2="308" y2="117" stroke="#999" stroke-width="1"
+                                stroke-dasharray="3,3" />
+                            <circle cx="185" cy="150" r="2.5" fill="#333" />
+                            <circle cx="275" cy="150" r="2.5" fill="#333" />
+                            <circle cx="140" cy="72" r="2.5" fill="#333" />
+                            <circle cx="140" cy="228" r="2.5" fill="#333" />
+                            <circle cx="263" cy="195" r="2.5" fill="#333" />
+                            <circle cx="17" cy="195" r="2.5" fill="#333" />
+                            <circle cx="308" cy="117" r="2.5" fill="#333" />
+                            <text x="191" y="143" font-size="14">O</text>
+                            <text x="283" y="153" font-size="15">A</text>
+                            <text x="140" y="60" text-anchor="middle" font-size="15">B</text>
+                            <text x="140" y="244" text-anchor="middle" font-size="15">C</text>
+                            <text x="271" y="201" font-size="14">P</text>
+                            <text x="4" y="184" font-size="14">Q</text>
+                            <text x="313" y="112" font-size="14">R</text>
+                            <text x="185" y="56" text-anchor="middle" font-size="13" fill="#777">K</text>
+                        </svg>
+                        <p>
+                            \(O\)を原点とする複素数平面上に、\(3\)点\(A(1),\ B(\omega),\ C(\omega^2)\)を頂点とする正三角形\(ABC\)がある。ただし、\(\displaystyle\omega=\frac{-1+\sqrt3\,i}{2}\)（\(i\)は虚数単位）である。<br>
+                            また、正三角形\(ABC\)の外接円、すなわち\(O\)を中心とする半径\(1\)の円を\(K\)とする。<br>
+                            \(K\)上に\(3\)頂点\(A,\ B,\ C\)とは異なる点\(P(\alpha)\)をとる。直線\(BC\)に関して点\(P\)と対称な点を\(Q\)とし、直線\(AB\)に関して点\(P\)と対称な点を\(R\)とする。
+                        </p>
+                        <p>
+                            (1) 点\(Q\)を表す複素数を\(\beta\)とする。\(\displaystyle\beta+\frac{1}{\alpha}\)の値を求めよ。<br>
+                            (2) \(3\)点\(O,\ Q,\ R\)は同一直線上にあることを示せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution11" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution11">
+                    正三角形と対称点の複素数平面 解答
+                </div>
+                <div id="collapseSolution11" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(P(\alpha)\)は単位円\(K\)上にあり、\(P\)は\(A,B,C\)のいずれとも異なるので、\(\alpha=\cos\theta+i\sin\theta\)（\(\cos\theta\ne1,\ \cos\theta\ne-\dfrac12\)）と表せる（\(\cos\theta=1\)は\(P=A\)、\(\cos\theta=-\dfrac12\)は\(P=B\)または\(P=C\)にあたるため除く）。<br>
+                            <br>
+                            \(\beta=u+iv\)とおき、複素数平面を\(xy\)平面とみなすと、\(P(\cos\theta,\sin\theta)\)、\(Q(u,v)\)である。<br>
+                            \(\displaystyle\omega=\cos120^\circ+i\sin120^\circ=\left(-\frac12,\frac{\sqrt3}{2}\right)\)、\(\displaystyle\omega^2=\cos240^\circ+i\sin240^\circ=\left(-\frac12,-\frac{\sqrt3}{2}\right)\)であるから、\(B,C\)はともに実部が\(-\dfrac12\)であり、直線\(BC\)は実軸に垂直な直線\(\displaystyle x=-\frac12\)である。<br>
+                            \(P\)と\(Q\)がこの直線に関して対称であるための条件は、線分\(PQ\)の中点の\(x\)座標が\(-\dfrac12\)であり、かつ\(PQ\)が\(x\)軸に平行（直線\(BC\)に垂直）であることだから、<br>
+                            \(\left\{\begin{array}{l}\dfrac12(u+\cos\theta)=-\dfrac12\\ v=\sin\theta\end{array}\right.\)<br>
+                            第\(1\)式より\(u=-\cos\theta-1\)なので、<br>
+                            \(\beta=(-\cos\theta-1)+i\sin\theta\)<br>
+                            <br>
+                            \(|\alpha|=1\)より\(\dfrac1\alpha=\bar\alpha=\cos\theta-i\sin\theta\)であるから、<br>
+                            \(\beta+\dfrac1\alpha=(-\cos\theta-1+i\sin\theta)+(\cos\theta-i\sin\theta)=-1\)<br>
+                            \(\displaystyle\therefore\ \beta+\frac1\alpha=-1\)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            \(R\)を表す複素数を\(\gamma\)とする。まず、異なる\(2\)点\(a,b\)を通る直線に関して点\(z\)と対称な点\(z'\)を表す式を用意する。<br>
+                            \(b-a\)の偏角を\(\varphi\)とすると、\(z\)を\(a\)を中心に\(-\varphi\)だけ回転した点は\(a+e^{-i\varphi}(z-a)\)であり、この回転で直線\(ab\)は実軸に平行な直線に重なる。実軸に関する対称移動は共役をとることに対応するので、対称点を同じく\(-\varphi\)だけ回転した像は\(\overline{e^{-i\varphi}(z-a)}\)となる。これを\(\varphi\)だけ回転し戻せば対称点\(z'\)が得られるから、<br>
+                            \(z'=a+e^{i\varphi}\overline{e^{-i\varphi}(z-a)}=a+e^{2i\varphi}\overline{z-a}\)<br>
+                            ここで\(\displaystyle e^{i\varphi}=\frac{b-a}{|b-a|}\)より\(\displaystyle e^{2i\varphi}=\frac{(b-a)^2}{|b-a|^2}=\frac{(b-a)^2}{(b-a)\overline{(b-a)}}=\frac{b-a}{\overline{b-a}}\)であるから、<br>
+                            \(\displaystyle z'=a+\frac{b-a}{\overline{b-a}}\,\overline{z-a}\ \cdots\text{(*)}\)<br>
+                            <br>
+                            (*)を\(a=A=1,\ b=B=\omega,\ z=\alpha\)として用いると、<br>
+                            \(\displaystyle\gamma=1+\frac{\omega-1}{\overline{\omega-1}}\,\overline{\alpha-1}\)<br>
+                            \(|\omega|=1\)かつ\(\omega^3=1\)（\(\omega\ne1\)）であることから\(\bar\omega=\dfrac1\omega=\omega^2\)であり、<br>
+                            \(\overline{\omega-1}=\omega^2-1=(\omega-1)(\omega+1)\)<br>
+                            なので、<br>
+                            \(\displaystyle\frac{\omega-1}{\overline{\omega-1}}=\frac{1}{\omega+1}\)<br>
+                            また、\(\displaystyle\omega+1=\frac12+\frac{\sqrt3}{2}i\)であり、\(\left|\dfrac12+\dfrac{\sqrt3}{2}i\right|=1\)より、これは絶対値\(1\)の複素数であるから、<br>
+                            \(\gamma=1+(\omega+1)^{-1}(\bar\alpha-1)=(\omega+1)+(\omega^2+1)\bar\alpha\ \cdots\text{(**)}\)<br>
+                            が成り立つ（\((\omega+1)^{-1}=\overline{\omega+1}=\omega^2+1\)、および\(1-(\omega+1)^{-1}=1-(\omega^2+1)=-\omega^2=\omega+1\)、すなわち\((\omega+1)^{-1}\)を用いて整理すると係数が\(\omega+1\)と\(\omega^2+1\)になることによる）。<br>
+                            \(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)なので、(**)は、<br>
+                            \(\displaystyle\gamma=(\omega+1)+\frac{\omega^2+1}{\alpha}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\)<br>
+                            <br>
+                            一方、(1)の結果より\(\displaystyle\beta=-1-\frac1\alpha=-\frac{\alpha+1}{\alpha}\)である。<br>
+                            \(\beta\ne0\)（すなわち\(\alpha\ne-1\)）のとき、\(3\)点\(O,Q,R\)が同一直線上にあるための条件は\(\displaystyle\frac{\gamma}{\beta}\)が実数であることだから、この値を計算すると、<br>
+                            \(\displaystyle\frac{\gamma}{\beta}=\frac{\alpha(\omega+1)+\omega^2+1}{\alpha}\div\left(-\frac{\alpha+1}{\alpha}\right)=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}\ \left(=E\text{とおく}\right)\)<br>
+                            <br>
+                            \(E\)が実数であることを、\(\bar E=E\)を示すことで確かめる。\(|\alpha|=1\)より\(\bar\alpha=\dfrac1\alpha\)、\(\bar\omega=\omega^2\)、\(\overline{\omega^2}=\omega\)であるから、<br>
+                            \(\displaystyle\bar E=-\frac{\bar\alpha\bar\omega+\bar\alpha+\overline{\omega^2}+1}{\bar\alpha+1}=-\frac{\dfrac1\alpha\omega^2+\dfrac1\alpha+\omega+1}{\dfrac1\alpha+1}\)<br>
+                            分母・分子に\(\alpha\)を掛けると、<br>
+                            \(\displaystyle\bar E=-\frac{\omega^2+1+\alpha(\omega+1)}{1+\alpha}=-\frac{\alpha\omega+\alpha+\omega^2+1}{\alpha+1}=E\)<br>
+                            よって\(\bar E=E\)、すなわち\(E=\dfrac{\gamma}{\beta}\)は実数である。<br>
+                            <br>
+                            （\(\alpha=-1\)のときは\(\beta=0\)、すなわち\(Q\)は\(O\)と一致するから、\(O,Q,R\)は自明に同一直線上にある。）<br>
+                            <br>
+                            以上より、すべての場合について\(3\)点\(O,Q,R\)は同一直線上にある。(証明終)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
