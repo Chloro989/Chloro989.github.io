@@ -861,6 +861,193 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem9" role="button"
+                aria-expanded="false" aria-controls="collapseProblem9">
+                曲線の共有点とkの範囲
+                <div id="collapseProblem9" class="collapse">
+                    <div class="card-body">
+                        <p>\(k\)を実数の定数とし、\(2\)つの曲線<br>
+                            \(C_1: y = x\log x + (1-x)\log(1-x)\)<br>
+                            \(C_2: y = kx(x-1)\)<br>
+                            を考える。\(C_1\)と\(C_2\)が\(0 \lt x \lt 1\)で共有点をもつための\(k\)の値の範囲を求めよ。必要ならば
+                            \(\displaystyle \lim_{x\to+0}x\log x = 0\)を用いてよい。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution9" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution9">
+                    曲線の共有点とkの範囲 解答
+                </div>
+                <div id="collapseSolution9" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(f(x) = x\log x + (1-x)\log(1-x) - kx(x-1)\)とおく。\(f(x)=0\)を満たす\(x\)が\(0 \lt x \lt 1\)に存在するための\(k\)の範囲を求めればよい。<br>
+                            <br>
+                            \(f'(x) = \log x + 1 - \log(1-x) - 1 - k(2x-1) = \log x - \log(1-x) - k(2x-1)\ \cdots①\)<br>
+                            \(\displaystyle f''(x) = \frac{1}{x} + \frac{1}{1-x} - 2k\)<br>
+                            <br>
+                            ここで、\(\displaystyle g(x) = \frac{1}{x} + \frac{1}{1-x}\)とおくと、<br>
+                            \(\displaystyle g'(x) = -\frac{1}{x^2} + \frac{1}{(1-x)^2} = \frac{2x-1}{x^2(1-x)^2}\)<br>
+                            よって、\(g(x)\)の増減表は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\displaystyle\frac12\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\((1)\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(g'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>\(g(x)\)</th>
+                                <td>\((\infty)\)</td>
+                                <td>\(\searrow\)</td>
+                                <td>\(4\)</td>
+                                <td>\(\nearrow\)</td>
+                                <td>\((\infty)\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            \(f''(x) = g(x) - 2k\)であるから、\(g(x)\)の最小値\(4\)と\(2k\)の大小で場合分けする。<br>
+                            <br>
+                            \((\mathrm{i})\) \(4 \geqq 2k\)（つまり\(k \leqq 2\)）のとき、<br>
+                            \(f''(x) = g(x) - 2k \geqq 4 - 2k \geqq 0\)なので\(f'(x)\)は増加関数である。\(\displaystyle f'\!\left(\frac12\right)=0\)に注意すると、<br>
+                            \(\displaystyle 0 \lt x \lt \frac12\)のとき\(f'(x) \lt 0\)であり、\(\displaystyle \frac12 \lt x \lt 1\)のとき\(f'(x) \gt 0\)である。<br>
+                            また、\(\displaystyle \lim_{x\to+0}x\log x=0\)から、\(\displaystyle\lim_{x\to+0}f(x)=0\)、\(\displaystyle\lim_{x\to1-0}f(x)=0\)であるから、\(f(x)\)の増減は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\displaystyle\frac12\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\((1)\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>\(f(x)\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\searrow\)</td>
+                                <td>\(\displaystyle\frac{k}{4}-\log2\)</td>
+                                <td>\(\nearrow\)</td>
+                                <td>\((0)\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            よって、\(0 \lt x \lt 1\)において\(f(x) \lt 0\)であり、\(f(x)=0\)を満たす\(x\)（\(0 \lt x \lt 1\)）は存在しない。<br>
+                            <br>
+                            \((\mathrm{ii})\) \(4 \lt 2k\)（つまり\(k \gt 2\)）のとき、<br>
+                            方程式\(f''(x)=0\)すなわち方程式\(g(x)=2k\)は\(2\)個の解\(\alpha,\beta\)（\(\displaystyle 0 \lt \alpha \lt \frac12 \lt \beta \lt 1\)）をもち、\(f''(x)=g(x)-2k\)だから、\(f'(x)\)の増減は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\alpha\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\beta\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\((1)\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f''(x)\)</th>
+                                <td></td>
+                                <td>\(+\)</td>
+                                <td>\(0\)</td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td>\((-\infty)\)</td>
+                                <td>\(\nearrow\)</td>
+                                <td></td>
+                                <td>\(\searrow\)</td>
+                                <td></td>
+                                <td>\(\nearrow\)</td>
+                                <td>\((\infty)\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            ここで①に戻ると、\(\displaystyle f'\!\left(\frac12\right)=0\)であるから、\(f'(\alpha) \gt 0\)、\(f'(\beta) \lt 0\)である。また、<br>
+                            \(\displaystyle \lim_{x\to+0}f'(x)=-\infty\)、\(\displaystyle \lim_{x\to1-0}f'(x)=\infty\)である。よって、\(f'(\gamma)=f'(\delta)=0\)となる\(\gamma,\delta\)（\(\displaystyle 0 \lt \gamma \lt \alpha \lt \frac12 \lt \beta \lt \delta \lt 1\)）があり、\(f(x)\)の増減は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\gamma\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\displaystyle\frac12\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(\delta\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\((1)\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td>\(0\)</td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>\(f(x)\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\searrow\)</td>
+                                <td></td>
+                                <td>\(\nearrow\)</td>
+                                <td>\(\displaystyle\frac{k}{4}-\log2\)</td>
+                                <td>\(\searrow\)</td>
+                                <td></td>
+                                <td>\(\nearrow\)</td>
+                                <td>\((0)\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            したがって、\(f(x)=0\)を満たす\(x\)が\(0 \lt x \lt 1\)に存在するための条件は、<br>
+                            \(\displaystyle f\!\left(\frac12\right) = \frac{k}{4}-\log2 \geqq 0\)すなわち\(k \geqq 4\log2\)である。これは\(k \gt 2\)を満たしている。<br>
+                            <br>
+                            以上の\((\mathrm{i})\)、\((\mathrm{ii})\)より、\(f(x)=0\)を満たす\(x\)が\(0 \lt x \lt 1\)に存在するための条件は、<br>
+                            \(\therefore\ k \geqq 4\log2\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
