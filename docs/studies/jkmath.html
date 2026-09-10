@@ -1448,6 +1448,122 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem14" role="button"
+                aria-expanded="false" aria-controls="collapseProblem14">
+                複素数平面上の長方形と4次方程式
+                <div id="collapseProblem14" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            複素数\(\alpha,\ \beta,\ \gamma,\ \delta,\ p\)が、次の\(3\)条件を満たしながら動く。<br>
+                            条件\(1\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は相異なる。<br>
+                            条件\(2\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解である。<br>
+                            条件\(3\)：複素数\(\alpha,\ \beta,\ \gamma,\ \delta\)は複素数平面上で長方形の\(4\)頂点である。
+                        </p>
+                        <p>
+                            (1) 複素数\(\alpha\)が動きうる範囲を複素数平面上に図示せよ。<br>
+                            (2) 複素数\(p\)が動きうる範囲を複素数平面上に図示せよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution14" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution14">
+                    複素数平面上の長方形と4次方程式 解答
+                </div>
+                <div id="collapseSolution14" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            条件\(2\)より、\(\alpha,\beta,\gamma,\delta\)は\(4\)次方程式\(z^4+pz^2-4=0\)の解であるから、<br>
+                            \(z^4+pz^2-4=(z-\alpha)(z-\beta)(z-\gamma)(z-\delta)\ \cdots\text{①}\)<br>
+                            と因数分解できる。①の両辺の\(z^3\)の係数を比較すると、左辺の\(z^3\)の係数は\(0\)であるから、<br>
+                            \(0=-(\alpha+\beta+\gamma+\delta)\ \ \therefore\ \alpha+\beta+\gamma+\delta=0\)<br>
+                            <br>
+                            これは、\(4\)点\(\alpha,\beta,\gamma,\delta\)の重心\(\dfrac{\alpha+\beta+\gamma+\delta}{4}\)が原点\(O\)であることを意味する。条件\(3\)より、これらは長方形の\(4\)頂点であり、長方形（平行四辺形）の対角線の交点は\(4\)頂点の重心と一致し、対角線は互いに他を二等分するから、原点\(O\)が対角線の交点であるとき、各対角線の両端点は原点に関して互いに対称、すなわち互いに\(-1\)倍の関係にある。<br>
+                            よって、\(\alpha,\beta,\gamma,\delta\)は、必要なら順序を入れ替えて、\(\pm\alpha,\ \pm\beta\)の形に表される。さらに、長方形の\(2\)本の対角線の長さは等しく（\(2|\alpha|=2|\beta|\)）、また\(4\)頂点が相異なる（\(\alpha\ne\pm\beta\)）ことから、<br>
+                            \(|\alpha|=|\beta|\) かつ \(\alpha\ne\pm\beta\ \cdots\text{②}\)<br>
+                            が成り立つ。逆に②が成り立てば、\(4\)点\(\pm\alpha,\pm\beta\)は対角線が原点で直交せずとも互いに等しい長さで二等分し合う平行四辺形、すなわち長方形の\(4\)頂点となる。<br>
+                            <br>
+                            このとき、①は、<br>
+                            \(z^4+pz^2-4=(z-\alpha)(z+\alpha)(z-\beta)(z+\beta)=(z^2-\alpha^2)(z^2-\beta^2)=z^4-(\alpha^2+\beta^2)z^2+\alpha^2\beta^2\)<br>
+                            となるから、両辺の係数を比較して、<br>
+                            \(p=-(\alpha^2+\beta^2)\ \cdots\text{③}\)、\(\ \alpha^2\beta^2=-4\ \cdots\text{④}\)<br>
+                            が成り立つ。
+                        </p>
+                        <p>
+                            <b>(1)</b><br>
+                            \(\alpha\)が動きうる範囲は、\(\alpha\)を与えたとき、②かつ④を満たす\(\beta\)が存在する範囲である。<br>
+                            <br>
+                            \(\alpha=0\)のときは、④を満たす\(\beta\)が存在しない。<br>
+                            \(\therefore\ \alpha\ne0\ \cdots\text{⑤}\)<br>
+                            <br>
+                            \(\alpha\ne0\)のとき、④より、<br>
+                            \(\displaystyle\beta^2=-\frac{4}{\alpha^2}\ \ \therefore\ \beta=\pm\frac{2i}{\alpha}\ \cdots\text{⑥}\)<br>
+                            であり、この中に②を満たす\(\beta\)が存在する条件は、<br>
+                            \(\displaystyle|\alpha|=\left|\pm\frac{2i}{\alpha}\right|\) かつ \(\displaystyle\alpha\ne\pm\frac{2i}{\alpha}\)<br>
+                            \(\displaystyle\therefore\ |\alpha|=\sqrt2\ \cdots\text{⑦}\) かつ \(\alpha^2\ne\pm2i\ \cdots\text{⑧}\)<br>
+である（⑦は\(\displaystyle|\alpha|=\frac{|{\pm2i}|}{|\alpha|}=\frac{2}{|\alpha|}\)を解いたもの、⑧は\(\alpha\ne\pm\dfrac{2i}{\alpha}\)の両辺に\(\alpha\ (\ne0)\)をかけて整理したもの）。<br>
+                            <br>
+                            ⑦より、\(\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \cdots\text{⑨}\)とおけて、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)であるから、⑧は\(\cos2\theta+i\sin2\theta\ne\pm i\)となり、<br>
+                            \(\therefore\ \theta\ne\pm\dfrac{\pi}{4}+k\pi\ \ (k\in\mathbb{Z})\ \cdots\text{⑩}\)<br>
+                            <br>
+                            以上、⑤、⑨、⑩より、\(\alpha\)が動きうる範囲は、原点\(O\)を中心とする半径\(\sqrt2\)の円から、\(4\)点\(1+i,\ -1+i,\ -1-i,\ 1-i\)（偏角\(\pm\dfrac{\pi}{4},\ \pi\pm\dfrac{\pi}{4}\)にあたる点）を除いたものである。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 280 260" width="280" height="260"
+                            aria-label="原点中心、半径ルート2の円から45度刻みの4点を除いた図">
+                            <line x1="15" y1="130" x2="255" y2="130" stroke="#999" stroke-width="1" />
+                            <line x1="130" y1="15" x2="130" y2="245" stroke="#999" stroke-width="1" />
+                            <circle cx="130" cy="130" r="90" fill="none" stroke="#333" stroke-width="2.2" />
+                            <circle cx="193.6" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="66.4" cy="66.4" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="66.4" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="193.6" cy="193.6" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <text x="199" y="60" font-size="13" font-style="italic">1+i</text>
+                            <text x="4" y="60" font-size="13" font-style="italic">-1+i</text>
+                            <text x="0" y="208" font-size="13" font-style="italic">-1-i</text>
+                            <text x="194" y="208" font-size="13" font-style="italic">1-i</text>
+                            <text x="258" y="126" font-size="13" fill="#777">Re</text>
+                            <text x="136" y="20" font-size="13" fill="#777">Im</text>
+                            <text x="136" y="144" font-size="12" fill="#777">O</text>
+                            <text x="208" y="145" font-size="12" fill="#777" font-style="italic">√2</text>
+                        </svg>
+                        <p>
+                            <b>(2)</b><br>
+                            (1)より、\(\alpha\)は\(\displaystyle\alpha=\sqrt2(\cos\theta+i\sin\theta)\ \ (\theta\ne\pm\tfrac{\pi}{4}+k\pi,\ k\in\mathbb{Z})\)と表され、これと⑥を満たす\(\beta\)に対して、③により\(p\)が定まる。<br>
+                            <br>
+                            ③、④より、\(\displaystyle\beta^2=-\frac{4}{\alpha^2}\)であるから、<br>
+                            \(\displaystyle p=-(\alpha^2+\beta^2)=-\left(\alpha^2-\frac{4}{\alpha^2}\right)\)<br>
+                            <br>
+                            ここで、\(\alpha^2=2(\cos2\theta+i\sin2\theta)\)、\(\displaystyle\frac{4}{\alpha^2}=2(\cos2\theta-i\sin2\theta)\)であるから、<br>
+                            \(\displaystyle \alpha^2-\frac{4}{\alpha^2}=2(\cos2\theta+i\sin2\theta)-2(\cos2\theta-i\sin2\theta)=4i\sin2\theta\)<br>
+                            \(\therefore\ p=-4i\sin2\theta\)<br>
+                            <br>
+                            \(\theta\ne\pm\dfrac{\pi}{4}+k\pi\)より\(2\theta\ne\pm\dfrac{\pi}{2}+2k\pi\)であるから、\(-1\lt\sin2\theta\lt1\)である（\(\theta\)がこの範囲を動くとき\(\sin2\theta\)はこの開区間のすべての値をとる）。<br>
+                            <br>
+                            よって、\(p\)が動きうる範囲は、虚軸上の線分（\(-4i\)から\(4i\)まで）から両端点\(\pm4i\)を除いたものである。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 260 260" width="260" height="260"
+                            aria-label="虚軸上の-4iから4iまでの線分から両端点を除いた図">
+                            <line x1="15" y1="130" x2="225" y2="130" stroke="#999" stroke-width="1" />
+                            <line x1="110" y1="15" x2="110" y2="245" stroke="#999" stroke-width="1" />
+                            <line x1="110" y1="40" x2="110" y2="220" stroke="#333" stroke-width="2.5" />
+                            <circle cx="110" cy="40" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <circle cx="110" cy="220" r="4" fill="#fff" stroke="#333" stroke-width="1.6" />
+                            <text x="120" y="38" font-size="13" font-style="italic">4i</text>
+                            <text x="120" y="228" font-size="13" font-style="italic">-4i</text>
+                            <text x="232" y="134" font-size="13" fill="#777">Re</text>
+                            <text x="116" y="24" font-size="13" fill="#777">Im</text>
+                            <text x="116" y="144" font-size="12" fill="#777">O</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
