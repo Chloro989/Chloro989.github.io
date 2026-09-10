@@ -770,6 +770,97 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem8" role="button"
+                aria-expanded="false" aria-controls="collapseProblem8">
+                立方体の頂点への数字配置
+                <div id="collapseProblem8" class="collapse">
+                    <div class="card-body">
+                        <p>\(1\)つの立方体の\(8\)個の各頂点に、\(1,2,3,4,5,6,7,8\)の\(8\)個の数字を\(1\)個ずつ配置する。ただし、同じ数字を\(2\)個以上の頂点に配置しない。このとき、立方体の対角線に関する次の(条件)を考える。<br>
+                            <br>
+                            (条件) 対角線の両端の頂点に配置された\(2\)つの数字の和が\(9\)となる。<br>
+                            <br>
+                            ここで、立方体の対角線とは、立方体の\(2\)つの頂点を結ぶ線分のうち立方体の中心を通るものを指し、\(1\)つの立方体に対角線は\(4\)本ある。<br>
+                            <br>
+                            以下の\((1)\)、\((2)\)のような\(8\)個の数字の配置の仕方は何通りあるか、それぞれ答えよ。ただし、立方体を回転させることで\(8\)個の数字の配置が一致するものは同じ配置とみなす。<br>
+                            <br>
+                            \((1)\) 立方体の\(4\)本すべての対角線が(条件)をみたす。<br>
+                            \((2)\) 立方体の\(4\)本の対角線のうち、ちょうど\(2\)本の対角線が(条件)をみたす。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution8" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution8">
+                    立方体の頂点への数字配置 解答
+                </div>
+                <div id="collapseSolution8" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(8\)個の数字のうち、和が\(9\)となる組は\((1,8),\ (2,7),\ (3,6),\ (4,5)\)の\(4\)組である。<br>
+                            <br>
+                            立方体の回転群の位数は\(24\)であり、頂点\(1\)を置く場所を決めると回転による重複のうち\(8\)通り分（どの頂点に\(1\)を置くか）が解消される。さらに、頂点\(1\)を固定した状態でも、頂点\(1\)とその対角線の反対側の頂点\(Q\)を結ぶ軸のまわりに\(120^\circ,\ 240^\circ\)回転させると立方体は自身に重なるため、\(3\)通りの重複がなお残る。
+                        </p>
+                        <svg class="problem-diagram" viewBox="0 0 220 170" width="220" height="170"
+                            aria-label="立方体の頂点にP(1)、Q(8)、およびそれぞれに隣接するA1,A2,A3とB1,B2,B3を配置した図。AκとBκが対角線をなす">
+                            <line x1="60" y1="150" x2="150" y2="150" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="150" x2="150" y2="70" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="70" x2="60" y2="70" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="70" x2="60" y2="150" stroke="#333" stroke-width="1.5" />
+                            <line x1="105" y1="110" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="195" y1="110" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="195" y1="30" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="105" y1="30" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="150" x2="105" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="150" x2="195" y2="110" stroke="#333" stroke-width="1.5" />
+                            <line x1="150" y1="70" x2="195" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="70" x2="105" y2="30" stroke="#333" stroke-width="1.5" />
+                            <line x1="60" y1="150" x2="195" y2="30" stroke="#999" stroke-width="1" stroke-dasharray="3,3" />
+                            <circle cx="60" cy="150" r="2.5" fill="#333" />
+                            <circle cx="150" cy="150" r="2.5" fill="#333" />
+                            <circle cx="150" cy="70" r="2.5" fill="#333" />
+                            <circle cx="60" cy="70" r="2.5" fill="#333" />
+                            <circle cx="105" cy="110" r="2.5" fill="#333" />
+                            <circle cx="195" cy="110" r="2.5" fill="#333" />
+                            <circle cx="195" cy="30" r="2.5" fill="#333" />
+                            <circle cx="105" cy="30" r="2.5" fill="#333" />
+                            <text x="46" y="158" text-anchor="middle" font-size="13">P(1)</text>
+                            <text x="163" y="158" text-anchor="middle" font-size="13">A1</text>
+                            <text x="150" y="60" text-anchor="middle" font-size="13">B3</text>
+                            <text x="48" y="62" text-anchor="middle" font-size="13">A2</text>
+                            <text x="93" y="122" text-anchor="middle" font-size="13">A3</text>
+                            <text x="208" y="114" text-anchor="middle" font-size="13">B2</text>
+                            <text x="208" y="24" text-anchor="middle" font-size="13">Q(8)</text>
+                            <text x="93" y="22" text-anchor="middle" font-size="13">B1</text>
+                        </svg>
+                        <p>
+                            頂点\(P\)に数字\(1\)を、\(P\)に隣接する\(3\)頂点を\(A_1,A_2,A_3\)、\(P\)の対角線の反対側の頂点を\(Q\)、\(Q\)に隣接する\(3\)頂点を\(B_1,B_2,B_3\)とする（\(A_\kappa\)と\(B_\kappa\)が対角線をなすように番号を対応させる）。<br>
+                            <br>
+                            \((1)\) \(4\)本すべての対角線が(条件)をみたすとき、対角線\(P\text{-}Q\)も条件をみたすから、\(Q\)には\(8\)が入る。<br>
+                            残る\(3\)本の対角線\(A_1B_1,\ A_2B_2,\ A_3B_3\)に、残りの\(3\)組\((2,7),\ (3,6),\ (4,5)\)を\(1\)組ずつ配置すればよい。<br>
+                            組をどの対角線に対応させるか：\(3!\)通り。各組の左右（\(A_\kappa,B_\kappa\)のどちらに大きい方を置くか）：\(2^3\)通り。<br>
+                            \(3! \times 2^3 = 48\)通り。<br>
+                            \(P\)を固定した後も、\(P\text{-}Q\)軸まわりの\(120^\circ,240^\circ\)回転で\((A_1,A_2,A_3)\to(A_2,A_3,A_1)\)と重複するため、\(3\)で割って<br>
+                            \(\therefore\ \displaystyle \frac{48}{3} = 16\)通り<br>
+                            <br>
+                            \((2)\) この場合は\(Q\)が必ずしも\(8\)とは限らないため、頂点を区別した（回転で同一視する前の）配置の総数を数えてから最後に\(24\)で割る方が見通しがよい。\(8\)個の数字はすべて異なるので、どの配置も非自明な回転で自分自身とは重ならない。したがって（条件を満たす、頂点を区別した配置の総数）\(\div 24\)が求める個数に等しい。<br>
+                            <br>
+                            Step\(1\)：\(4\)本の対角線のうち、条件をみたす\(2\)本を選ぶ：\(\displaystyle\binom{4}{2}=6\)通り。<br>
+                            Step\(2\)：\((1,8),(2,7),(3,6),(4,5)\)の\(4\)組から\(2\)組を選び、Step\(1\)で選んだ\(2\)本の対角線に割り当てる：組の選び方\(\displaystyle\binom{4}{2}=6\)通り、どちらの対角線に対応させるか\(2!\)通り、各組の左右\(2\times2\)通り。\(6\times2\times4=48\)通り。<br>
+                            Step\(3\)：残る\(2\)本の対角線に、残った\(4\)個の数字（未使用の\(2\)組）を、どちらの対角線も和が\(9\)にならないように配置する。例えば残りが\(\{3,6\}\)、\(\{4,5\}\)の場合、\(4\)個から\(2\)個を選んで一方の対角線に配る\(\displaystyle\binom{4}{2}=6\)通りのうち、\(\{3,6\}\)または\(\{4,5\}\)のまま（すなわち和が\(9\)のまま）になるのは\(2\)通りのみで、残る\(4\)通りはどちらの対角線も和が\(9\)にならない。各対角線内の左右\(2\times2\)通りをかけて、\(4\times4=16\)通り。<br>
+                            <br>
+                            以上より、頂点を区別した配置の総数は\(6\times48\times16=4608\)通り。回転による重複\(24\)で割って、<br>
+                            \(\therefore\ \displaystyle \frac{4608}{24} = 192\)通り
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
