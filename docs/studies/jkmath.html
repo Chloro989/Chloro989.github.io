@@ -1048,6 +1048,103 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem10" role="button"
+                aria-expanded="false" aria-controls="collapseProblem10">
+                ガウス記号で定まる数列とその極限
+                <div id="collapseProblem10" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            実数\(x\)に対して、\(x\)以下の最大の整数を\([x]\)で表す。数列\(\{a_n\}\ (n=1,2,3,\cdots)\)を<br>
+                            \(a_n=[\sqrt2\,n]\)<br>
+                            で定め、\(\{a_n\}\)の項に現れない正の整数を、小さい順に並べてできる数列を\(\{b_n\}\ (n=1,2,3,\cdots)\)とする。例えば、<br>
+                            \(\sqrt2=1.414\cdots,\ 2\sqrt2=2.828\cdots,\ 3\sqrt2=4.242\cdots,\ 4\sqrt2=5.656\cdots,\ 5\sqrt2=7.071\cdots\)<br>
+                            であるから、\(a_1=1,\ a_2=2,\ a_3=4,\ a_4=5,\ a_5=7\)となり、また、\(b_1=3,\ b_2=6\)となる。
+                        </p>
+                        <p>
+                            (1) \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}\)を求めよ。<br>
+                            (2) \(a_{n+1}-a_n\)の値は\(1\)または\(2\)であることを示せ。<br>
+                            (3) 次の(i), (ii)に答えよ。ただし、(ii)を先に答えてもよい。<br>
+                            &emsp;(i) \(\{a_n\}\)の項に現れない正の整数は無限に存在すること、すなわち、\(\{b_n\}\)は無限に多くの項からなる数列であることを示せ。<br>
+                            &emsp;(ii) \(\displaystyle\lim_{n\to\infty}\frac{b_n}{n}\)を求めよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution10" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution10">
+                    ガウス記号で定まる数列とその極限 解答
+                </div>
+                <div id="collapseSolution10" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(a_n\)は\(\sqrt2\,n\)以下の最大の整数であるから、<br>
+                            \(a_n \leqq \sqrt2\,n \lt a_n+1\)<br>
+                            すなわち<br>
+                            \(\sqrt2\,n-1 \lt a_n \leqq \sqrt2\,n\ \cdots\text{①}\)<br>
+                            ①の両辺を\(n\)で割ると、<br>
+                            \(\displaystyle \sqrt2-\frac1n \lt \frac{a_n}{n} \leqq \sqrt2\)<br>
+                            \(\displaystyle\lim_{n\to\infty}\left(\sqrt2-\frac1n\right)=\sqrt2\)であるから、はさみうちの原理により、<br>
+                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            ①は\(n\)によらず成り立つので、\(n+1\)についても、<br>
+                            \(\sqrt2\,(n+1)-1 \lt a_{n+1} \leqq \sqrt2\,(n+1)\ \cdots\text{②}\)<br>
+                            が成り立つ。①より\(-\sqrt2\,n \leqq -a_n \lt -\sqrt2\,n+1\)であるから、これと②を辺々加えると、<br>
+                            \(\sqrt2\,(n+1)-1-\sqrt2\,n \lt a_{n+1}-a_n \lt \sqrt2\,(n+1)-\sqrt2\,n+1\)<br>
+                            \(\therefore\ \sqrt2-1 \lt a_{n+1}-a_n \lt \sqrt2+1\)<br>
+                            \(1\lt\sqrt2\lt2\)より\(0 \lt a_{n+1}-a_n \lt 3\)であり、\(a_{n+1}-a_n\)は整数であるから、<br>
+                            \(\therefore\ a_{n+1}-a_n=1\)または\(a_{n+1}-a_n=2\)である。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)(i)</b><br>
+                            (2)より、\(a_{n+1}-a_n\)の値は\(1\)または\(2\)である。<br>
+                            \(\cdot\ a_{n+1}-a_n=1\)のとき、\(a_n\)と\(a_{n+1}\)は連続する\(2\)つの正の整数であるから、この間に入る整数はなく、したがって\(\{b_n\}\)の項もこの間には現れない。<br>
+                            \(\cdot\ a_{n+1}-a_n=2\)のとき、\(a_n\)と\(a_{n+1}\)の間に入る正の整数はただ\(1\)つ存在し、それは\(\{a_n\}\)の項ではないから\(\{b_n\}\)の項である。<br>
+                            <br>
+                            ここで、\(\{b_n\}\)が有限個の項からなる数列であると仮定する。\(\{a_n\}\)は(2)より狭義単調増加であるから、異なる\(n\)に対する区間\((a_n,a_{n+1})\)は互いに素であり、上の考察より、\(a_{n+1}-a_n=2\)を満たす\(n\)一つひとつに対して\(\{b_n\}\)の項がちょうど\(1\)個ずつ、しかも互いに異なるものが対応する。よって\(\{b_n\}\)が有限個の項からなるならば、\(a_{n+1}-a_n=2\)を満たす\(n\)も有限個である。<br>
+                            <br>
+                            よって、ある番号\(p\)が存在して、\(n\geqq p\)に対して常に\(a_{n+1}-a_n=1\)となる。このとき\(\{a_n\}\)は\(n\geqq p\)の範囲で公差\(1\)の等差数列となるから、<br>
+                            \(a_n=a_p+(n-p)=n+(a_p-p)\ \ (n\geqq p)\)<br>
+                            と表される。したがって、<br>
+                            \(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\lim_{n\to\infty}\left(1+\frac{a_p-p}{n}\right)=1\)<br>
+                            となるが、これは(1)の結果\(\displaystyle\lim_{n\to\infty}\frac{a_n}{n}=\sqrt2\)に矛盾する。<br>
+                            <br>
+                            よって、\(\{b_n\}\)は有限個の項からなる数列ではない。すなわち、\(\{a_n\}\)の項に現れない正の整数は無限に存在する。(証明終)
+                        </p>
+                        <p>
+                            <b>(3)(ii)</b><br>
+                            数列\(\{a_n\}\)を\(A\)、数列\(\{b_n\}\)を\(B\)と呼ぶことにする。(2)より\(A\)は狭義単調増加であり、\(a_1=1\)であるから、\(A\)は正の整数からなる単調増加数列である。このことと\(B\)の定義から、\(A\)と\(B\)の項をすべて合わせて小さい順に並べたものは、正の整数を\(1\)から順に並べた数列に一致する。この数列を\(S\)と書く。<br>
+                            <br>
+                            \(b_n=m\)とおく。数列\(S\)の最初の\(m\)項、すなわち\(1,2,\cdots,m\)のうち、\(n\)個が数列\(B\)の項であり、残りの\(m-n\)個が数列\(A\)の項である。そこで\(k=m-n\)とおくと、数列\(S\)において\(b_n=m\)の直前までに現れる数列\(A\)の項はちょうど\(a_1,a_2,\cdots,a_k\)である。つまり、<br>
+                            \(S:\ a_1=1,\ a_2=2,\ b_1=3,\ \cdots,\ a_k,\ \cdots,\ b_n=m,\ \cdots,\ a_{k+1},\ \cdots\)<br>
+                            となっているから、不等式<br>
+                            \(a_k \lt m \lt a_{k+1}\)<br>
+                            が成り立つ。<br>
+                            <br>
+                            ①を\(n=k\)および\(n=k+1\)に適用すると、\(a_k \gt \sqrt2\,k-1\)、\(a_{k+1} \leqq \sqrt2\,(k+1)\)であるから、これと上の不等式を合わせて、<br>
+                            \(\sqrt2\,k-1 \lt m \lt \sqrt2\,(k+1)\)<br>
+                            が成り立つ。\(k=m-n\)を代入して\(m\)について整理すると、<br>
+                            \(\displaystyle \frac{\sqrt2\,(n-1)}{\sqrt2-1} \lt m \lt \frac{\sqrt2\,n+1}{\sqrt2-1}\)<br>
+                            両辺を\(n\ (\gt0)\)で割り、\(\dfrac{m}{n}=\dfrac{b_n}{n}\)に注意すると、<br>
+                            \(\displaystyle \frac{\sqrt2\,(n-1)}{(\sqrt2-1)n} \lt \frac{b_n}{n} \lt \frac{\sqrt2\,n+1}{(\sqrt2-1)n}\)<br>
+                            <br>
+                            \(n\to\infty\)のとき、左辺、右辺はともに<br>
+                            \(\displaystyle \frac{\sqrt2}{\sqrt2-1}=\frac{\sqrt2\,(\sqrt2+1)}{(\sqrt2-1)(\sqrt2+1)}=\sqrt2\,(\sqrt2+1)=2+\sqrt2\)<br>
+                            に収束するから、はさみうちの原理により、<br>
+                            \(\displaystyle\therefore\ \lim_{n\to\infty}\frac{b_n}{n}=2+\sqrt2\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
