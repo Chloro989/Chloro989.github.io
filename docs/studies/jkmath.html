@@ -1351,6 +1351,103 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem13" role="button"
+                aria-expanded="false" aria-controls="collapseProblem13">
+                べき関数を用いた不等式の証明
+                <div id="collapseProblem13" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \(n\)は正の整数とする。
+                        </p>
+                        <p>
+                            (1) 正の実数\(x\)に対して、<br>
+                            \(x^{n+1}\geqq(n+1)x-n\)<br>
+                            が成り立つことを示せ。
+                        </p>
+                        <p>
+                            (2) 正の実数\(a,\ b,\ c,\ d\)が<br>
+                            \(a\geqq b,\ \ d^{n+1}=\{(n+1)c-na\}b^n\)<br>
+                            を満たすとき、<br>
+                            \(c\geqq d\)<br>
+                            が成り立つことを示せ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution13" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution13">
+                    べき関数を用いた不等式の証明 解答
+                </div>
+                <div id="collapseSolution13" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            <b>(1)</b><br>
+                            \(f(x)=x^{n+1}-\{(n+1)x-n\}\)とおくと、<br>
+                            \(f'(x)=(n+1)x^n-(n+1)=(n+1)(x^n-1)\)<br>
+                            <br>
+                            \(x\gt0\)のとき、\(x^n-1\)の符号は\(x=1\)を境に変わる。<br>
+                            (i) \(0\lt x\lt1\)のとき、\(x^n\lt1\)であるから\(x^n-1\lt0\)<br>
+                            (ii) \(x\gt1\)のとき、\(x^n\gt1\)であるから\(x^n-1\gt0\)<br>
+                            <br>
+                            したがって、\(x\gt0\)における\(f(x)\)の増減表は次のようになる。
+                        </p>
+                        <table class="zougen">
+                            <tr>
+                                <th>\(x\)</th>
+                                <td>\((0)\)</td>
+                                <td>\(\cdots\)</td>
+                                <td>\(1\)</td>
+                                <td>\(\cdots\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f'(x)\)</th>
+                                <td></td>
+                                <td>\(-\)</td>
+                                <td>\(0\)</td>
+                                <td>\(+\)</td>
+                            </tr>
+                            <tr>
+                                <th>\(f(x)\)</th>
+                                <td></td>
+                                <td>\(\searrow\)</td>
+                                <td>\(0\)</td>
+                                <td>\(\nearrow\)</td>
+                            </tr>
+                        </table>
+                        <p>
+                            ここで、\(f(1)=1^{n+1}-\{(n+1)\cdot1-n\}=1-1=0\)である。<br>
+                            この増減表より、\(f(x)\)は\(x=1\)で最小値\(0\)をとるから、\(x\gt0\)のとき\(f(x)\geqq0\)である。<br>
+                            \(\displaystyle\therefore\ x^{n+1}\geqq(n+1)x-n\)（等号成立は\(x=1\)のとき）(証明終)
+                        </p>
+                        <p>
+                            <b>(2)</b><br>
+                            条件\(d^{n+1}=\{(n+1)c-na\}b^n\)の両辺を\(b^{n+1}\ (\gt0)\)で割ると、<br>
+                            \(\displaystyle\left(\frac db\right)^{n+1}=\frac{(n+1)c-na}{b}\)<br>
+                            <br>
+                            (1)の不等式において\(\displaystyle x=\frac db\ (\gt0)\)とおくと、<br>
+                            \(\displaystyle\left(\frac db\right)^{n+1}\geqq(n+1)\cdot\frac db-n\)<br>
+                            <br>
+                            これと上の等式を合わせると、<br>
+                            \(\displaystyle\frac{(n+1)c-na}{b}\geqq(n+1)\frac db-n\)<br>
+                            この両辺に\(b\ (\gt0)\)をかけて整理すると、<br>
+                            \((n+1)c-na\geqq(n+1)d-nb\)<br>
+                            \(\displaystyle\therefore\ (n+1)(c-d)\geqq n(a-b)\)<br>
+                            <br>
+                            \(a\geqq b\)より\(a-b\geqq0\)であり、\(n\)は正の整数だから\(n\gt0\)なので、\(n(a-b)\geqq0\)である。よって、<br>
+                            \((n+1)(c-d)\geqq0\)<br>
+                            \(n+1\gt0\)であるから、両辺を\(n+1\)で割って、<br>
+                            \(\displaystyle\therefore\ c\geqq d\) (証明終)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
