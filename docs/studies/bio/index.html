@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>生命科学問題集</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="/static/css/ress.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-size: 2.5rem;
+            font-family: khula;
+        }
+
+        .back-to-top {
+            padding-top: 2rem;
+            text-align: left;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+        }
+
+        .back-to-top a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 860px;
+            padding-bottom: 3rem;
+        }
+
+        .field {
+            margin-top: 2.5rem;
+        }
+
+        .field h2 {
+            font-size: 1.4rem;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .field p {
+            line-height: 1.9;
+            margin-bottom: 0.4rem;
+        }
+
+        .field .links a {
+            margin-right: 1.2rem;
+            white-space: nowrap;
+        }
+
+        .field .soon {
+            color: #999;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHVWGPNGT6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LHVWGPNGT6');
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul id="g-navi">
+                <li><a>生命科学問題集</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="back-to-top">
+        <button type="button" class="btn btn-outline-info">
+            <a href="/studies/">Study Portalに戻る</a>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>大学で学ぶ生命科学の内容を、分野ごとに問題で確認するための問題集です。問題と解答はそれぞれクリックすると開きます。</p>
+
+        <div class="field">
+            <h2>タンパク質・アミノ酸</h2>
+            <p>タンパク質は20種類のアミノ酸がペプチド結合でつながった高分子である。アミノ酸の性質は側鎖で決まり、電荷や等電点、立体化学がタンパク質の性質の基礎になる。</p>
+            <p class="links">
+                <a href="protein.html#problem1">名前と略号</a>
+                <a href="protein.html#problem2">側鎖による分類</a>
+                <a href="protein.html#problem3">等電点</a>
+                <a href="protein.html#problem4">ヒスチジン</a>
+                <a href="protein.html#problem5">ペプチド結合</a>
+                <a href="protein.html#problem6">分子量</a>
+                <a href="protein.html#problem7">キラリティ</a>
+                <a href="protein.html#problem8">一次構造</a>
+            </p>
+        </div>
+
+        <div class="field">
+            <h2>酵素</h2>
+            <p>酵素は生体内の化学反応を触媒するタンパク質である。反応速度の式や阻害様式、活性の制御のしくみを扱う。</p>
+            <p class="soon">準備中</p>
+        </div>
+
+        <div class="field">
+            <h2>遺伝学</h2>
+            <p>形質が親から子へ伝わるしくみを扱う。メンデルの法則、連鎖と組換え、集団遺伝学。</p>
+            <p class="soon">準備中</p>
+        </div>
+
+        <div class="field">
+            <h2>分子生物学</h2>
+            <p>DNAからRNA、タンパク質へと遺伝情報が流れるしくみと、その制御を扱う。</p>
+            <p class="soon">準備中</p>
+        </div>
+
+        <div class="field">
+            <h2>ウイルス学</h2>
+            <p>ウイルスの構造と増殖のしくみ、感染価の測定を扱う。</p>
+            <p class="soon">準備中</p>
+        </div>
+
+        <div class="field">
+            <h2>バイオインフォマティクス</h2>
+            <p>塩基配列やアミノ酸配列を計算機で解析する方法を扱う。配列アラインメント、系統解析。</p>
+            <p class="soon">準備中</p>
+        </div>
+    </div>
+</body>
+
+</html>

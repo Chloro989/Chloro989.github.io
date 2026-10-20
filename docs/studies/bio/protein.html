@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>タンパク質・アミノ酸（1）アミノ酸の基礎</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- OGPの設定 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="タンパク質・アミノ酸（1）アミノ酸の基礎" />
+    <meta property="og:description" content="生命科学問題集：アミノ酸の名前、分類、等電点、ペプチド結合、キラリティの8問" />
+    <meta property="og:url" content="chloro966.net" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:publisher" content="chloro" />
+    <meta property="og:image"
+        content="https://switch-box.net/wp-content/uploads/2013/06/wallpaper-monochrome-town-01.jpg" />
+    <!-- Twitterカードの設定 -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@BarbaroyBadBurn" />
+
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/ress.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;/
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+            text-decoration: none;
+            font-size: 2.5rem;
+            font-family: khula;
+
+        }
+
+        .container,
+        .back-to-top {
+            padding-top: 2rem;
+            padding-right: 1rem;
+        }
+
+        .back-to-top {
+            text-align: left;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+        }
+
+        .back-to-top a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            margin-top: 1rem;
+        }
+
+        .card-body {
+            line-height: 3rem;
+            background-color: #fff;
+        }
+
+        .problem-diagram {
+            display: block;
+            margin: 0.5rem auto 1rem;
+        }
+
+        .problem-diagram text {
+            font-family: 'Arial', sans-serif;
+            font-style: italic;
+            fill: #333;
+        }
+
+        table.zougen {
+            border-collapse: collapse;
+            margin: 0.75rem auto 1rem;
+        }
+
+        table.zougen th,
+        table.zougen td {
+            border: 1px solid #333;
+            padding: 0.35rem 0.9rem;
+            text-align: center;
+            min-width: 2.5rem;
+        }
+
+        table.zougen th {
+            background: #f8f9fa;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        p span {
+            display: inline-block;
+        }
+
+        table.zougen th {
+            font-style: normal;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHVWGPNGT6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-LHVWGPNGT6');
+</script>
+</head>
+
+<body>
+    <div class="back-to-top">
+        <button type="button" class="btn btn-outline-info">
+            <a href="/studies/bio/">生命科学問題集に戻る</a>
+        </button>
+
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseToc" role="button" aria-expanded="true"
+                aria-controls="collapseToc">
+                目次
+                <div id="collapseToc" class="collapse show">
+                    <div class="card-body">
+                        <p class="text-muted" style="margin-bottom:1rem;">タンパク質・アミノ酸（1）アミノ酸の基礎</p>
+                        <p style="margin-bottom:0.3rem;"><b>アミノ酸の性質</b></p>
+                        <ul>
+                            <li><a href="#problem1">アミノ酸の名前と略号</a></li>
+                            <li><a href="#problem2">側鎖による分類</a></li>
+                            <li><a href="#problem3">等電点の計算</a></li>
+                            <li><a href="#problem4">ヒスチジンが触媒に使われる理由</a></li>
+                        </ul>
+                        <p style="margin-bottom:0.3rem;"><b>ペプチドと一次構造</b></p>
+                        <ul>
+                            <li><a href="#problem5">ペプチド結合の構造</a></li>
+                            <li><a href="#problem6">ペプチドの分子量</a></li>
+                            <li><a href="#problem8">一次構造を読み取る</a></li>
+                        </ul>
+                        <p style="margin-bottom:0.3rem;"><b>立体化学</b></p>
+                        <ul>
+                            <li><a href="#problem7">キラリティと立体異性体</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題1 ===== -->
+        <div class="card" id="problem1">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem1" role="button"
+                aria-expanded="false" aria-controls="collapseProblem1">
+                アミノ酸の名前と略号
+                <div id="collapseProblem1" class="collapse">
+                    <div class="card-body">
+                        <p>次の三文字表記のアミノ酸について、日本語名と一文字表記を答えよ。<br>
+                            <br>
+                            Trp、Gln、Asn、Lys、Tyr、Asp、Glu、Arg、Phe、Ile
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution1" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution1">
+                    アミノ酸の名前と略号 解答
+                </div>
+                <div id="collapseSolution1" class="collapse">
+                    <div class="card-body">
+                        <table class="zougen">
+                            <tr><th>三文字</th><th>日本語名</th><th>一文字</th></tr>
+                            <tr><td>Trp</td><td>トリプトファン</td><td>W</td></tr>
+                            <tr><td>Gln</td><td>グルタミン</td><td>Q</td></tr>
+                            <tr><td>Asn</td><td>アスパラギン</td><td>N</td></tr>
+                            <tr><td>Lys</td><td>リシン（リジン）</td><td>K</td></tr>
+                            <tr><td>Tyr</td><td>チロシン</td><td>Y</td></tr>
+                            <tr><td>Asp</td><td>アスパラギン酸</td><td>D</td></tr>
+                            <tr><td>Glu</td><td>グルタミン酸</td><td>E</td></tr>
+                            <tr><td>Arg</td><td>アルギニン</td><td>R</td></tr>
+                            <tr><td>Phe</td><td>フェニルアラニン</td><td>F</td></tr>
+                            <tr><td>Ile</td><td>イソロイシン</td><td>I</td></tr>
+                        </table>
+                        <p>
+                            頭文字がほかと重ならないもの（Ala、Cys、Gly、His、Ile、Leu、Met、Pro、Ser、Thr、Val）は、頭文字がそのまま一文字表記になる。<br>
+                            <br>
+                            Asp（アスパラギン酸、D）とAsn（アスパラギン、N）、Glu（グルタミン酸、E）とGln（グルタミン、Q）は混同しやすい。側鎖が酸（–COOH）の形のものがD・E、アミド（–CONH₂）の形のものがN・Qである。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題2 ===== -->
+        <div class="card" id="problem2">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem2" role="button"
+                aria-expanded="false" aria-controls="collapseProblem2">
+                側鎖による分類
+                <div id="collapseProblem2" class="collapse">
+                    <div class="card-body">
+                        <p>\((1)\) 次の\(10\)種類のアミノ酸を、側鎖の性質から「塩基性」「酸性」「含硫」「芳香族」の\(4\)つに分類せよ。<br>
+                            <br>
+                            Lys、Asp、Cys、Phe、His、Met、Glu、Trp、Arg、Tyr<br>
+                            <br>
+                            \((2)\) タンパク質の水溶液が波長\(280\ \mathrm{nm}\)の光を吸収するのは、\((1)\)のどのグループのアミノ酸によるか。<br>
+                            \((3)\) タンパク質を構成する標準アミノ酸は何種類か。また、「構成元素がC・H・O・N・Sに限られるもの」という条件が付くとき、「\(21\)番目のアミノ酸」と呼ばれるものが除外される理由を答えよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution2" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution2">
+                    側鎖による分類 解答
+                </div>
+                <div id="collapseSolution2" class="collapse">
+                    <div class="card-body">
+                        <p>\((1)\)</p>
+                        <table class="zougen">
+                            <tr><th>分類</th><th>アミノ酸</th><th>特徴</th></tr>
+                            <tr><td>塩基性</td><td>Lys、Arg、His</td><td>側鎖に窒素。中性pHで正電荷</td></tr>
+                            <tr><td>酸性</td><td>Asp、Glu</td><td>側鎖に–COOH。中性pHで負電荷</td></tr>
+                            <tr><td>含硫</td><td>Cys、Met</td><td>Cysは–SH（S–S結合を作る）、Metは–S–CH₃</td></tr>
+                            <tr><td>芳香族</td><td>Phe、Tyr、Trp</td><td>\(280\ \mathrm{nm}\)の吸収の原因</td></tr>
+                        </table>
+                        <p>
+                            \((2)\) 芳香族アミノ酸。寄与はTrpが最も大きく、Tyrがそれに次ぎ、Pheは小さい。これがタンパク質の濃度測定（\(A_{280}\)）の原理になる。核酸は\(260\ \mathrm{nm}\)に吸収をもつ。<br>
+                            <br>
+                            \((3)\) \(20\)種類。\(21\)番目のアミノ酸と呼ばれるセレノシステインはセレン（Se）を含むので、この条件で除外される。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題3 ===== -->
+        <div class="card" id="problem3">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem3" role="button"
+                aria-expanded="false" aria-controls="collapseProblem3">
+                等電点の計算
+                <div id="collapseProblem3" class="collapse">
+                    <div class="card-body">
+                        <p>次の表の\(\mathrm{p}K_a\)の値を用いて、以下の問いに答えよ。</p>
+                        <table class="zougen">
+                            <tr><th>アミノ酸</th><th>α-COOH</th><th>α-NH₃⁺</th><th>側鎖</th></tr>
+                            <tr><td>グリシン（Gly）</td><td>\(2.34\)</td><td>\(9.60\)</td><td>―</td></tr>
+                            <tr><td>アスパラギン酸（Asp）</td><td>\(2.10\)</td><td>\(9.82\)</td><td>\(3.86\)</td></tr>
+                            <tr><td>リシン（Lys）</td><td>\(2.18\)</td><td>\(8.95\)</td><td>\(10.53\)</td></tr>
+                        </table>
+                        <p>
+                            \((1)\) グリシン、アスパラギン酸、リシンの等電点（pI）をそれぞれ求めよ。<br>
+                            \((2)\) \(\mathrm{pH}\ 7.0\)の緩衝液中で電気泳動を行うと、\(3\)つのアミノ酸はそれぞれ陽極・陰極のどちらへ移動するか。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution3" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution3">
+                    等電点の計算 解答
+                </div>
+                <div id="collapseSolution3" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) 等電点は正味の電荷が\(0\)になるpHであり、正味\(0\)の状態（両性イオン）を挟む\(2\)つの\(\mathrm{p}K_a\)の平均で求められる。\(3\)つのうちどの\(2\)つを選ぶかがポイントである。<br>
+                            <br>
+                            グリシン：\(\displaystyle \mathrm{pI}=\frac{2.34+9.60}{2}=5.97\)<br>
+                            <br>
+                            アスパラギン酸は側鎖も酸性基なので、正味\(0\)になるのは低いpH側である。小さいほうの\(2\)つを取って<br>
+                            \(\displaystyle \mathrm{pI}=\frac{2.10+3.86}{2}=2.98\)<br>
+                            <br>
+                            リシンは側鎖が塩基性基なので、正味\(0\)になるのは高いpH側である。大きいほうの\(2\)つを取って<br>
+                            \(\displaystyle \mathrm{pI}=\frac{8.95+10.53}{2}=9.74\)<br>
+                            <br>
+                            \((2)\) \(\mathrm{pH}>\mathrm{pI}\)ならマイナス、\(\mathrm{pH}<\mathrm{pI}\)ならプラスに帯電する。したがって<br>
+                            グリシン：わずかに負に帯電し、陽極へ（移動は遅い）<br>
+                            アスパラギン酸：負に帯電し、陽極へ<br>
+                            リシン：正に帯電し、陰極へ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題4 ===== -->
+        <div class="card" id="problem4">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem4" role="button"
+                aria-expanded="false" aria-controls="collapseProblem4">
+                ヒスチジンが触媒に使われる理由
+                <div id="collapseProblem4" class="collapse">
+                    <div class="card-body">
+                        <p>次の文の空欄（ア）〜（カ）に当てはまる語句または数値を答えよ。<br>
+                            <br>
+                            ヒスチジンの側鎖の\(\mathrm{p}K_a\)は約（ア）で、生理的pHに最も近い。そのため、ヒスチジンはプロトンを受け取る（イ）としても、プロトンを渡す（ウ）としても働くことができ、酵素の（エ）残基として頻繁に現れる。たとえばキモトリプシンの触媒三残基はSer195、（オ）、Asp102である。これらの残基は一次構造の上では離れているが、（カ）構造で互いに近接することで、\(1\)つの活性部位を作る。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution4" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution4">
+                    ヒスチジンが触媒に使われる理由 解答
+                </div>
+                <div id="collapseSolution4" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            （ア）\(6\)　（イ）塩基　（ウ）酸　（エ）触媒　（オ）His57　（カ）三次<br>
+                            <br>
+                            側鎖の\(\mathrm{p}K_a\)の目安は、Asp・Glu\(\approx 4\)、His\(\approx 6\)、Cys\(\approx 8.3\)、Lys\(\approx 10.5\)、Arg\(\approx 12.5\)である。\(\mathrm{p}K_a\)が生理的pHから大きく離れたアミノ酸は、ほぼ完全にプロトン化されているか脱プロトン化されているかのどちらかなので、プロトンのやり取りに使いにくい。<br>
+                            <br>
+                            活性部位の残基は、一次構造上で隣り合っている必要はなく、三次元的に近接していればよい。このため、セリンプロテアーゼでは触媒三残基を共通にしたまま、基質ポケットだけを変えて特異性を変えることができる。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題5 ===== -->
+        <div class="card" id="problem5">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem5" role="button"
+                aria-expanded="false" aria-controls="collapseProblem5">
+                ペプチド結合の構造
+                <div id="collapseProblem5" class="collapse">
+                    <div class="card-body">
+                        <p>\((1)\) ジペプチドの骨格を正しく表しているものを、次の(a)〜(d)から\(1\)つ選べ。\(\mathrm{R_1}\)、\(\mathrm{R_2}\)は側鎖を表す。<br>
+                            <br>
+                            (a) H₂N–CH(R₁)–CO–NH–CH(R₂)–COOH<br>
+                            (b) H₂N–CH(R₁)–NH–CO–CH(R₂)–COOH<br>
+                            (c) H₂N–CH₂–CH(R₁)–CO–NH–CH(R₂)–COOH<br>
+                            (d) H₂N–CH(R₁)–CO–O–CH(R₂)–COOH<br>
+                            <br>
+                            \((2)\) ペプチド結合はどのような反応によって生じるか。\(1\)行で説明せよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution5" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution5">
+                    ペプチド結合の構造 解答
+                </div>
+                <div id="collapseSolution5" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) (a)<br>
+                            <br>
+                            確認するのは、①側鎖がα炭素に付いているか、②アミド結合の向きが–CO–NH–になっているか、の\(2\)点である。<br>
+                            (b) アミド結合の向きが逆で、\(1\)つ目の残基に–NH₂が\(2\)つ付いた形になっている。<br>
+                            (c) 側鎖の付いた炭素とアミノ基の間にCH₂が入っており、α-アミノ酸ではなくβ-アミノ酸の形になっている。<br>
+                            (d) –CO–O–はエステル結合で、ペプチド結合ではない。<br>
+                            <br>
+                            \((2)\) 一方のアミノ酸のカルボキシル基と、もう一方のアミノ酸のアミノ基から水\(1\)分子が取れて、–CO–NH–が生じる（脱水縮合）。<br>
+                            <br>
+                            遊離のアミノ基が残っている側がN末端、遊離のカルボキシル基が残っている側がC末端であり、配列はN末端からC末端の向きに書く。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題6 ===== -->
+        <div class="card" id="problem6">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem6" role="button"
+                aria-expanded="false" aria-controls="collapseProblem6">
+                ペプチドの分子量
+                <div id="collapseProblem6" class="collapse">
+                    <div class="card-body">
+                        <p>分子量は、グリシン（Gly）\(75\)、アラニン（Ala）\(89\)、セリン（Ser）\(105\)、水\(18\)とする。<br>
+                            <br>
+                            \((1)\) ジペプチドGly-Alaの分子量を求めよ。<br>
+                            \((2)\) トリペプチドGly-Ala-Serの分子量を求めよ。<br>
+                            \((3)\) Gly、Ala、Serを\(1\)つずつ使ってできるトリペプチドは何種類あるか。また、\(20\)種類の標準アミノ酸から重複を許してトリペプチドを作るとき、配列は何通りあるか。<br>
+                            \((4)\) Gly-AlaとAla-Glyの分子量は等しいか。また、両者は同じ物質か。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution6" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution6">
+                    ペプチドの分子量 解答
+                </div>
+                <div id="collapseSolution6" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            ペプチド結合が\(1\)つできるごとに水が\(1\)分子取れる。\(n\)個のアミノ酸からなるペプチドには、ペプチド結合が\(n-1\)個ある。<br>
+                            <br>
+                            \((1)\) \(75+89-18=146\)<br>
+                            \((2)\) \(75+89+105-18\times2=233\)<br>
+                            \((3)\) \(3!=6\)種類。重複を許すと、各位置に\(20\)通りずつで\(20^3=8000\)通り。<br>
+                            \((4)\) 組成が同じなので分子量は等しいが、別の物質である。Gly-AlaではGlyが、Ala-GlyではAlaがN末端になる。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題7 ===== -->
+        <div class="card" id="problem7">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem7" role="button"
+                aria-expanded="false" aria-controls="collapseProblem7">
+                キラリティと立体異性体
+                <div id="collapseProblem7" class="collapse">
+                    <div class="card-body">
+                        <p>\((1)\) \(20\)種類の標準アミノ酸のうち、キラル（不斉炭素をもつ）でないものはどれか。理由とともに答えよ。<br>
+                            \((2)\) トレオニン（Thr）とイソロイシン（Ile）の立体異性体は、それぞれ何種類考えられるか。<br>
+                            \((3)\) タンパク質を構成するアミノ酸はL体である。R/S表記で表すと、L-アラニンはS体だが、L-システインはR体になる。この理由をCIP則（置換基の優先順位の決め方）にもとづいて説明せよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution7" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution7">
+                    キラリティと立体異性体 解答
+                </div>
+                <div id="collapseSolution7" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) グリシン。側鎖が–Hなので、α炭素にHが\(2\)つ結合しており、\(4\)つの基がすべて異なるという条件を満たさない。<br>
+                            <br>
+                            \((2)\) どちらもα炭素のほかに側鎖のβ炭素が不斉炭素であり、不斉炭素が\(2\)つあるので\(2^2=4\)種類。このうちタンパク質に使われるのは\(1\)種類だけである。<br>
+                            <br>
+                            \((3)\) α炭素に直接結合する原子は、N（–NH₃⁺）、C（–COO⁻）、C（側鎖）、Hである。Nが最優先、Hが最下位なので、\(2\)つのCの順位が問題になる。CIP則では、直接結合する原子が同じなら、その先に結合している原子の原子番号を比べる。<br>
+                            <br>
+                            アラニン：–COO⁻のCの先は(O, O, O)、側鎖–CH₃のCの先は(H, H, H)。Oのほうが大きいので、NH₃⁺ ＞ COO⁻ ＞ CH₃ ＞ Hとなり、L体はSになる。<br>
+                            システイン：側鎖–CH₂SHのCの先は(S, H, H)。最も大きい原子どうしを比べると、S（原子番号\(16\)）＞ O（原子番号\(8\)）なので、側鎖のほうが–COO⁻より優先される。\(2\)位と\(3\)位が入れ替わるため、立体配置はアラニンと同じでも表記はRになる。<br>
+                            <br>
+                            L/Dは立体配置の型（グリセルアルデヒドとの対応）による表記であり、R/Sは優先順位から機械的に決める表記なので、両者は\(1\)対\(1\)には対応しない。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 問題8 ===== -->
+        <div class="card" id="problem8">
+            <div class="card-header" data-toggle="collapse" href="#collapseProblem8" role="button"
+                aria-expanded="false" aria-controls="collapseProblem8">
+                一次構造を読み取る
+                <div id="collapseProblem8" class="collapse">
+                    <div class="card-body">
+                        <p>一文字表記でMKDWYと書かれるペンタペプチドについて、次の問いに答えよ。<br>
+                            <br>
+                            \((1)\) 三文字表記で書き、N末端とC末端のアミノ酸を答えよ。<br>
+                            \((2)\) このペプチドに含まれるペプチド結合の数を答えよ。また、構成アミノ酸の分子量の合計からペプチドの分子量を求めるには、いくつを引けばよいか。<br>
+                            \((3)\) \(\mathrm{pH}\ 7\)で電荷をもつ部位をすべて挙げ、正味の電荷のおおよその値を答えよ。<br>
+                            \((4)\) \(280\ \mathrm{nm}\)の吸収に寄与する残基を答えよ。<br>
+                            \((5)\) このペプチドをトリプシンで切断したときに生じる断片を答えよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSolution8" role="button"
+                    aria-expanded="false" aria-controls="collapseSolution8">
+                    一次構造を読み取る 解答
+                </div>
+                <div id="collapseSolution8" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            \((1)\) Met-Lys-Asp-Trp-Tyr。N末端はMet、C末端はTyr。<br>
+                            <br>
+                            \((2)\) \(5\)残基なのでペプチド結合は\(4\)個。合計から\(18\times4=72\)を引く。<br>
+                            <br>
+                            \((3)\) N末端のアミノ基（＋）、Lysの側鎖（＋）、Aspの側鎖（－）、C末端のカルボキシル基（－）。正味の電荷はおよそ\(0\)。Tyrの側鎖（–OH）は\(\mathrm{p}K_a\approx10\)なので、\(\mathrm{pH}\ 7\)ではほとんど電荷をもたない。<br>
+                            <br>
+                            \((4)\) TrpとTyr（芳香族）。<br>
+                            <br>
+                            \((5)\) トリプシンはLysとArgのC末端側で切断するので、Met-LysとAsp-Trp-Tyrの\(2\)つ。トリプシンがLys・Argの後ろを選んで切るのは、基質ポケットの底に負電荷をもつAsp189があり、正電荷の側鎖を引き寄せるためである。なお、切断点の直後がProのときはほとんど切断しない。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+</html>
